@@ -14,6 +14,7 @@ import { LitElement, html, css } from "lit-element";
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
+import closeIcon from '@alaskaairux/orion-icons/dist/icons/close-lg_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -24,15 +25,17 @@ import styleCss from "./style-css.js";
 
 // build the component class
 class AuroBadge extends LitElement {
-  // constructor() {
-  //   super();
-  // }
+  constructor() {
+    super();
+    this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
+    this.svg = this.dom.body.firstChild;
+  }
 
   // function to define props used within the scope of this component
   static get properties() {
     return {
       // ...super.properties,
-      cssClass:   { type: String }
+      action: {type: Boolean},
     };
   }
 
@@ -48,8 +51,12 @@ class AuroBadge extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div class=${this.cssClass}>
+      <div class="badge">
         <slot></slot>
+        ${!this.action ? html`
+          ${this.svg}
+        ` : html`
+        `}
       </div>
     `;
   }
