@@ -27,9 +27,24 @@
 //   ...
 // }
 
-.testClass {
-  color:  var(--auro-color-border-error-on-light);
-  border: 1px solid var(--auro-color-border-error-on-light);
-  display: inline-block;
-  padding: var(--auro-text-body-size-default);
+.badge {
+  align-items: center;
+  background-color: var(--auro-color-ui-default-on-light);
+  border-radius: 22px;
+
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: var(--auro-size-md);
+  padding-right: var(--auro-size-md);
+  margin-left: var(--auro-size-lg);
+  margin-right: var(--auro-size-lg);
+
+  font-size: var(--auro-text-body-size-default);
+  color: var(--auro-color-text-primary-on-dark);
+
+  & svg {
+    margin-left: var(--auro-size-xs);
+  }
 }
