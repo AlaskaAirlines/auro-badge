@@ -3,18 +3,9 @@ import sinon from 'sinon';
 import '../src/auro-badge.js';
 
 describe('auro-badge', () => {
-  it('sets the CSS class on auro-badge > div element', async () => {
-    const el = await fixture(html`
-      <auro-badge cssclass="testClass"></auro-badge>
-    `);
-
-    const div = el.shadowRoot.querySelector('div');
-    expect(div.className).to.equal('testClass');
-  });
-
   it('auro-badge is accessible', async () => {
     const el = await fixture(html`
-      <auro-badge cssclass="testClass"></auro-badge>
+      <auro-badge cssclass="testClass">asdf</auro-badge>
     `);
 
     await expect(el).to.be.accessible();
@@ -24,5 +15,22 @@ describe('auro-badge', () => {
     const el = await !!customElements.get("auro-badge");
 
     await expect(el).to.be.true;
+  });
+  it('auro-badge content is defined', async () => {
+    const el = await fixture(html`
+      <auro-badge cssclass="testClass">asdf</auro-badge>
+    `);
+    const root = el.shadowRoot;
+    const text = root.textContent;
+
+    await expect(text).to.equal('asdf');
+  });
+  it('auro-badge has an action', async () => {
+    const el = await fixture(html`
+      <auro-badge cssclass="testClass" action>asdf</auro-badge>
+    `);
+    const root = el.shadowRoot;
+    const attr = root.querySelector('svg');
+    await expect(attr).to.exist;
   });
 });
