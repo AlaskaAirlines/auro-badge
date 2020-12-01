@@ -18,7 +18,6 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "@alaskaairux/auro-icon": "^2.0.2",
     "@alaskaairux/orion-icons": "^2.1.5",
     "chalk": "^4.1.0",
     "lit-element": "^2.4.0"
@@ -121,7 +120,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all test lint bundler postinstall",
+      "pre-commit": "npm-run-all test lint bundler postinstall || true",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
