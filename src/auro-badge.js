@@ -39,6 +39,16 @@ class AuroBadge extends LitElement {
     };
   }
 
+  handleChange(event) {
+    debugger;
+    if (this.action) {
+      const customEvent = new CustomEvent(event.type, event);
+
+      this.dispatchEvent(customEvent);
+      this.remove();
+    }
+  }
+
   static get styles() {
     return css`
       ${styleCss}
@@ -51,7 +61,7 @@ class AuroBadge extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div class="badge">
+      <div class="badge" @click=${this.handleChange}>
         <slot></slot>
         ${this.action ? html`
           ${this.svg}
