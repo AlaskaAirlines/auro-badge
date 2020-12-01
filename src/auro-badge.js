@@ -53,7 +53,7 @@ class AuroBadge extends LitElement {
     return html`
       <div class="badge">
         <slot></slot>
-        ${!this.action ? html`
+        ${this.action ? html`
           ${this.svg}
         ` : html`
         `}
