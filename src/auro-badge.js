@@ -43,7 +43,7 @@ class AuroBadge extends LitElement {
    * Fires a custom event and removes the element from the DOM if action is true
    *
    * @param {*} event interaction event from Badge
-   * @return void
+   * @returns {void}
    */
   handleChange(event) {
     if (this.action) {
