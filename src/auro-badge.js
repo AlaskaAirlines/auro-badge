@@ -43,7 +43,7 @@ class AuroBadge extends LitElement {
    * Fires a custom event and removes the element from the DOM if action is true
    *
    * @param {*} event interaction event from Badge
-   * @returns void
+   * @return void
    */
   handleChange(event) {
     if (this.action) {
@@ -66,7 +66,7 @@ class AuroBadge extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div class="badge" @click=${this.handleChange}>
+      <div class="badge" @click=${this.handleChange} role="button">
         <slot></slot>
         ${this.action ? html`
           ${this.svg}
