@@ -5,7 +5,7 @@ import '../src/auro-badge.js';
 describe('auro-badge', () => {
   it('auro-badge is accessible', async () => {
     const el = await fixture(html`
-      <auro-badge cssclass="testClass">asdf</auro-badge>
+      <auro-badge>asdf</auro-badge>
     `);
 
     await expect(el).to.be.accessible();
@@ -16,12 +16,12 @@ describe('auro-badge', () => {
 
     await expect(el).to.be.true;
   });
-  /*it('auro-badge has an action', async () => {
+  it('auro-badge has an action that closes the pane', async () => {
     const el = await fixture(html`
-      <auro-badge cssclass="testClass" action>asdf</auro-badge>
+      <auro-badge action>asdf</auro-badge>
     `);
     const root = el.shadowRoot;
-    document.querySelector('auro-badge').click();
-    await expect(root).to.not.exist;
-  });*/
+    root.querySelector('div').click();
+    setTimeout(() =>  expect(root).to.be.equal(undefined), 3000);
+  });
 });
