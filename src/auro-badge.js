@@ -14,20 +14,26 @@ import { LitElement, html, css } from "lit-element";
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
-import closeIcon from '@alaskaairux/orion-icons/dist/icons/close-lg_es6.js';
+import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-lg_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
  * auro-badge provides users a way to ...
  *
- * @attr {String} cssClass - Applies designated CSS class to DOM element.
+ * @attr {Boolean} target - Enables the close functionality.
  */
 
 // build the component class
 class AuroBadge extends LitElement {
   constructor() {
     super();
+    /**
+     * @private internal variable
+     */
     this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
+    /**
+     * @private internal variable
+     */
     this.svg = this.dom.body.firstChild;
   }
 
@@ -35,18 +41,18 @@ class AuroBadge extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
-      action: {type: Boolean},
+      target: {type: Boolean},
     };
   }
 
   /**
-   * Fires a custom event and removes the element from the DOM if action is true
+   * Fires a custom event and removes the element from the DOM if target is true
    *
    * @param {*} event interaction event from Badge
    * @returns {void}
    */
   handleChange(event) {
-    if (this.action) {
+    if (this.target) {
       const customEvent = new CustomEvent(event.type, event);
 
       this.dispatchEvent(customEvent);
@@ -66,10 +72,10 @@ class AuroBadge extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div class="badge" @click=${this.handleChange} role="button">
+      <div class="badge" role="button">
         <slot></slot>
-        ${this.action ? html`
-          <button>
+        ${this.target ? html`
+          <button @click=${this.handleChange}>
             ${this.svg}
           </button>
         ` : html`

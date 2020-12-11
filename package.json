@@ -25,12 +25,12 @@
   "peerDependencies": {
     "@alaskaairux/design-tokens": "^3.0.0",
     "@alaskaairux/webcorestylesheets": "^3.0.0",
-    "@alaskaairux/icons": "^4.0.4",
+    "@alaskaairux/icons": "^4.0.7",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "focus-visible": "^5.2.0"
   },
   "devDependencies": {
-    "@alaskaairux/icons": "^4.0.4",
+    "@alaskaairux/icons": "^4.0.7",
     "@alaskaairux/design-tokens": "^3.0.0",
     "@alaskaairux/webcorestylesheets": "^3.0.0",
     "@babel/core": "^7.12.9",

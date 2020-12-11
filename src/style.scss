@@ -27,6 +27,27 @@
 //   ...
 // }
 
+// focus-visible mixin
+@mixin focus-visible {
+    & svg {
+      border: 2px solid white;
+    }
+
+}
+
+// handle focus-visible state
+:host(.focus-visible) {
+  .auro-badge {
+    @include focus-visible;
+
+    &::-moz-focus-inner {
+      border: none;
+      width: 100%;
+    }
+  }
+}
+
+
 .badge {
   align-items: center;
   background-color: var(--auro-color-ui-default-on-light);
@@ -34,8 +55,8 @@
 
   display: inline-flex;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--auro-size-sm);
+  padding-bottom: var(--auro-size-sm);
   padding-left: var(--auro-size-md);
   padding-right: var(--auro-size-md);
   margin-left: var(--auro-size-lg);
@@ -48,6 +69,7 @@
     background-color: unset;
     color: unset;
     border: none;
+    padding: 0;
   }
 
   & svg {
