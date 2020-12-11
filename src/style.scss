@@ -44,6 +44,12 @@
   font-size: var(--auro-text-body-size-default);
   color: var(--auro-color-text-primary-on-dark);
 
+  & button {
+    background-color: unset;
+    color: unset;
+    border: none;
+  }
+
   & svg {
     margin-left: var(--auro-size-xs);
   }

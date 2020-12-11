@@ -69,7 +69,9 @@ class AuroBadge extends LitElement {
       <div class="badge" @click=${this.handleChange} role="button">
         <slot></slot>
         ${this.action ? html`
-          ${this.svg}
+          <button>
+            ${this.svg}
+          </button>
         ` : html`
         `}
       </div>
