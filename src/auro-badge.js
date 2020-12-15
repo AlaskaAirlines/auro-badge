@@ -72,11 +72,12 @@ class AuroBadge extends LitElement {
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      <div class="badge" role="button">
+      <div class="badge">
         <slot></slot>
         ${this.target ? html`
           <button @click=${this.handleChange}>
             ${this.svg}
+            <span class="util_displayHiddenVisually">Close</span>
           </button>
         ` : html`
         `}
