@@ -9,6 +9,7 @@
 
 @import "./node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints";
 @import "./node_modules/@alaskaairux/webcorestylesheets/dist/core";
+@import "./node_modules/@alaskaairux/webcorestylesheets/dist/utilityClasses/displayProperties";
 
 // Support for auroElement styles
 // @import "./node_modules/@alaskaairux/webcorestylesheets/dist/auroElement/auroElement";
@@ -29,22 +30,27 @@
 
 // focus-visible mixin
 @mixin focus-visible {
-    & svg {
-      border: 2px solid white;
+    &.badge {
+      & svg {
+        border: var(--auro-size-xxxs) solid var(--auro-color-border-focus-on-dark);
+        border-radius: var(--auro-size-xxs);
+      }
     }
 
 }
 
 // handle focus-visible state
 :host(.focus-visible) {
-  .auro-badge {
-    @include focus-visible;
+    .badge {
+      @include focus-visible;
 
-    &::-moz-focus-inner {
-      border: none;
-      width: 100%;
+      &::-moz-focus-inner {
+        border: none;
+        width: 100%;
+      }
     }
-  }
+
+  
 }
 
 
