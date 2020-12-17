@@ -14,23 +14,27 @@ import { LitElement, html, css } from "lit-element";
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
-import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-lg_es6.js';
+import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * auro-badge provides users a way to ...
+ * HTML custom element for the use of drawing attention to additional interface information
  *
- * @attr {Boolean} target - Enables the close functionality.
+ * @attr {Boolean} target - Enables the close functionality
+ * @attr {Boolean} space - Adds default spacing spec to badges
+ * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
  */
 
 // build the component class
 class AuroBadge extends LitElement {
   constructor() {
     super();
+
     /**
      * @private internal variable
      */
     this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
+
     /**
      * @private internal variable
      */
@@ -41,13 +45,25 @@ class AuroBadge extends LitElement {
   static get properties() {
     return {
       // ...super.properties,
-      target: {type: Boolean},
+      target: {
+        type: Boolean
+      },
+      disabled: {
+        type: Boolean,
+        reflect: true
+      },
+
+      /**
+       * @private
+       */
+      value: {
+        type: String
+      },
     };
   }
 
   /**
-   * Fires a custom event and removes the element from the DOM if target is true
-   *
+   * @private Fires a custom event and removes the element from the DOM if target is true
    * @param {*} event interaction event from Badge
    * @returns {void}
    */
@@ -57,6 +73,15 @@ class AuroBadge extends LitElement {
 
       this.dispatchEvent(customEvent);
       this.remove();
+    }
+  }
+
+  firstUpdated() {
+    // Finds slotted content and adds string to button value
+    if (this.target) {
+      const [targetElement] = this.shadowRoot.querySelector('slot').assignedNodes();
+
+      this.value = targetElement.textContent;
     }
   }
 
@@ -71,17 +96,19 @@ class AuroBadge extends LitElement {
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
+
     return html`
-      <div class="badge">
-        <slot></slot>
-        ${this.target ? html`
-          <button @click=${this.handleChange}>
-            ${this.svg}
-            <span class="util_displayHiddenVisually">Close</span>
-          </button>
-        ` : html`
-        `}
-      </div>
+      ${this.target
+        ? html`<button
+                @click=${this.handleChange}
+                ?disabled="${this.disabled}"
+                .value="${this.value}"
+                class="target">
+          <slot></slot>${this.svg}
+          <span class="util_displayHiddenVisually">Dismiss</span>
+        </button>`
+        : html`<slot></slot>`
+      }
     `;
   }
 }
