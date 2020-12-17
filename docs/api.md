@@ -1,15 +1,16 @@
 # auro-badge
 
-auro-badge provides users a way to ...
+HTML custom element for the use of drawing attention to additional interface information
+
+## Attributes
+
+| Attribute | Type      | Description                         |
+|-----------|-----------|-------------------------------------|
+| `space`   | `Boolean` | Adds default spacing spec to badges |
 
 ## Properties
 
-| Property | Attribute | Type      | Description                      |
-|----------|-----------|-----------|----------------------------------|
-| `target` | `target`  | `Boolean` | Enables the close functionality. |
-
-## Methods
-
-| Method         | Type               | Description                                      |
-|----------------|--------------------|--------------------------------------------------|
-| `handleChange` | `(event: *): void` | Fires a custom event and removes the element from the DOM if target is true<br /><br />**event**: interaction event from Badge |
+| Property   | Attribute  | Type      | Description                                      |
+|------------|------------|-----------|--------------------------------------------------|
+| `disabled` | `disabled` | `Boolean` | If set to true button will become disabled and not allow for interactions |
+| `target`   | `target`   | `Boolean` | Enables the close functionality                  |

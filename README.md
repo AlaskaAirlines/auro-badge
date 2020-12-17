@@ -1,6 +1,6 @@
 # auro-badge
 
-`<auro-badge>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the purpose of ...
+`<auro-badge>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the use of drawing attention to additional interface information.  
 
 ## UI development browser support
 
@@ -58,14 +58,6 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 <script src="https://unpkg.com/@alaskaairux/auro-badge@:version/dist/auro-badge__bundled.es5.js" nomodule></script>
 ```
 
-## auro-badge use cases
-
-The `<auro-badge>` element should be used in situations where users may:
-
-* ...
-* ...
-* ...
-
 ## API Code Examples
 
 Default auro-badge
@@ -92,7 +84,7 @@ $ npm run dev
 $ npm run serve
 ```
 
-Open [localhost:3001](http://localhost:3001/)
+Open [localhost:8000](http://localhost:8000/)
 
 ### Testing
 Automated tests are required for every Auro component. See `.\test\auro-badge.test.js` for the tests for this component. Run `npm test` to run the tests and check code coverage. Tests must pass and meet a certain coverage threshold to commit. See [the testing documentation](https://auro.alaskaair.com/support/tests) for more details.
