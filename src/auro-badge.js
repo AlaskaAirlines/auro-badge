@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------------
 
 // If use litElement base class
-import { LitElement, html, css } from "lit-element";
+import { LitElement, html } from "lit-element";
 
 // If using auroElement base class
 // See instructions for importing auroElement base class https://git.io/JULq4
@@ -14,6 +14,7 @@ import { LitElement, html, css } from "lit-element";
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
+import styleCssFixed from "./style-fixed-css.js";
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -22,6 +23,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  *
  * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} space - Adds default spacing spec to badges
+ * @attr {Boolean} fixed - Uses px values instead of rem
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
  */
 
@@ -86,9 +88,10 @@ class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return css`
-      ${styleCss}
-    `;
+    return [
+      styleCss,
+      styleCssFixed
+    ]
   }
 
   // When using auroElement, use the following attribute and function when hiding content from screen readers.

@@ -6,6 +6,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 | Attribute | Type      | Description                         |
 |-----------|-----------|-------------------------------------|
+| `fixed`   | `Boolean` | Uses px values instead of rem       |
 | `space`   | `Boolean` | Adds default spacing spec to badges |
 
 ## Properties
