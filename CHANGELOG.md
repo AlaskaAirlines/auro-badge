@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.0.0...v1.1.0) (2020-12-18)
+
+
+### Features
+
+* add px fixed feature ([9964c2b](https://github.com/AlaskaAirlines/auro-badge/commit/9964c2b54a6f555a9729f0b09686772876683d0a))
+
 # 1.0.0 (2020-12-18)
 
 
