@@ -1,6 +1,6 @@
 # auro-badge
 
-`<auro-badge>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the use of drawing attention to additional interface information.  
+`<auro-badge>` is a [HTML custom element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) for the use of drawing attention to additional interface information.
 
 ## UI development browser support
 
@@ -44,18 +44,18 @@ import "@alaskaairux/auro-badge";
 
 ## Install bundled assets from CDN
 
-In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-badge__bundled.js` for modern browsers and `auro-badge__bundled.es5.js` for legacy browsers (including IE11). 
+In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Two bundles are available -- `auro-badge__bundled.js` for modern browsers and `auro-badge__bundled.es5.js` for legacy browsers (including IE11).
 
 Since the legacy bundle includes many polyfills that are not needed by modern browsers, we recommend you load these bundles using [differential serving](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/) so that the browser only loads the bundle it needs. To accomplish this, the script tag for the modern bundle should have `type="module"` and the script tag for the legacy bundle should have the `nomodule` attribute. See the example below.
 
-**NOTE:** Be sure to replace `:version` in the URL with the version of the asset you want.
+**NOTE:** Be sure to replace `@latest` in the URL with the version of the asset you want. @latest is NOT aware of any MAJOR releases, use at your own risk.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@:version/dist/tokens/CSSTokenProperties.css" />
-<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@:version/dist/bundled/baseline.css" />
+<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/design-tokens@latest/dist/tokens/CSSCustomProperties.css" />
+<link rel="stylesheet" href="https://unpkg.com/@alaskaairux/webcorestylesheets@latest/dist/bundled/essentials.css" />
 
-<script src="https://unpkg.com/@alaskaairux/auro-badge@:version/dist/auro-badge__bundled.js" type="module"></script>
-<script src="https://unpkg.com/@alaskaairux/auro-badge@:version/dist/auro-badge__bundled.es5.js" nomodule></script>
+<script src="https://unpkg.com/@alaskaairux/auro-badge@latest/dist/auro-badge__bundled.js" type="module"></script>
+<script src="https://unpkg.com/@alaskaairux/auro-badge@latest/dist/auro-badge__bundled.es5.js" nomodule></script>
 ```
 
 ## API Code Examples
