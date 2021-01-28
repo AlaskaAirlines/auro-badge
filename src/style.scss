@@ -145,6 +145,12 @@ svg {
   height: auto;
 }
 
+:host([label][ondark]) {
+  background-color: transparent;
+  border-color: var(--auro-color-border-primary-on-dark);
+  color: var(--auro-color-text-primary-on-dark);
+}
+
 :host([pill]) {
   padding: 0.375rem 0.5625rem 0.1875rem 0.5625rem;
   user-select: none;
