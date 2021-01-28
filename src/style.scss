@@ -136,11 +136,12 @@ svg {
 :host([label]) {
   background-color: transparent;
   border-color: var(--auro-color-border-primary-on-light);
-  color: var(--auro-color-text-secondary-on-light);	
-  padding: 0.375rem 0.5625rem 0.1875rem 0.5625rem;
+  color: var(--auro-color-text-secondary-on-light);
+  font-size: var(--auro-text-body-size-xs);
+  padding: 4px 6px;
   user-select: none;
   border-radius: 9999px;
-  line-height: .85;
+  line-height: 16px;
   height: auto;
 }
 
