@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [1.2.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.1.0...v1.2.0) (2021-01-28)
+
+
+### Features
+
+* **label:** add 'label option for new flightresult component' option ([3fe97f1](https://github.com/AlaskaAirlines/auro-badge/commit/3fe97f1b1ffde6371b3619dec5644e48566ecbb0))
+
 # [1.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.0.0...v1.1.0) (2020-12-18)
 
 
