@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.1](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.0...v1.2.1) (2021-01-29)
+
+
+### Bug Fixes
+
+* address miss in version update ([74bc2ef](https://github.com/AlaskaAirlines/auro-badge/commit/74bc2ef2f5b09ea015468f3dfb0e3b247b7b3689))
+
 # [1.2.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.1.0...v1.2.0) (2021-01-28)
 
 
