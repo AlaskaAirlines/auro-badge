@@ -22,7 +22,12 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * HTML custom element for the use of drawing attention to additional interface information
  *
  * @attr {Boolean} target - Enables the close functionality
+ * @attr {Boolean} error - Enables error ui
+ * @attr {Boolean} success - Enables success ui
+ * @attr {Boolean} advisory - Enables advisory ui
  * @attr {Boolean} space - Adds default spacing spec to badges
+ * @attr {Boolean} pill - Enables pill ui option
+ * @attr {Boolean} label - Enables label ui option
  * @attr {Boolean} fixed - Uses px values instead of rem
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
  */
