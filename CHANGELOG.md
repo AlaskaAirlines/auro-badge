@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.2](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.1...v1.2.2) (2021-03-02)
+
+
+### Bug Fixes
+
+* update label border color ([40a61e4](https://github.com/AlaskaAirlines/auro-badge/commit/40a61e4ebe69fa2e729da530b173becff190524f))
+
 ## [1.2.1](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.0...v1.2.1) (2021-01-29)
 
 
