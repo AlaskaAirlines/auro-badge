@@ -16,7 +16,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ## Properties
 
-| Property   | Attribute  | Type      | Description                                      |
-|------------|------------|-----------|--------------------------------------------------|
-| `disabled` | `disabled` | `Boolean` | If set to true button will become disabled and not allow for interactions |
-| `target`   | `target`   | `Boolean` | Enables the close functionality                  |
+| Property   | Attribute  | Type      | Default | Description                                      |
+|------------|------------|-----------|---------|--------------------------------------------------|
+| `disabled` | `disabled` | `Boolean` | false   | If set to true button will become disabled and not allow for interactions |
+| `target`   | `target`   | `Boolean` | false   | Enables the close functionality                  |
