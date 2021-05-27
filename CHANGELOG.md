@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.2.3](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.2...v1.2.3) (2021-05-27)
+
+
+### Bug Fixes
+
+* reflect attributes used for styling ([cb2188b](https://github.com/AlaskaAirlines/auro-badge/commit/cb2188bf9b34b32028f214395d65e241447393a5))
+
 ## [1.2.2](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.1...v1.2.2) (2021-03-02)
 
 
