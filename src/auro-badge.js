@@ -14,7 +14,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * HTML custom element for the use of drawing attention to additional interface information
+ * HTML custom element for the use of drawing attention to additional interface information.
  *
  * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} error - Enables error ui
@@ -33,12 +33,12 @@ class AuroBadge extends LitElement {
     super();
 
     /**
-     * @private internal variable
+     * @private
      */
     this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
 
     /**
-     * @private internal variable
+     * @private
      */
     this.svg = this.dom.body.firstChild;
 
@@ -68,8 +68,8 @@ class AuroBadge extends LitElement {
   }
 
   /**
-   * @private Fires a custom event and removes the element from the DOM if target is true
-   * @param {*} event interaction event from Badge
+   * @private
+   * @param {*} event Interaction event from Badge.
    * @returns {void}
    */
   handleChange(event) {
@@ -94,7 +94,7 @@ class AuroBadge extends LitElement {
     return [
       styleCss,
       styleCssFixed
-    ]
+    ];
   }
 
   // function that renders the HTML and CSS into  the scope of the component

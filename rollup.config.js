@@ -26,10 +26,12 @@ const getSharedPlugins = (isLegacy) => [
 ];
 
 const modernConfig = {
-  input: 'src/auro-badge.js',
+  input: {
+    ['auro-badge__bundled']: './src/auro-badge.js',
+  },
   output: {
     format: 'esm',
-    file: 'dist/auro-badge__bundled.js'
+    dir: 'dist/'
   },
   plugins: [
     // remove shady DOM polyfill for modern browsers
@@ -51,7 +53,7 @@ const modernConfig = {
   ]
 };
 
-const legacyConfig = {
+const auroBadgeConfig = {
   input: 'src/es5.js',
   output: {
     format: 'iife',
@@ -60,4 +62,4 @@ const legacyConfig = {
   plugins: getSharedPlugins(true)
 };
 
-export default [modernConfig, legacyConfig];
+export default [modernConfig, auroBadgeConfig];

@@ -1,15 +1,17 @@
+/* stylelint-disable */
+
 // Copyright (c) 2020 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
 
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import "./node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
-@import "./node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties";
+@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables';
+@import './../node_modules/@alaskaairux/design-tokens/dist/tokens/SassCustomProperties';
 
-@import "./node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints";
-@import "./node_modules/@alaskaairux/webcorestylesheets/dist/core";
-@import "./node_modules/@alaskaairux/webcorestylesheets/dist/utilityClasses/displayProperties";
+@import './../node_modules/@alaskaairux/webcorestylesheets/dist/breakpoints';
+@import './../node_modules/@alaskaairux/webcorestylesheets/dist/core';
+@import './../node_modules/@alaskaairux/webcorestylesheets/dist/utilityClasses/displayProperties';
 
 // Support for auroElement styles
 // @import "./node_modules/@alaskaairux/webcorestylesheets/dist/auroElement/auroElement";
@@ -22,7 +24,6 @@
 // layout styles - define any layout specifications for UI that is contained WITHIN the component
 // never define layout that would cause effect on element outside the scope of this component
 
-
 // component shape styles
 // .auro-badge {
 //   ...
@@ -31,7 +32,9 @@
 // handle focus-visible state
 :host(.focus-visible) {
   .target {
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-focus-on-dark), inset 0 0 0 3px var(--auro-color-background-lightest);
+    box-shadow:
+      inset 0 0 0 1px var(--auro-color-border-focus-on-dark),
+      inset 0 0 0 3px var(--auro-color-background-lightest);
 
     &::-moz-focus-inner {
       border: none;
@@ -152,7 +155,7 @@ svg {
 }
 
 :host([pill]) {
-  padding: 0.375rem 0.5625rem 0.1875rem 0.5625rem;
+  padding: .375rem .5625rem .1875rem;
   user-select: none;
   border-radius: 9999px;
   line-height: 1;
@@ -160,7 +163,7 @@ svg {
 }
 
 :host([disabled]) {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 %hostTarget {
@@ -207,9 +210,9 @@ $states: error, success, advisory;
       @media (hover: hover) {
         &:active,
         &:hover {
-          cursor: pointer;
-          background-color: var(--auro-color-alert-#{$state}-on-dark);
           border-color: var(--auro-color-alert-#{$state}-on-dark);
+          background-color: var(--auro-color-alert-#{$state}-on-dark);
+          cursor: pointer;
           filter: brightness(85%);
         }
       }
