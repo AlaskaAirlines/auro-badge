@@ -104,6 +104,23 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 
 </auro-accordion>
 
+### Custom color options
+
+The `style` attribute can be used to apply any custom coloring needed to the badge.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/customColor.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/customColor.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
 ### Pill option
 
 Use the `pill` property in combination with `error`, `success`, or `advisory` attributes for alternate badge experiences.

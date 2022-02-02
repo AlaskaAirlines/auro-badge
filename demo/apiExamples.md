@@ -188,3 +188,23 @@ Use the `target` property to convert the badge to a functional button. This this
 ```
 
 </auro-accordion>
+
+### Other Examples
+
+#### Custom color options
+
+The `style` attribute can be used to apply any custom coloring needed to the badge.
+
+<div class="exampleWrapper">
+  <auro-badge style="background-color: var(--auro-color-brand-tropical-200); color: var(--auro-color-text-primary-on-light); border-color: var(--auro-color-border-error-on-light);">Hello World</auro-badge>
+  <auro-badge disabled style="background-color: var(--auro-color-brand-tropical-200); color: var(--auro-color-text-primary-on-light); border-color: var(--auro-color-border-error-on-light);">Hello World</auro-badge>
+</div>
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+```html
+<auro-badge style="background-color: var(--auro-color-brand-tropical-200); color: var(--auro-color-text-primary-on-light); border-color: var(--auro-color-border-error-on-light);">Hello World</auro-badge>
+<auro-badge disabled style="background-color: var(--auro-color-brand-tropical-200); color: var(--auro-color-text-primary-on-light); border-color: var(--auro-color-border-error-on-light);">Hello World</auro-badge>
+```
+
+</auro-accordion>
