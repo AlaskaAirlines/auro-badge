@@ -4,11 +4,10 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ## auro-badge use cases
 
-The `<auro-badge>` element should be used in situations where users may:
+The `auro-badge` element is a static label that should indicate:
 
-* ...
-* ...
-* ...
+* category
+* status
 
 ## Example(s)
 

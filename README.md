@@ -79,11 +79,10 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 
 ## auro-badge use cases
 
-The `<auro-badge>` element should be used in situations where users may:
+The `auro-badge` element is a static label that should indicate:
 
-* ...
-* ...
-* ...
+* category
+* status
 
 ## API Code Examples
 
