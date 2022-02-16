@@ -160,16 +160,3 @@ Use the `label` property for a text label experience. The last example illustrat
   ```
 
 </auro-accordion>
-
-<div class="exampleWrapper--ondark">
-  <auro-badge label ondark>Hello World</auro-badge>
-</div>
-
-<auro-accordion lowProfile justifyRight>
-  <span slot="trigger">See code</span>
-
-  ```html
-  <auro-badge label ondark>Hello World</auro-badge>
-  ```
-
-</auro-accordion>
