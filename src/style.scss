@@ -138,11 +138,11 @@ svg {
   border-color: var(--auro-color-brand-neutral-500);
   color: var(--auro-color-text-secondary-on-light);
   font-size: var(--auro-text-body-size-xs);
-  padding: var(--auro-size-xxxs) var(--auro-size-xxs);
+  padding: var(--auro-size-xxs) var(--auro-size-xs);
   user-select: none;
   border-radius: 9999px;
-  line-height: var(--auro-size-md);
   height: auto;
+  line-height: 1;
 }
 
 :host([label][ondark]) {
@@ -215,4 +215,13 @@ $states: error, success, advisory;
       }
     }
   }
+}
+
+:host([label][error]),
+:host([label][success]) {
+  color: var(--auro-color-base-white);
+}
+
+:host([label][advisory]) {
+  color: var(--auro-color-text-primary-on-light);
 }

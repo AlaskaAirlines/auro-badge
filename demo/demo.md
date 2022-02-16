@@ -112,13 +112,14 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 
 ## Pill option
 
-Use the `pill` property in combination with `error`, `success`, or `advisory` attributes for alternate badge experiences.
+Use the `pill` property in combination with `error`, `success`, or `advisory` attributes for alternate badge experiences. The last example illustrates a customized version.
 
 <div class="exampleWrapper">
   <auro-badge space pill>12</auro-badge>
-  <auro-badge space error pill>184</auro-badge>
-  <auro-badge space success pill>34</auro-badge>
+  <auro-badge space error pill>Danger</auro-badge>
+  <auro-badge space success pill>Flight 167</auro-badge>
   <auro-badge space advisory pill>99</auro-badge>
+  <auro-badge space pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -126,19 +127,25 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 
   ```html
   <auro-badge space pill>12</auro-badge>
-  <auro-badge space error pill>184</auro-badge>
-  <auro-badge space success pill>34</auro-badge>
+  <auro-badge space error pill>Danger</auro-badge>
+  <auro-badge space success pill>Flight 167</auro-badge>
   <auro-badge space advisory pill>99</auro-badge>
+
+  <auro-badge space pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
   ```
 
 </auro-accordion>
 
 ## Label option
 
-Use the `label` property for a text label experience.
+Use the `label` property for a text label experience. The last example illustrates a customized version.
 
 <div class="exampleWrapper">
   <auro-badge label>Hello World</auro-badge>
+  <auro-badge label error>Danger</auro-badge>
+  <auro-badge label success>Success</auro-badge>
+  <auro-badge label advisory>Advisory</auro-badge>
+  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -146,6 +153,10 @@ Use the `label` property for a text label experience.
 
   ```html
   <auro-badge label>Hello World</auro-badge>
+  <auro-badge label error>Danger</auro-badge>
+  <auro-badge label success>Success</auro-badge>
+  <auro-badge label advisory>Advisory</auro-badge>
+  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
   ```
 
 </auro-accordion>
