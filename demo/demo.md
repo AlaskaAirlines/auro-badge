@@ -119,7 +119,10 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <auro-badge space error pill>Danger</auro-badge>
   <auro-badge space success pill>Flight 167</auro-badge>
   <auro-badge space advisory pill>99</auro-badge>
-  <auro-badge space pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
+  <auro-badge space tropical-300 pill>New!</auro-badge>
+  <auro-badge space goldcoast-200 pill>394</auro-badge>
+  <auro-badge space breeze-100 pill>Flight 1</auro-badge>
+  <auro-badge space atlas-100 pill>Discount</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -130,8 +133,10 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <auro-badge space error pill>Danger</auro-badge>
   <auro-badge space success pill>Flight 167</auro-badge>
   <auro-badge space advisory pill>99</auro-badge>
-
-  <auro-badge space pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
+  <auro-badge space tropical-300 pill>New!</auro-badge>
+  <auro-badge space goldcoast-200 pill>394</auro-badge>
+  <auro-badge space breeze-100 pill>Flight 1</auro-badge>
+  <auro-badge space atlas-100 pill>Discount</auro-badge>
   ```
 
 </auro-accordion>
@@ -145,7 +150,10 @@ Use the `label` property for a text label experience. The last example illustrat
   <auro-badge label error>Danger</auro-badge>
   <auro-badge label success>Success</auro-badge>
   <auro-badge label advisory>Advisory</auro-badge>
-  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
+  <auro-badge label tropical-300 pill>New!</auro-badge>
+  <auro-badge label goldcoast-200 pill>394</auro-badge>
+  <auro-badge label breeze-100 pill>Flight 1</auro-badge>
+  <auro-badge label atlas-100 pill>Discount</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -156,7 +164,10 @@ Use the `label` property for a text label experience. The last example illustrat
   <auro-badge label error>Danger</auro-badge>
   <auro-badge label success>Success</auro-badge>
   <auro-badge label advisory>Advisory</auro-badge>
-  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
+  <auro-badge label tropical-300 pill>New!</auro-badge>
+  <auro-badge label goldcoast-200 pill>394</auro-badge>
+  <auro-badge label breeze-100 pill>Flight 1</auro-badge>
+  <auro-badge label atlas-100 pill>Discount</auro-badge>
   ```
 
 </auro-accordion>

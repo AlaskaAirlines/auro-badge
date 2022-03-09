@@ -20,6 +20,10 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * @attr {Boolean} error - Enables error ui
  * @attr {Boolean} success - Enables success ui
  * @attr {Boolean} advisory - Enables advisory ui
+ * @attr {Boolean} tropical-300 - Enables tropical ui
+ * @attr {Boolean} goldcoast-200 - Enables goldcoast ui
+ * @attr {Boolean} atlas-100 - Enables atlas ui
+ * @attr {Boolean} breeze-100 - Enables breeze ui
  * @attr {Boolean} space - Adds default spacing spec to badges
  * @attr {Boolean} pill - Enables pill ui option
  * @attr {Boolean} label - Enables label ui option

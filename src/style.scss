@@ -217,6 +217,32 @@ $states: error, success, advisory;
   }
 }
 
+// Sass loop for various states of the badges
+$brands: tropical-300, breeze-100, atlas-100, goldcoast-200;
+
+@each $brand in $brands {
+  :host([#{$brand}]) {
+    background-color: var(--auro-color-brand-#{$brand});
+    border-color: var(--auro-color-brand-#{$brand});
+    color: var(--auro-color-text-primary-on-light);
+    @extend %hostTarget;
+  }
+
+  :host([#{$brand}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-#{$brand});
+          border-color: var(--auro-color-#{$brand});
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
+
 :host([label][error]),
 :host([label][success]) {
   color: var(--auro-color-base-white);
