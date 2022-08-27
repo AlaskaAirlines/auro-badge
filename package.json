@@ -19,7 +19,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@alaskaairux/orion-icons": "^2.1.5",
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.2",
     "lit-element": "^2.4.0"
   },
   "peerDependencies": {
