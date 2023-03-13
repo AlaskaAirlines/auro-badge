@@ -1,5 +1,5 @@
 import { fixture, html, expect } from '@open-wc/testing';
-import '../src/auro-badge.js';
+import '../index.js';
 
 describe('auro-badge', () => {
   it('auro-badge is accessible', async () => {

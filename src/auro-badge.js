@@ -28,7 +28,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  */
 
 // build the component class
-class AuroBadge extends LitElement {
+export class AuroBadge extends LitElement {
   constructor() {
     super();
 
@@ -113,10 +113,4 @@ class AuroBadge extends LitElement {
       }
     `;
   }
-}
-
-/* istanbul ignore else */
-// define the name of the custom component
-if (!customElements.get("auro-badge")) {
-  customElements.define("auro-badge", AuroBadge);
 }
