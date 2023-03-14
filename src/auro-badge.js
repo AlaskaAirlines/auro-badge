@@ -90,9 +90,7 @@ export class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return [
-      styleCss
-    ]
+    return [styleCss]
   }
 
   // function that renders the HTML and CSS into  the scope of the component

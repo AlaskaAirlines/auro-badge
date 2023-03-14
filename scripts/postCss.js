@@ -1,7 +1,5 @@
 const autoprefixer = require('autoprefixer');
 const postcss = require('postcss');
-const remToPx = require('postcss-rem-to-pixel');
-const removeNonRem = require('./removeNonRemPlugin.js');
 const postcssCustomProperties = require('postcss-custom-properties');
 const removeRules = require('postcss-remove-rules');
 const comments = require('postcss-discard-comments');
