@@ -11,6 +11,9 @@
   "version": "1.2.4",
   "description": "Auro custom auro-badge element",
   "author": "Product design and research",
+  "engines": {
+    "node": ">=18.15.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/AlaskaAirlines/auro-badge"
