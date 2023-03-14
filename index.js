@@ -1,4 +1,4 @@
-export * from './dist/auro-badge';
+export * from './src/auro-badge.js';
 
 import { AuroBadge } from './src/auro-badge.js';
 
