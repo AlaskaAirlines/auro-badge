@@ -21,9 +21,8 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "@alaskaairux/orion-icons": "^2.1.5",
     "chalk": "^4.1.0",
-    "lit-element": "^2.4.0"
+    "lit": "^2.6.1"
   },
   "peerDependencies": {
     "@alaskaairux/design-tokens": "^3.0.0",
@@ -34,7 +33,7 @@
   },
   "devDependencies": {
     "@alaskaairux/design-tokens": "^3.12.2",
-    "@alaskaairux/icons": "^4.4.3",
+    "@alaskaairux/icons": "^4.22.0",
     "@alaskaairux/webcorestylesheets": "^3.7.3",
     "@babel/core": "^7.13.8",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",

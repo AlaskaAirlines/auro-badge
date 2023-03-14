@@ -4,7 +4,7 @@
 // ---------------------------------------------------------------------
 
 // If use litElement base class
-import { LitElement, html } from "lit-element";
+import { LitElement, html } from "lit";
 
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
