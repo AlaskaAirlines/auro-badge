@@ -7,7 +7,7 @@
     "  3. Go to http://localhost:3001",
     "================================================================================"
   ],
-  "name": "@alaskaairux/auro-badge",
+  "name": "@aurodesignsystem/auro-badge",
   "version": "1.2.4",
   "description": "Auro custom auro-badge element",
   "author": "Product design and research",
@@ -25,9 +25,9 @@
     "lit": "^2.6.1"
   },
   "peerDependencies": {
-    "@alaskaairux/design-tokens": "^3.0.0",
-    "@alaskaairux/icons": "^4.0.7",
-    "@alaskaairux/webcorestylesheets": "^3.0.0",
+    "@alaskaairux/design-tokens": "^3.12.2",
+    "@alaskaairux/icons": "^4.22.0",
+    "@alaskaairux/webcorestylesheets": "^3.7.3",
     "@webcomponents/webcomponentsjs": "^2.5.0",
     "focus-visible": "^5.2.0"
   },
