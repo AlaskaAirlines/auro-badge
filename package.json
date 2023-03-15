@@ -75,6 +75,7 @@
     "semantic-release": "^20.1.1",
     "stylelint": "^15.2.0",
     "stylelint-config-standard": "^30.0.1",
+    "typescript": "^4.9.5",
     "wc-sass-render": "^1.4.0",
     "web-component-analyzer": "^1.1.6",
     "webpack-merge": "^5.7.3",
@@ -95,7 +96,7 @@
     ]
   },
   "scripts": {
-    "build": "npm-run-all build:sass sass:render cssLint dist:js bundler postinstall build:api",
+    "build": "npm-run-all build:sass sass:render cssLint dist:js bundler postinstall build:api types",
     "build:dev:assets": "npm-run-all build:sass:component postCss:component sass:render",
     "build:ci": "npm-run-all sweep build",
     "build:api": "wca analyze 'src/auro-badge.js' --outFiles docs/api.md",
@@ -116,7 +117,8 @@
     "build:watch": "nodemon -e scss,js --watch src --exec npm run build:dev:assets",
     "postCss:component": "node ./scripts/postCss.js",
     "serve": "web-dev-server --open demo/ --node-resolve --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "types": "tsc"
   },
   "release": {
     "branches": [
