@@ -12,5 +12,5 @@ src/*.css
 dist/
 build/
 
-## Karma code coverage reports
+## Code coverage reports
 coverage/
