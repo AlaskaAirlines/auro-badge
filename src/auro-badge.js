@@ -9,7 +9,6 @@ import { LitElement, html } from "lit-element";
 // Import touch detection lib
 import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
-import styleCssFixed from "./style-fixed-css.js";
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -91,10 +90,7 @@ export class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return [
-      styleCss,
-      styleCssFixed
-    ]
+    return [styleCss]
   }
 
   // function that renders the HTML and CSS into  the scope of the component
