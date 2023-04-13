@@ -1,5 +1,40 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.4...v2.0.0) (2023-04-13)
+
+
+### Documentation
+
+* **npm:** update npm namespace [#37](https://github.com/AlaskaAirlines/auro-badge/issues/37) ([ebe7baa](https://github.com/AlaskaAirlines/auro-badge/commit/ebe7baa030903dc0a82b52faba2a1d2e8fd71b14))
+
+
+### Features
+
+* **ts:** add support for typescript users [#39](https://github.com/AlaskaAirlines/auro-badge/issues/39) ([6d960f0](https://github.com/AlaskaAirlines/auro-badge/commit/6d960f024e9c5227653b1a79332c142889f31623))
+
+
+### Performance Improvements
+
+* **demo styles:** remove local dependency [#34](https://github.com/AlaskaAirlines/auro-badge/issues/34) ([8d3dc13](https://github.com/AlaskaAirlines/auro-badge/commit/8d3dc139af200d6e11618db21b04cddcf36df1d3))
+* **es5:** remove legacy bundle build process [#35](https://github.com/AlaskaAirlines/auro-badge/issues/35) ([5166da4](https://github.com/AlaskaAirlines/auro-badge/commit/5166da4e5046fda301b8a52dc8eba329b43ef0b9))
+* **extend:** move customElements.define function to root [#44](https://github.com/AlaskaAirlines/auro-badge/issues/44) ([44ad8c8](https://github.com/AlaskaAirlines/auro-badge/commit/44ad8c86715e525590eeba7b73179f6f7589898c))
+* **husky:** update to current version [#43](https://github.com/AlaskaAirlines/auro-badge/issues/43) ([f14f563](https://github.com/AlaskaAirlines/auro-badge/commit/f14f563fe871aac20b411c735343ebe32dfd6c35))
+* **lit:** update component to Lit2.0 [#32](https://github.com/AlaskaAirlines/auro-badge/issues/32) ([2dbf150](https://github.com/AlaskaAirlines/auro-badge/commit/2dbf15073be19ba40f79649abdef4d72caae21b8))
+* **node18:** update repo to support Node 18+ [#31](https://github.com/AlaskaAirlines/auro-badge/issues/31) ([8617c36](https://github.com/AlaskaAirlines/auro-badge/commit/8617c36d0867314bdf7ef1ea0183d41b2bb5ea64))
+* **postCss:** remove legacy build services [#40](https://github.com/AlaskaAirlines/auro-badge/issues/40) ([651fcb7](https://github.com/AlaskaAirlines/auro-badge/commit/651fcb796725e4096562c5c99bf12f12da2d7817))
+* **sass:** update to dart-sass [#42](https://github.com/AlaskaAirlines/auro-badge/issues/42) ([d8f40ff](https://github.com/AlaskaAirlines/auro-badge/commit/d8f40ffb8196e73ceff63d4d45ccc7e15fbd1087))
+* **server:** update to use single shell [#33](https://github.com/AlaskaAirlines/auro-badge/issues/33) ([181aba8](https://github.com/AlaskaAirlines/auro-badge/commit/181aba8a283174b25abf65d7699b305f962b5efe))
+
+
+### BREAKING CHANGES
+
+* **npm:** This update will redefine the npm namespace
+for the auro-badge element.
+
+Changes to be committed:
+modified:   README.md
+modified:   package.json
+
 ## [1.2.4](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.3...v1.2.4) (2022-02-16)
 
 
