@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.0.0...v2.0.1) (2023-04-18)
+
+
+### Bug Fixes
+
+* **npm:** update ignore to include src assets [#56](https://github.com/AlaskaAirlines/auro-badge/issues/56) ([d446c25](https://github.com/AlaskaAirlines/auro-badge/commit/d446c25a90f1093aaf6a7e72d196e80200f8c4ac))
+
 # [2.0.0](https://github.com/AlaskaAirlines/auro-badge/compare/v1.2.4...v2.0.0) (2023-04-13)
 
 
