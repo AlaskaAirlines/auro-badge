@@ -224,3 +224,13 @@ $states: error, success, advisory;
 :host([label][advisory]) {
   color: var(--auro-color-text-primary-on-light);
 }
+
+:host([icon]) ::slotted(auro-icon) {
+  width: var(--auro-size-400); 
+  margin-right: var(--auro-size-25);
+  line-height: .75;
+}
+
+:host([icon][pill]) ::slotted(auro-icon) {
+  width: var(--auro-size-200); 
+}
