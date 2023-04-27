@@ -5,9 +5,6 @@
 
 // If use litElement base class
 import { LitElement, html } from "lit";
-
-// Import touch detection lib
-import "focus-visible/dist/focus-visible.min.js";
 import styleCss from "./style-css.js";
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
 
