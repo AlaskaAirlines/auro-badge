@@ -140,11 +140,11 @@ Use the `label` property for a text label experience. The last example illustrat
 Use icon attribute to include icons inside your badge.
 
 <div class="exampleWrapper">
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -191,12 +191,13 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 
 Use `icon` attribute to include icons inside your badge.
 
-<div class="exampleWrapper">
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+<div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
+  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill>Spray bottle</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
@@ -225,7 +226,7 @@ Use the `club49` `mvp`, `mvpgold`, `mvpgold75k`, `mvpgold100k`, `millionmiler` o
   <auro-badge pill icon twomillionmiler><auro-icon customSize emphasis category="programs" name="alaska"></auro-icon>2 Million Miler</auro-badge>
   <auro-badge pill icon lounge><auro-icon customSize ondark emphasis category="terminal" name="lounge"></auro-icon>Lounge</auro-badge>
   <auro-badge pill icon loungeplus><auro-icon customSize ondark emphasis category="terminal" name="lounge"></auro-icon>Lounge+</auro-badge>
-  <auro-badge pill icon club49><auro-icon customSize emphasis category="programs" name="alaska"></auro-icon>Club 49</auro-badge>
+  <auro-badge pill icon club49><auro-icon customSize emphasis category="programs" name="club49"></auro-icon>Club 49</auro-badge>
   <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
   <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
   <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
@@ -243,7 +244,7 @@ Use the `club49` `mvp`, `mvpgold`, `mvpgold75k`, `mvpgold100k`, `millionmiler` o
   <auro-badge pill icon twomillionmiler><auro-icon customSize emphasis category="programs" name="alaska"></auro-icon>2 Million Miler</auro-badge>
   <auro-badge pill icon lounge><auro-icon customSize ondark emphasis category="terminal" name="lounge"></auro-icon>Lounge</auro-badge>
   <auro-badge pill icon loungeplus><auro-icon customSize ondark emphasis category="terminal" name="lounge"></auro-icon>Lounge+</auro-badge>
-  <auro-badge pill icon club49><auro-icon customSize emphasis category="programs" name="alaska"></auro-icon>Club 49</auro-badge>
+  <auro-badge pill icon club49><auro-icon customSize emphasis category="programs" name="club49"></auro-icon>Club 49</auro-badge>
   <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
   <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
   <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>

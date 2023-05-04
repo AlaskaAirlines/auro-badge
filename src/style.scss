@@ -226,13 +226,18 @@ $states: error, success, advisory;
 }
 
 :host([icon]) ::slotted(auro-icon) {
-  width: var(--auro-size-400); 
+  width: var(--auro-size-300); 
   margin-right: var(--auro-size-25);
-  line-height: .75;
+  height: auto;
 }
 
 :host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--auro-size-200); 
+  width: var(--auro-size-200);
+}
+
+:host([icon][pill]) {
+  padding: 0.225rem 0.5625rem 0.1875rem;
+  line-height: 0.75rem;
 }
 
 // new tokens, we'll need to add these to our design tokens library before commiting these changes.
@@ -253,7 +258,7 @@ $states: error, success, advisory;
 }
 
 
-$status: mvp, mvpgold, mvpgold75k, mvpgold100k, millionmiler, twomillionmiler, lounge, loungeplus;
+$status: mvp, mvpgold, mvpgold75k, mvpgold100k, lounge, loungeplus;
 
 @each $status in $status {
   :host([#{$status}]) {
