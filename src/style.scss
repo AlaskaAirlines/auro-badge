@@ -234,3 +234,130 @@ $states: error, success, advisory;
 :host([icon][pill]) ::slotted(auro-icon) {
   width: var(--auro-size-200); 
 }
+
+// new tokens, we'll need to add these to our design tokens library before commiting these changes.
+:host {
+  --auro-color-tier-alaska-lounge-on-light: #01426A;
+  --auro-color-tier-alaska-loungeplus-on-light:#53b390;
+  --auro-color-tier-alaska-club49-on-light: var(--auro-color-brand-midnight-500);
+  --auro-color-tier-alaska-mvpgold-on-light:#99875b;
+  --auro-color-tier-alaska-mvpgold75k-on-light:var(--auro-color-brand-gold-100);
+  --auro-color-tier-alaska-mvpgold100k-on-light:var(--auro-color-brand-gold-200);
+  --auro-color-tier-alaska-millionmiler-on-light:var(--auro-color-brand-gold-200);
+  --auro-color-tier-alaska-twomillionmiler-on-light:var(--auro-color-tier-alaska-mvp-on-light);
+  --auro-color-tier-alaska-club49-on-dark: var(--auro-color-brand-midnight-100);
+  --auro-color-tier-alaska-mvpgold75k-on-dark:var(--auro-color-brand-gold-100);
+  --auro-color-tier-alaska-mvpgold100k-on-dark:var(--auro-color-brand-gold-100);
+  --auro-color-tier-alaska-millionmiler-on-dark:var(--auro-color-brand-goldgray-100);
+  --auro-color-tier-alaska-twomillionmiler-on-dark:var(--auro-color-brand-goldgray-100);
+}
+
+
+$status: mvp, mvpgold, mvpgold75k, mvpgold100k, millionmiler, twomillionmiler, lounge, loungeplus;
+
+@each $status in $status {
+  :host([#{$status}]) {
+    background-color: var(--auro-color-tier-alaska-#{$status}-on-light);
+    border-color:  var(--auro-color-tier-alaska-#{$status}-on-light);
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$status}][ondark]) {
+    background-color:  var(--auro-color-tier-alaska-#{$status}-on-dark);
+    border-color:  var(--auro-color-tier-alaska-#{$status}-on-dark);
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$status}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-tier-alaska-#{$status}-on-light);
+          border-color: var(--auro-color-tier-alaska-#{$status}-on-light);
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+
+  :host([#{$status}][ondark]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-status-#{$status}-on-light);
+          border-color: var(--auro-color-status-#{$status}-on-light);
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
+
+$owstatus: emerald, sapphire, ruby;
+
+@each $owstatus in $owstatus {
+  :host([#{$owstatus}]) {
+    background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+    border-color:  var(--auro-color-tier-oneworld-#{$owstatus});
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$owstatus}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          border-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
+// $outline: club49, millionmiler, twomillionmiler;
+
+// @each $outline in $outline {
+//   :host([#{$outline}]) {
+//     .outline {
+//       box-shadow:inset 0px 0px 0px 10px  var(--auro-color-tier-alaska-#{$outline}-on-light);
+//     }
+//   }
+// }
+
+// @extend %hostTarget;
+
+$club: club49, millionmiler, twomillionmiler;
+
+@each $club in $club {
+  :host([#{$club}]) {
+    background-color: var(--auro-color-base-white);
+    border-color:  var(--auro-color-tier-alaska-#{$club}-on-light);
+    color:  var(--auro-color-tier-alaska-#{$club}-on-light);
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$club}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-base-white);
+          border-color:  var(--auro-color-tier-alaska-#{$club}-on-light);
+          color:  var(--auro-color-tier-alaska-#{$club}-on-light);
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
