@@ -221,6 +221,50 @@ $states: error, success, advisory;
   color: var(--auro-color-text-primary-on-light);
 }
 
+$owstatus: emerald, sapphire, ruby;
+
+@each $owstatus in $owstatus {
+  :host([#{$owstatus}]) {
+    background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+    border-color:  var(--auro-color-tier-oneworld-#{$owstatus});
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$owstatus}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          border-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
+
+
+:host([icon]) {
+  padding: var(--labelpillpadding) var(--auro-size-200);
+}
+
+:host([icon]) ::slotted(auro-icon) {
+  width: var(--auro-size-300); 
+  margin-right: var(--auro-size-50);
+}
+
+:host([icon][pill]) ::slotted(auro-icon) {
+  width: var(--auro-size-200);
+}
+
+:host([icon][pill]) {
+  padding: var(--auro-size-50) var(--auro-size-150);
+  line-height: 0.75rem;
+}
+
 :host([icon]) {
   padding: var(--labelpillpadding) var(--auro-size-200);
 }
