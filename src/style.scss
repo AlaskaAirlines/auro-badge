@@ -40,11 +40,12 @@
 }
 
 :host {
-  height: 2.75rem;
+  line-height: 1;
+  --labelpillpadding: .3125rem;
 }
 
 :host([space]) {
-  margin-left: var(--auro-size-lg);
+  margin-left: var(--auro-size-300);
 }
 
 :host,
@@ -57,7 +58,7 @@
   background-color: var(--auro-color-ui-default-on-light);
   border: 1px solid var(--auro-color-ui-default-on-light);
   border-radius: 1.375rem;
-  padding: 0 var(--auro-size-md);
+  padding: .688rem var(--auro-size-200);
 }
 
 :host([advisory]) {
@@ -79,10 +80,6 @@
 :host([target]) {
   padding: 0;
   border: 0;
-
-  .target {
-    height: 2.75rem;
-  }
 }
 
 :host([target][ondark][disabled]) {
@@ -121,6 +118,7 @@
 
 .target {
   font: inherit;
+  padding: .4375rem var(--auro-size-100) .4375rem var(--auro-size-200);
 
   // macOS / iOS agents
   -webkit-tap-highlight-color: transparent;
@@ -129,19 +127,19 @@
 }
 
 svg {
-  margin-left: var(--auro-size-xs);
+  margin-left: var(--auro-size-100);
 }
+
+
 
 :host([label]) {
   background-color: transparent;
   border-color: var(--auro-color-brand-neutral-500);
   color: var(--auro-color-text-secondary-on-light);
   font-size: var(--auro-text-body-size-xs);
-  padding: var(--auro-size-xxs) var(--auro-size-xs);
+  padding: var(--labelpillpadding) var(--auro-size-150);
   user-select: none;
   border-radius: 9999px;
-  height: auto;
-  line-height: 1;
 }
 
 :host([label][ondark]) {
@@ -151,11 +149,9 @@ svg {
 }
 
 :host([pill]) {
-  padding: 0.375rem 0.5625rem 0.1875rem 0.5625rem;
+  padding: var(--labelpillpadding) var(--auro-size-150);
   user-select: none;
   border-radius: 9999px;
-  line-height: 1;
-  height: auto;
 }
 
 :host([disabled]) {
@@ -223,4 +219,22 @@ $states: error, success, advisory;
 
 :host([label][advisory]) {
   color: var(--auro-color-text-primary-on-light);
+}
+
+:host([icon]) {
+  padding: var(--labelpillpadding) var(--auro-size-200);
+}
+
+:host([icon]) ::slotted(auro-icon) {
+  width: var(--auro-size-300); 
+  margin-right: var(--auro-size-50);
+}
+
+:host([icon][pill]) ::slotted(auro-icon) {
+  width: var(--auro-size-200);
+}
+
+:host([icon][pill]) {
+  padding: var(--auro-size-50) var(--auro-size-150);
+  line-height: 0.75rem;
 }

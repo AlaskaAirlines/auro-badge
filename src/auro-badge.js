@@ -21,6 +21,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * @attr {Boolean} label - Enables label ui option
  * @attr {Boolean} fixed - Uses px values instead of rem
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
+ * @attr {Boolean} icon - Enables the styling and positioning of auro-icon's inside a badge
  */
 
 // build the component class
