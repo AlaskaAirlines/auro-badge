@@ -238,3 +238,28 @@ $states: error, success, advisory;
   padding: var(--auro-size-50) var(--auro-size-150);
   line-height: 0.75rem;
 }
+
+$owstatus: emerald, sapphire, ruby;
+
+@each $owstatus in $owstatus {
+  :host([#{$owstatus}]) {
+    background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+    border-color:  var(--auro-color-tier-oneworld-#{$owstatus});
+
+    @extend %hostTarget;
+  }
+
+  :host([#{$owstatus}]:not([disabled])) {
+    .target {
+      @media (hover: hover) {
+        &:active,
+        &:hover {
+          cursor: pointer;
+          background-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          border-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          filter: brightness(85%);
+        }
+      }
+    }
+  }
+}
