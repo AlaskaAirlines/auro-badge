@@ -21,6 +21,9 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * @attr {Boolean} label - Enables label ui option
  * @attr {Boolean} fixed - Uses px values instead of rem
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
+ * @attr {Boolean} emerald - Sets the background color of the badge to the oneworld emerald color
+ * @attr {Boolean} sapphire - Sets the background color of the badge to the oneworld sapphire color
+ * @attr {Boolean} ruby - Sets the background color of the badge to the oneworld ruby color
  */
 
 // build the component class

@@ -4,15 +4,18 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ## Attributes
 
-| Attribute  | Type      | Description                         |
-|------------|-----------|-------------------------------------|
-| `advisory` | `Boolean` | Enables advisory ui                 |
-| `error`    | `Boolean` | Enables error ui                    |
-| `fixed`    | `Boolean` | Uses px values instead of rem       |
-| `label`    | `Boolean` | Enables label ui option             |
-| `pill`     | `Boolean` | Enables pill ui option              |
-| `space`    | `Boolean` | Adds default spacing spec to badges |
-| `success`  | `Boolean` | Enables success ui                  |
+| Attribute  | Type      | Description                                      |
+|------------|-----------|--------------------------------------------------|
+| `advisory` | `Boolean` | Enables advisory ui                              |
+| `emerald`  | `Boolean` | Sets the background color of the badge to the oneworld emerald color |
+| `error`    | `Boolean` | Enables error ui                                 |
+| `fixed`    | `Boolean` | Uses px values instead of rem                    |
+| `label`    | `Boolean` | Enables label ui option                          |
+| `pill`     | `Boolean` | Enables pill ui option                           |
+| `ruby`     | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
+| `sapphire` | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
+| `space`    | `Boolean` | Adds default spacing spec to badges              |
+| `success`  | `Boolean` | Enables success ui                               |
 
 ## Properties
 

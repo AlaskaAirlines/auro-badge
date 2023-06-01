@@ -211,3 +211,25 @@ Use `icon` attribute to include icons inside your badge.
   ```
 
 </auro-accordion>
+
+
+### Brand programs
+
+Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges. 
+
+<div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
+  <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
+  <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
+  <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
+</div>
+
+<auro-accordion lowProfile justifyRight>
+  <span slot="trigger">See code</span>
+
+  ```html
+  <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
+  <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
+  <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
+  ```
+
+</auro-accordion>
