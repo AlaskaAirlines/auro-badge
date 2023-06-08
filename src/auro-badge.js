@@ -93,7 +93,11 @@ export class AuroBadge extends LitElement {
   handleContentSlotChanges() {
     const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
 
-    slotContent.tagName === 'AURO-ICON' ? this.icon = true : this.icon = false;
+    if (slotContent.tagName === 'AURO-ICON') {
+      this.icon = true;
+    } else {
+      this.icon = false
+    }
   }
 
   firstUpdated() {
