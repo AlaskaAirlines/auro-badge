@@ -140,22 +140,22 @@ Use the `label` property for a text label experience. The last example illustrat
 Use icon attribute to include icons inside your badge.
 
 <div class="exampleWrapper">
-  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge icon><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
 </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge icon><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   ```
 
 </auro-accordion>
@@ -192,22 +192,22 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 Use `icon` attribute to include icons inside your badge.
 
 <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
-  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge pill icon><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   </div>
 
 <auro-accordion lowProfile justifyRight>
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge pill icon><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   ```
 
 </auro-accordion>
