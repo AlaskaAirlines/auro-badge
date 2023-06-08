@@ -203,11 +203,11 @@ Use `icon` attribute to include icons inside your badge.
   <span slot="trigger">See code</span>
 
   ```html
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="health"></auro-icon>Health</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
+  <auro-badge pill><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   ```
 
 </auro-accordion>
