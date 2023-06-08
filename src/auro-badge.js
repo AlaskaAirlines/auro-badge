@@ -21,7 +21,6 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * @attr {Boolean} label - Enables label ui option
  * @attr {Boolean} fixed - Uses px values instead of rem
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
- * @attr {Boolean} icon - Enables the styling and positioning of auro-icon's inside a badge
  */
 
 // build the component class
@@ -39,6 +38,11 @@ export class AuroBadge extends LitElement {
      */
     this.svg = this.dom.body.firstChild;
 
+    /**
+     * @private internal variable
+     */
+    this.icon = false;
+
     this.target = false;
     this.disabled = false;
   }
@@ -51,6 +55,10 @@ export class AuroBadge extends LitElement {
         reflect: true
       },
       disabled: {
+        type: Boolean,
+        reflect: true
+      },
+      icon: {
         type: Boolean,
         reflect: true
       },
@@ -78,6 +86,16 @@ export class AuroBadge extends LitElement {
     }
   }
 
+  /**
+  * @private On slot content change, checks for auro-icon and applies attribute to component for adjusted styling
+  * @returns {void}
+  */
+  handleContentSlotChanges() {
+    const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
+
+    slotContent.tagName === 'AURO-ICON' ? this.icon = true : this.icon = false;
+  }
+
   firstUpdated() {
     // Finds slotted content and adds string to button value
     if (this.target) {
@@ -100,10 +118,10 @@ export class AuroBadge extends LitElement {
                 ?disabled="${this.disabled}"
                 .value="${this.value}"
                 class="target">
-          <slot></slot>${this.svg}
+          <slot @slotchange="${this.handleContentSlotChanges}"></slot>${this.svg}
           <span class="util_displayHiddenVisually">Dismiss</span>
         </button>`
-        : html`<slot></slot>`
+        : html`<slot @slotchange="${this.handleContentSlotChanges}"></slot>`
       }
     `;
   }
