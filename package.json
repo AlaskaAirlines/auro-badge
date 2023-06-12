@@ -21,7 +21,7 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^5.2.0",
     "lit": "^2.7.2"
   },
   "peerDependencies": {
@@ -90,8 +90,9 @@
     "build:watch": "nodemon -e scss,js --watch src --exec npm run build:dev:assets",
     "bundler": "rollup -c",
     "bundle:test": "rollup -c -w",
-    "postinstall": "node packageScripts/postinstall.js",
+    "postinstall": "node packageScripts/postinstall.mjs",
     "cssLint": "stylelint \"./src/*.css\"",
+    "preCommit": "node scripts/pre-commit.mjs",
     "dev": "concurrently --kill-others 'npm run build:watch' 'npm run serve'",
     "dist:js": "copyfiles -u 1 -V './src/**/*.js' ./dist",
     "sass:render": "sass-render src/*.css -t ./scripts/staticStyles-template.js",
