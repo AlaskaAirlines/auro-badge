@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.0.3...v2.1.0) (2023-06-12)
+
+
+### Features
+
+* ability to add icons to badges [#28](https://github.com/AlaskaAirlines/auro-badge/issues/28) ([690d790](https://github.com/AlaskaAirlines/auro-badge/commit/690d79013244e8f1a674f2aa0170294f50eb6a2c))
+
+
+### Performance Improvements
+
+* change ternary to if else per eslint ([813ad56](https://github.com/AlaskaAirlines/auro-badge/commit/813ad566e9b2479be1942640f20ddda6d71c981a))
+* **icon:** improve usage of icons in content ([90c4cdf](https://github.com/AlaskaAirlines/auro-badge/commit/90c4cdf09c01acae46c98eb5cbd122b961192d33))
+
 ## [2.0.3](https://github.com/AlaskaAirlines/auro-badge/compare/v2.0.2...v2.0.3) (2023-05-12)
 
 
