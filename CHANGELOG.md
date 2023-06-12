@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.2.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.1.0...v2.2.0) (2023-06-12)
+
+
+### Features
+
+* add oneworld badges [#75](https://github.com/AlaskaAirlines/auro-badge/issues/75) ([a39ab83](https://github.com/AlaskaAirlines/auro-badge/commit/a39ab83b1b246e5a6ef2262a277cbc4f757072fd))
+
 # [2.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.0.3...v2.1.0) (2023-06-12)
 
 
