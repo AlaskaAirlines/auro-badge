@@ -10,7 +10,7 @@ Default non-actionable badge element to display data.
   <auro-badge>Nonstop</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -23,7 +23,7 @@ Default non-actionable badge element to display data.
   <auro-badge ondark>Nonstop</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -41,7 +41,7 @@ Use the `target` property to convert the badge to a functional button. This this
   <auro-badge target disabled>1 stop</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -61,7 +61,7 @@ Use the `space` property to allow for default spacing between elements.
   <auro-badge space>2+ stops</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -82,7 +82,7 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
   <auro-badge space advisory>2+ stops</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -99,7 +99,7 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
   <auro-badge space ondark advisory>2+ stops</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -122,7 +122,7 @@ Use the `label` property for a text label experience. The last example illustrat
   <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -147,7 +147,7 @@ Use icon attribute to include icons inside your badge.
   <auro-badge><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -173,7 +173,7 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <auro-badge space pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -199,7 +199,7 @@ Use `icon` attribute to include icons inside your badge.
   <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
@@ -215,7 +215,7 @@ Use `icon` attribute to include icons inside your badge.
 
 ### Brand programs
 
-Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges. 
+Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 
 <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
   <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
@@ -223,7 +223,7 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
   <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
 </div>
 
-<auro-accordion lowProfile justifyRight>
+<auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
   ```html
