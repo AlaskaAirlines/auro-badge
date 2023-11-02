@@ -4,14 +4,14 @@
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import "./../node_modules/@alaskaairux/design-tokens/dist/tokens/SCSSVariables";
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
 
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/dist/breakpoints";
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/dist/core";
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/dist/utilityClasses/displayProperties";
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints";
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/core";
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/utilityClasses/displayProperties";
 
 // Support for auroElement styles
-// @import "./../node_modules/@aurodesignsystem/webcorestylesheets/dist/auroElement/auroElement";
+// @import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/auroElement/auroElement";
 
 // container styles - defines the look of the outer custom component
 // :host {
@@ -27,10 +27,11 @@
 //   ...
 // }
 
-// handle focus-visible state
-:host(.focus-visible) {
-  .target {
-    box-shadow: inset 0 0 0 1px var(--auro-color-border-focus-on-dark), inset 0 0 0 3px var(--auro-color-background-lightest);
+// This pattern will ensure that the focus-visible state will be shown
+// regardless of native support or using the polyfill.
+:host(.focus-visible), :focus-visible {
+  &.target, .target {
+    box-shadow: inset 0 0 0 1px var(--ds-color-base-white, $ds-color-base-white), inset 0 0 0 3px var(--ds-color-background-lightest, $ds-color-background-lightest);
 
     &::-moz-focus-inner {
       border: none;
@@ -45,7 +46,7 @@
 }
 
 :host([space]) {
-  margin-left: var(--auro-size-300);
+  margin-left: var(--ds-size-300, $ds-size-300);
 }
 
 :host,
@@ -54,25 +55,27 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  color: var(--auro-color-text-primary-on-dark);
-  background-color: var(--auro-color-ui-default-on-light);
-  border: 1px solid var(--auro-color-ui-default-on-light);
+  color: var(--ds-color-text-primary-inverse, $ds-color-text-primary-inverse);
+  background-color: var(--ds-color-ui-default-default, $ds-color-ui-default-default);
+  border: 1px solid var(--ds-color-ui-default-default, $ds-color-ui-default-default);
+  // suggestion token; establish a supported scale of values, e.g. 100 - 1000
+  // also create --ds-border-radius-badge that maps to a scale value
   border-radius: 1.375rem;
-  padding: .688rem var(--auro-size-200);
+  padding: .688rem var(--ds-size-200, $ds-size-200);
 }
 
 :host([advisory]) {
-  color: var(--auro-color-text-primary-on-light);
+  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 
   .target {
-    color: var(--auro-color-text-primary-on-light);
+    color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
   }
 }
 
 :host([onDark]) {
-  background-color: var(--auro-color-ui-default-on-dark);
-  border-color: var(--auro-color-ui-default-on-dark);
-  color: var(--auro-color-text-primary-on-light);
+  background-color: var(--ds-color-brand-breeze-300, $ds-color-brand-breeze-300);
+  border-color: var(--ds-color-brand-breeze-300, $ds-color-brand-breeze-300);
+  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 
   @extend %hostTarget;
 }
@@ -84,20 +87,20 @@
 
 :host([target][ondark][disabled]) {
   .target {
-    color: var(--auro-color-text-primary-on-light);
+    color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
   }
 }
 
 :host([target][ondark]:not([disabled])) {
   .target {
-    color: var(--auro-color-text-primary-on-light);
+    color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 
     @media (hover: hover) {
       &:active,
       &:hover {
         cursor: pointer;
-        background-color: var(--auro-color-ui-hover-on-dark);
-        border-color: var(--auro-color-ui-hover-on-dark);
+        background-color: var(--ds-color-brand-breeze-200, $ds-color-brand-breeze-200);
+        border-color: var(--ds-color-brand-breeze-200, $ds-color-brand-breeze-200);
       }
     }
   }
@@ -109,8 +112,8 @@
       &:active,
       &:hover {
         cursor: pointer;
-        background-color: var(--auro-color-ui-hover-on-light);
-        border-color: var(--auro-color-ui-hover-on-light);
+        background-color: var(--ds-color-ui-hover-default, $ds-color-ui-hover-default);
+        border-color: var(--ds-color-ui-hover-default, $ds-color-ui-hover-default);
       }
     }
   }
@@ -118,7 +121,7 @@
 
 .target {
   font: inherit;
-  padding: .4375rem var(--auro-size-100) .4375rem var(--auro-size-200);
+  padding: .4375rem var(--ds-size-100, $ds-size-100) .4375rem var(--ds-size-200, $ds-size-200);
 
   // macOS / iOS agents
   -webkit-tap-highlight-color: transparent;
@@ -127,29 +130,29 @@
 }
 
 svg {
-  margin-left: var(--auro-size-100);
+  margin-left: var(--ds-size-100, $ds-size-100);
 }
 
 
 
 :host([label]) {
   background-color: transparent;
-  border-color: var(--auro-color-brand-neutral-500);
-  color: var(--auro-color-text-secondary-on-light);
-  font-size: var(--auro-text-body-size-xs);
-  padding: var(--labelpillpadding) var(--auro-size-150);
+  border-color: var(--ds-color-brand-neutral-500, $ds-color-brand-neutral-500);
+  color: var(--ds-color-text-secondary-default, $ds-color-text-secondary-default);
+  font-size: var(--ds-text-body-size-xs, $ds-text-body-size-xs);
+  padding: var(--labelpillpadding) var(--ds-size-150, $ds-size-150);
   user-select: none;
   border-radius: 9999px;
 }
 
 :host([label][ondark]) {
   background-color: transparent;
-  border-color: var(--auro-color-brand-neutral-500);
-  color: var(--auro-color-text-primary-on-dark);
+  border-color: var(--ds-color-brand-neutral-500, $ds-color-brand-neutral-500);
+  color: var(--ds-color-text-primary-inverse, $ds-color-text-primary-inverse);
 }
 
 :host([pill]) {
-  padding: var(--labelpillpadding) var(--auro-size-150);
+  padding: var(--labelpillpadding) var(--ds-size-150, $ds-size-150);
   user-select: none;
   border-radius: 9999px;
 }
@@ -165,20 +168,26 @@ svg {
   }
 }
 
-// Sass loop for various states of the badges
-$states: error, success, advisory;
+// The following loop supports the defined state of a badge, as well
+// as the default fallback Sass variable color and then the OnDark
+// Sass variable color using Sass destructuring
+// https://sass-lang.com/documentation/at-rules/control/each/#destructuring
+$states:
+  "error" $ds-color-alert-error-default $ds-color-state-error-100,
+  "success" $ds-color-alert-success-default $ds-color-state-success-100,
+  "advisory" $ds-color-alert-advisory-default $ds-color-alert-advisory-default;
 
-@each $state in $states {
+@each $state, $default, $dark in $states {
   :host([#{$state}]) {
-    background-color: var(--auro-color-alert-#{$state}-on-light);
-    border-color: var(--auro-color-alert-#{$state}-on-light);
+    background-color: var(--ds-color-alert-#{$state}-default, $default);
+    border-color: var(--ds-color-alert-#{$state}-default, $default);
 
     @extend %hostTarget;
   }
 
   :host([#{$state}][ondark]) {
-    background-color: var(--auro-color-alert-#{$state}-on-dark);
-    border-color: var(--auro-color-alert-#{$state}-on-dark);
+    background-color: var(--ds-color-state-#{$state}-100, $dark);
+    border-color: var(--ds-color-state-#{$state}-100, $dark);
 
     @extend %hostTarget;
   }
@@ -189,8 +198,8 @@ $states: error, success, advisory;
         &:active,
         &:hover {
           cursor: pointer;
-          background-color: var(--auro-color-alert-#{$state}-on-light);
-          border-color: var(--auro-color-alert-#{$state}-on-light);
+          background-color: var(--ds-color-alert-#{$state}-default, $default);
+          border-color: var(--ds-color-alert-#{$state}-default, $default);
           filter: brightness(85%);
         }
       }
@@ -203,8 +212,8 @@ $states: error, success, advisory;
         &:active,
         &:hover {
           cursor: pointer;
-          background-color: var(--auro-color-alert-#{$state}-on-dark);
-          border-color: var(--auro-color-alert-#{$state}-on-dark);
+          background-color: var(--ds-color-state-#{$state}-100, $dark);
+          border-color: var(--ds-color-state-#{$state}-100, $dark);
           filter: brightness(85%);
         }
       }
@@ -214,31 +223,35 @@ $states: error, success, advisory;
 
 :host([label][error]),
 :host([label][success]) {
-  color: var(--auro-color-base-white);
+  color: var(--ds-color-base-white, $ds-color-base-white);
 }
 
 :host([label][advisory]) {
-  color: var(--auro-color-text-primary-on-light);
+  color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
 }
 
-$owstatus: emerald, sapphire, ruby;
+// Sass destructuring loop
+$owstatus:
+  "emerald" $ds-color-tier-oneworld-emerald,
+  "sapphire" $ds-color-tier-oneworld-sapphire,
+  "ruby" $ds-color-tier-oneworld-ruby;
 
-@each $owstatus in $owstatus {
-  :host([#{$owstatus}]) {
-    background-color: var(--auro-color-tier-oneworld-#{$owstatus});
-    border-color:  var(--auro-color-tier-oneworld-#{$owstatus});
+@each $status, $fallback in $owstatus {
+  :host([#{$status}]) {
+    background-color: var(--ds-color-tier-oneworld-#{$status}, $fallback);
+    border-color:  var(--ds-color-tier-oneworld-#{$status}, $fallback);
 
     @extend %hostTarget;
   }
 
-  :host([#{$owstatus}]:not([disabled])) {
+  :host([#{$status}]:not([disabled])) {
     .target {
       @media (hover: hover) {
         &:active,
         &:hover {
           cursor: pointer;
-          background-color: var(--auro-color-tier-oneworld-#{$owstatus});
-          border-color: var(--auro-color-tier-oneworld-#{$owstatus});
+          background-color: var(--ds-color-tier-oneworld-#{$status}, $fallback);
+          border-color: var(--ds-color-tier-oneworld-#{$status}, $fallback);
           filter: brightness(85%);
         }
       }
@@ -248,37 +261,37 @@ $owstatus: emerald, sapphire, ruby;
 
 
 :host([icon]) {
-  padding: var(--labelpillpadding) var(--auro-size-200);
+  padding: var(--labelpillpadding) var(--ds-size-200, $ds-size-200);
 }
 
 :host([icon]) ::slotted(auro-icon) {
-  width: var(--auro-size-300); 
-  margin-right: var(--auro-size-50);
+  width: var(--ds-size-300, $ds-size-300);
+  margin-right: var(--ds-size-50, $ds-size-50);
 }
 
 :host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--auro-size-200);
+  width: var(--ds-size-200, $ds-size-200);
 }
 
 :host([icon][pill]) {
-  padding: var(--auro-size-50) var(--auro-size-150);
+  padding: var(--ds-size-50, $ds-size-50) var(--ds-size-150, $ds-size-150);
   line-height: 0.75rem;
 }
 
 :host([icon]) {
-  padding: var(--labelpillpadding) var(--auro-size-200);
+  padding: var(--labelpillpadding) var(--ds-size-200, $ds-size-200);
 }
 
 :host([icon]) ::slotted(auro-icon) {
-  width: var(--auro-size-300); 
-  margin-right: var(--auro-size-50);
+  width: var(--ds-size-300, $ds-size-300);
+  margin-right: var(--ds-size-50, $ds-size-50);
 }
 
 :host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--auro-size-200);
+  width: var(--ds-size-200, $ds-size-200);
 }
 
 :host([icon][pill]) {
-  padding: var(--auro-size-50) var(--auro-size-150);
+  padding: var(--ds-size-50, $ds-size-50) var(--ds-size-150, $ds-size-150);
   line-height: 0.75rem;
 }
