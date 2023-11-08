@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [2.3.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.2.1...v2.3.0) (2023-11-08)
+
+
+### Features
+
+* update to support new tokens and WCSS ([0fdf4e1](https://github.com/AlaskaAirlines/auro-badge/commit/0fdf4e1eea4f5f3158606f623a381bd5eed4fdfe))
+* update to support Node 20 ([0677ff9](https://github.com/AlaskaAirlines/auro-badge/commit/0677ff9046a626356d79a41f93a6409177aedcfd))
+
 ## [2.2.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.2.0...v2.2.1) (2023-07-13)
 
 
