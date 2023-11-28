@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.3.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.3.0...v2.3.1) (2023-11-28)
+
+
+### Performance Improvements
+
+* **deps:** update WCSS peerDependencies ([818e48b](https://github.com/AlaskaAirlines/auro-badge/commit/818e48b38c26c99d6b2229ccc1a4ab7ea6ad1e5b))
+
 # [2.3.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.2.1...v2.3.0) (2023-11-08)
 
 
