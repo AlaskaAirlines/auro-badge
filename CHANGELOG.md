@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.4.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.3.1...v2.4.0) (2024-01-18)
+
+
+### Features
+
+* add suport for SSR projects ([7980ca4](https://github.com/AlaskaAirlines/auro-badge/commit/7980ca47db5b9efcdc421ea9f0132b184c2eba8f))
+
 ## [2.3.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.3.0...v2.3.1) (2023-11-28)
 
 
