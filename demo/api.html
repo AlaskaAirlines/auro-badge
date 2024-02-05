@@ -1,3 +1,16 @@
+<!--
+  Copyright (c) Alaska Air. All right reserved. Licensed under the Apache-2.0 license
+  See LICENSE in the project root for license information.
+
+  HTML in this document is standardized and NOT to be edited.
+  All demo code should be added/edited in ./demo/demo.md
+
+  With the exception of adding custom elements if needed for the demo.
+
+  ----------------------- DO NOT EDIT -----------------------------
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,22 +20,19 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.24.1/themes/prism.css"
     />
-    <!-- legacy reference is still needed to support auro-accordion's use of legacy toke vales at this time-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens@latest/dist/tokens/CSSCustomProperties.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/design-tokens@latest/dist/tokens/CSSCustomProperties.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/demoWrapper.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@aurodesignsystem/webcorestylesheets@latest/dist/elementDemoStyles.css" />
   </head>
-  <body>
+  <body class="auro-markdown">
     <main></main>
 
     <script type="module">
-      import 'https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js';
+      import 'https://cdn.jsdelivr.net/npm/marked@5.1.0/marked.min.js';
       import 'https://cdn.jsdelivr.net/npm/prismjs@latest/prism.js';
-      fetch('/demo/index.md')
+      fetch('/demo/api.md')
         .then((response) => response.text())
         .then((text) => {
           const rawHtml = marked.parse(text);
@@ -30,15 +40,10 @@
           Prism.highlightAll();
         });
     </script>
-    <script type="module" src="../index.js"></script>
+    <script type="module" src="../index.js" data-demo-script="true"></script>
+    <script src="./api.min.js"></script>
 
-    <!-- Register the custom element for demo versioning purpose -->
-    <script type="module">
-      import { registerComponent } from '../index.js';
-      registerComponent('custom-badge');
-    </script>
-
+    <!-- If additional elements are needed for the demo, add them here. -->
     <script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-accordion@latest/dist/auro-accordion__bundled.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-icon@latest/dist/auro-icon__bundled.js" type="module"></script>
   </body>
 </html>
