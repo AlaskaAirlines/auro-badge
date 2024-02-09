@@ -6,16 +6,15 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 | Attribute  | Type      | Description                                      |
 |------------|-----------|--------------------------------------------------|
-| `advisory` | `Boolean` | Enables advisory ui                              |
+| `advisory` | `Boolean` | Enables advisory UI                              |
 | `emerald`  | `Boolean` | Sets the background color of the badge to the oneworld emerald color |
-| `error`    | `Boolean` | Enables error ui                                 |
-| `fixed`    | `Boolean` | Uses px values instead of rem                    |
-| `label`    | `Boolean` | Enables label ui option                          |
-| `pill`     | `Boolean` | Enables pill ui option                           |
+| `error`    | `Boolean` | Enables error UI                                 |
+| `label`    | `Boolean` | Enables label UI option                          |
+| `pill`     | `Boolean` | Enables pill UI option                           |
 | `ruby`     | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
 | `sapphire` | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
 | `space`    | `Boolean` | Adds default spacing spec to badges              |
-| `success`  | `Boolean` | Enables success ui                               |
+| `success`  | `Boolean` | Enables success UI                               |
 
 ## Properties
 

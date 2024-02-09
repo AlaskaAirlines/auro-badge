@@ -31,9 +31,11 @@ Default non-actionable badge element to display data.
 
 </auro-accordion>
 
-### On Dark
+### On dark option
 
-<div class="exampleWrapper">
+Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
+
+<div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/onDark.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -63,9 +65,9 @@ Use the `target` property to convert the badge to a functional button. This this
 
 </auro-accordion>
 
-## Elements with spacing property
+## Elements with spacing attribute
 
-Use the `space` property to allow for default spacing between elements.
+Use the `space` attribute to allow for default spacing between elements.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/space.html) -->
@@ -97,7 +99,11 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 
 </auro-accordion>
 
-<div class="exampleWrapper">
+### On dark option
+
+Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
+
+<div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/color-onDark.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -112,7 +118,7 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 
 ## Label option
 
-Use the `label` property for a text label experience. The last example illustrates a customized version.
+Use the `label` attribute for a text label experience. The last example illustrates a customized version.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/label.html) -->
@@ -129,7 +135,7 @@ Use the `label` property for a text label experience. The last example illustrat
 
 ## Icons
 
-Use icon attribute to include icons inside your badge.
+To use icons in your badges, it is preferred that this is added as contnet within the `<slot>` of the `<auro-badge>` element. In most cases is is preferred to to use the Auro Icons repo and include the icon as part of the bundle. This example illustrates this option using the `<auro-icon>` element. Be aware that the `<auro-icon>` element uses a CDN to render the SVG. Consider this when building app critical UIs.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/icon.html) -->

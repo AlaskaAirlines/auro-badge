@@ -13,13 +13,12 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
  * HTML custom element for the use of drawing attention to additional interface information
  *
  * @attr {Boolean} target - Enables the close functionality
- * @attr {Boolean} error - Enables error ui
- * @attr {Boolean} success - Enables success ui
- * @attr {Boolean} advisory - Enables advisory ui
+ * @attr {Boolean} error - Enables error UI
+ * @attr {Boolean} success - Enables success UI
+ * @attr {Boolean} advisory - Enables advisory UI
  * @attr {Boolean} space - Adds default spacing spec to badges
- * @attr {Boolean} pill - Enables pill ui option
- * @attr {Boolean} label - Enables label ui option
- * @attr {Boolean} fixed - Uses px values instead of rem
+ * @attr {Boolean} pill - Enables pill UI option
+ * @attr {Boolean} label - Enables label UI option
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
  * @attr {Boolean} emerald - Sets the background color of the badge to the oneworld emerald color
  * @attr {Boolean} sapphire - Sets the background color of the badge to the oneworld sapphire color
