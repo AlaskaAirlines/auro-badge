@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@alaskaairux/icons": "^4.31.0",
-    "@aurodesignsystem/auro-library": "^2.2.4",
+    "@aurodesignsystem/auro-library": "^2.5.1",
     "@aurodesignsystem/design-tokens": "^4.3.0",
     "@aurodesignsystem/webcorestylesheets": "^5.0.5",
     "@commitlint/cli": "^18.4.4",
