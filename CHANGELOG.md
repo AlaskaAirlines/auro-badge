@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [2.4.3](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.2...v2.4.3) (2024-02-09)
+
+
+### Performance Improvements
+
+* remove unused dependencies ([ee3710d](https://github.com/AlaskaAirlines/auro-badge/commit/ee3710dd0b16db07af684ddb8ca8cfa844daf7eb))
+* update icons dependency ([aeabb6b](https://github.com/AlaskaAirlines/auro-badge/commit/aeabb6b93df6a2d7c86e490ec690ec10b911a923))
+
 ## [2.4.2](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.1...v2.4.2) (2024-02-09)
 
 
