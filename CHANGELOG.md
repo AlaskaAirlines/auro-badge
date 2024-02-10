@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.4.5](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.4...v2.4.5) (2024-02-10)
+
+
+### Performance Improvements
+
+* update SVG dependency ([1870744](https://github.com/AlaskaAirlines/auro-badge/commit/1870744499e89cf1b7160ea3a71df567f72ab651))
+
 ## [2.4.4](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.3...v2.4.4) (2024-02-10)
 
 
