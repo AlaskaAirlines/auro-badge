@@ -31,7 +31,7 @@
     "@aurodesignsystem/webcorestylesheets": "^5.0.5"
   },
   "devDependencies": {
-    "@alaskaairux/icons": "^4.35.1",
+    "@alaskaairux/icons": "^4.36.0",
     "@aurodesignsystem/auro-library": "^2.5.1",
     "@aurodesignsystem/design-tokens": "^4.3.0",
     "@aurodesignsystem/webcorestylesheets": "^5.0.7",

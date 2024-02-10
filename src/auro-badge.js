@@ -6,7 +6,7 @@
 // If use litElement base class
 import { LitElement, html } from "lit";
 import styleCss from "./style-css.js";
-import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm_es6.js';
+import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
