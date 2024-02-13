@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.4.8](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.7...v2.4.8) (2024-02-13)
+
+
+### Performance Improvements
+
+* update auro dependencies ([f67d8d2](https://github.com/AlaskaAirlines/auro-badge/commit/f67d8d2a9b135d1437c01234757e1c6e2b110b32))
+
 ## [2.4.7](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.6...v2.4.7) (2024-02-10)
 
 
