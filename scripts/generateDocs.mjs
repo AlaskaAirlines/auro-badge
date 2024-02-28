@@ -153,12 +153,12 @@ function processDemo() {
 
 function processApiExamples() {
   const callback = function(updatedContent, outputConfig) {
-    if (fs.existsSync('./demo/.md')) {
+    if (fs.existsSync('./demo/api.md')) {
       fs.readFile('./demo/.md', 'utf8', function(err, data) {
-        formatApiTableContents(data, './demo/.md');
+        formatApiTableContents(data, './demo/api.md');
       });
     } else {
-      console.log('ERROR: ./demo/.md file is missing');
+      console.log('ERROR: ./demo/api.md file is missing');
     }
   };
 
@@ -167,7 +167,7 @@ function processApiExamples() {
     outputDir: './demo'
   };
 
-  const markdownPath = path.join(__dirname, '../docs/partials/.md');
+  const markdownPath = path.join(__dirname, '../docs/partials/api.md');
 
   markdownMagic(markdownPath, config, callback);
 }
