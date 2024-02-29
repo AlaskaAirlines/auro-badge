@@ -31,17 +31,15 @@ Default non-actionable badge element to display data.
   <auro-badge>Nonstop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/basic.html -->
+
 ```html
 <auro-badge>Nonstop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ### On dark option
@@ -54,17 +52,15 @@ Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
   <auro-badge ondark>Nonstop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/onDark.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/onDark.html -->
+
 ```html
 <auro-badge ondark>Nonstop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Element with target property
@@ -78,18 +74,16 @@ Use the `target` property to convert the badge to a functional button. This this
   <auro-badge target disabled>1 stop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/target.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/target.html -->
+
 ```html
 <auro-badge target>Nonstop</auro-badge>
 <auro-badge target disabled>1 stop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Elements with spacing attribute
@@ -104,19 +98,17 @@ Use the `space` attribute to allow for default spacing between elements.
   <auro-badge space>2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/space.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/space.html -->
+
 ```html
 <auro-badge space>Nonstop</auro-badge>
 <auro-badge space>1 stop</auro-badge>
 <auro-badge space>2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Alert color options
@@ -131,19 +123,17 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
   <auro-badge advisory>2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/color.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/color.html -->
+
 ```html
 <auro-badge error>Nonstop</auro-badge>
 <auro-badge success>1 stop</auro-badge>
 <auro-badge advisory>2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ### On dark option
@@ -158,19 +148,17 @@ Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
   <auro-badge ondark advisory>2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/color-onDark.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/color-onDark.html -->
+
 ```html
 <auro-badge ondark error>Nonstop</auro-badge>
 <auro-badge ondark success>1 stop</auro-badge>
 <auro-badge ondark advisory>2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Label option
@@ -187,12 +175,11 @@ Use the `label` attribute for a text label experience. The last example illustra
   <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/label.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/label.html -->
+
 ```html
 <auro-badge label>Hello World</auro-badge>
 <auro-badge label error>Danger</auro-badge>
@@ -201,7 +188,6 @@ Use the `label` attribute for a text label experience. The last example illustra
 <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Icons
@@ -218,12 +204,11 @@ To use icons in your badges, it is preferred that this is added as contnet withi
   <auro-badge><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/icon.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/icon.html -->
+
 ```html
 <auro-badge><auro-icon ondark emphasis category="health" name="air"></auro-icon>Air</auro-badge>
 <auro-badge><auro-icon ondark emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
@@ -232,7 +217,6 @@ To use icons in your badges, it is preferred that this is added as contnet withi
 <auro-badge><auro-icon ondark emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Pill option
@@ -249,12 +233,11 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/pill.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/pill.html -->
+
 ```html
 <auro-badge pill>12</auro-badge>
 <auro-badge error pill>Danger</auro-badge>
@@ -263,7 +246,6 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 99</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Pill with Icons
@@ -282,12 +264,11 @@ Use `icon` attribute to include icons inside your badge.
   </div>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/pillWithIcons.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/pillWithIcons.html -->
+
 ```html
 <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
   <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
@@ -298,7 +279,6 @@ Use `icon` attribute to include icons inside your badge.
 </div>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ### Brand programs
@@ -313,19 +293,17 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
   <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/brand.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/brand.html -->
+
 ```html
 <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
 <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
 <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
 
 ## Recommended Use and Version Control
@@ -347,15 +325,13 @@ This will create a new custom element that you can use in your HTML that will fu
   <custom-badge type="warning">Salutations World!</custom-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
-
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/custom.html) -->
 <!-- The below code snippet is automatically added from ./../../apiExamples/custom.html -->
+
 ```html
 <custom-badge type="warning">Salutations World!</custom-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-
 </auro-accordion>
