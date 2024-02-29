@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+## [2.4.10](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.9...v2.4.10) (2024-02-29)
+
+
+### Bug Fixes
+
+* address issues with misconfigs ([3b27142](https://github.com/AlaskaAirlines/auro-badge/commit/3b27142bffca52ea648f088d5301ae8850b6da8a))
+
+
+### Performance Improvements
+
+* update dependencies ([8df9c7d](https://github.com/AlaskaAirlines/auro-badge/commit/8df9c7d98dca6c3fe4e3b96d5cce92f417ee8fcf))
+
 ## [2.4.9](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.8...v2.4.9) (2024-02-23)
 
 
