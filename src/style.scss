@@ -234,7 +234,11 @@ $states:
 $owstatus:
   "emerald" $ds-color-tier-oneworld-emerald,
   "sapphire" $ds-color-tier-oneworld-sapphire,
-  "ruby" $ds-color-tier-oneworld-ruby;
+  "ruby" $ds-color-tier-oneworld-ruby,
+  "lounge" $ds-color-tier-alaska-lounge,
+  "loungeplus" $ds-color-tier-alaska-loungeplus,
+  "mvp" $ds-color-tier-alaska-mvp-default,
+  "mvpgold" $ds-color-tier-alaska-mvpgold-default;
 
 @each $status, $fallback in $owstatus {
   :host([#{$status}]) {
