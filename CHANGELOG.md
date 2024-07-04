@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+# [2.5.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.10...v2.5.0) (2024-07-04)
+
+
+### Features
+
+* add tier badges [#96](https://github.com/AlaskaAirlines/auro-badge/issues/96) ([7630a84](https://github.com/AlaskaAirlines/auro-badge/commit/7630a848fcec092d7a5a626e16a18f18e4e16d6a))
+* **mvp:** add mvpgold75k variant ([11d7600](https://github.com/AlaskaAirlines/auro-badge/commit/11d76007e88e0ec49e237c92eeab8144a4de3746))
+
 ## [2.4.10](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.9...v2.4.10) (2024-02-29)
 
 

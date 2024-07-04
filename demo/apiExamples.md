@@ -7,17 +7,22 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ## Attributes
 
-| Attribute  | Type      | Description                                      |
-|------------|-----------|--------------------------------------------------|
-| [advisory](#advisory) | `Boolean` | Enables advisory UI                              |
-| [emerald](#emerald)  | `Boolean` | Sets the background color of the badge to the oneworld emerald color |
-| [error](#error)    | `Boolean` | Enables error UI                                 |
-| [label](#label)    | `Boolean` | Enables label UI option                          |
-| [pill](#pill)     | `Boolean` | Enables pill UI option                           |
-| [ruby](#ruby)     | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
-| [sapphire](#sapphire) | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
-| [space](#space)    | `Boolean` | Adds default spacing spec to badges              |
-| [success](#success)  | `Boolean` | Enables success UI                               |
+| Attribute    | Type      | Description                                      |
+|--------------|-----------|--------------------------------------------------|
+| [advisory](#advisory)   | `Boolean` | Enables advisory UI                              |
+| [emerald](#emerald)    | `Boolean` | Sets the background color of the badge to the oneworld emerald color |
+| [error](#error)      | `Boolean` | Enables error UI                                 |
+| [label](#label)      | `Boolean` | Enables label UI option                          |
+| [lounge](#lounge)     | `Boolean` | Sets the background color of the badge to the oneworld lounge color |
+| [loungeplus](#loungeplus) | `Boolean` | Sets the background color of the badge to the oneworld loungeplus color |
+| [mvp](#mvp)        | `Boolean` | Sets the background color of the badge to the oneworld mvp color |
+| [mvpgold](#mvpgold)    | `Boolean` | Sets the background color of the badge to the oneworld mvpgold color |
+| `mvpgold75k` | `Boolean` | Sets the background color of the badge to the oneworld mvpgold75k color |
+| [pill](#pill)       | `Boolean` | Enables pill UI option                           |
+| [ruby](#ruby)       | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
+| [sapphire](#sapphire)   | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
+| [space](#space)      | `Boolean` | Adds default spacing spec to badges              |
+| [success](#success)    | `Boolean` | Enables success UI                               |
 
 ## Properties
 
