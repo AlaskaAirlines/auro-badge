@@ -203,7 +203,7 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 
 ### Tier programs
 
-Use the `lounge`, `loungeplus`, `mvp` or `mvpgold` attributes for tier badges.
+Use the `lounge`, `loungeplus`, `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/tier.html) -->

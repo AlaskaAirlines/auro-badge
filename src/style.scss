@@ -238,7 +238,8 @@ $owstatus:
   "lounge" $ds-color-tier-alaska-lounge,
   "loungeplus" $ds-color-tier-alaska-loungeplus,
   "mvp" $ds-color-tier-alaska-mvp-default,
-  "mvpgold" $ds-color-tier-alaska-mvpgold-default;
+  "mvpgold" $ds-color-tier-alaska-mvpgold-default,
+  "mvpgold75k" $ds-color-tier-alaska-mvpgold-default;
 
 @each $status, $fallback in $owstatus {
   :host([#{$status}]) {
