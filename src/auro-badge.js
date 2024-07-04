@@ -27,6 +27,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  * @attr {Boolean} loungeplus - Sets the background color of the badge to the oneworld loungeplus color
  * @attr {Boolean} mvp - Sets the background color of the badge to the oneworld mvp color
  * @attr {Boolean} mvpgold - Sets the background color of the badge to the oneworld mvpgold color
+ * @attr {Boolean} mvpgold75k - Sets the background color of the badge to the oneworld mvpgold75k color
  */
 
 // build the component class
