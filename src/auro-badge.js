@@ -10,7 +10,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * HTML custom element for the use of drawing attention to additional interface information
+ * HTML custom element for the use of drawing attention to additional interface information.
  *
  * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} error - Enables error UI
@@ -36,17 +36,17 @@ export class AuroBadge extends LitElement {
     super();
 
     /**
-     * @private internal variable
+     * @private
      */
     this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
 
     /**
-     * @private internal variable
+     * @private
      */
     this.svg = this.dom.body.firstChild;
 
     /**
-     * @private internal variable
+     * @private
      */
     this.icon = false;
 
@@ -80,8 +80,9 @@ export class AuroBadge extends LitElement {
   }
 
   /**
-   * @private Fires a custom event and removes the element from the DOM if target is true
-   * @param {*} event interaction event from Badge
+   * Fires a custom event and removes the element from the DOM if target is true.
+   * @private
+   * @param {*} event - Event interaction event from Badge.
    * @returns {void}
    */
   handleChange(event) {
@@ -94,16 +95,17 @@ export class AuroBadge extends LitElement {
   }
 
   /**
-  * @private On slot content change, checks for auro-icon and applies attribute to component for adjusted styling
-  * @returns {void}
-  */
+   * On slot content change, checks for auro-icon and applies attribute to component for adjusted styling.
+   * @private
+   * @returns {void}
+   */
   handleContentSlotChanges() {
     const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
 
     if (slotContent.tagName === 'AURO-ICON') {
       this.icon = true;
     } else {
-      this.icon = false
+      this.icon = false;
     }
   }
 
@@ -117,7 +119,7 @@ export class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return [styleCss]
+    return [styleCss];
   }
 
   // function that renders the HTML and CSS into  the scope of the component
