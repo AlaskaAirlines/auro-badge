@@ -3,16 +3,31 @@
 
 // ---------------------------------------------------------------------
 
-// If use litElement base class
-import { LitElement, html } from "lit";
+/* eslint-disable lit/binding-positions, lit/no-invalid-html */
+
+import { LitElement } from "lit";
+import { html } from 'lit/static-html.js';
+
 import styleCss from "./style-css.js";
+import colorCss from "./color-css.js";
+import tokensCss from "./tokens-css.js";
+
+import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
+
+import { AuroButton } from '@aurodesignsystem/auro-button/src/auro-button.js';
+import buttonVersion from './buttonVersion';
+
+import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
+import iconVersion from './iconVersion';
+
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * HTML custom element for the use of drawing attention to additional interface information
+ * HTML custom element for the use of drawing attention to additional interface information.
  *
  * @attr {Boolean} target - Enables the close functionality
+ * @attr {Boolean} ondark - Enables styles for dark backgrounds
  * @attr {Boolean} error - Enables error UI
  * @attr {Boolean} success - Enables success UI
  * @attr {Boolean} advisory - Enables advisory UI
@@ -36,19 +51,21 @@ export class AuroBadge extends LitElement {
     super();
 
     /**
-     * @private internal variable
-     */
-    this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
-
-    /**
-     * @private internal variable
-     */
-    this.svg = this.dom.body.firstChild;
-
-    /**
-     * @private internal variable
+     * @private
      */
     this.icon = false;
+
+    const versioning = new AuroDependencyVersioning();
+
+    /**
+     * @private
+     */
+    this.buttonTag = versioning.generateTag('auro-button', buttonVersion, AuroButton);
+
+    /**
+     * @private
+     */
+    this.iconTag = versioning.generateTag('auro-icon', iconVersion, AuroIcon);
 
     this.target = false;
     this.disabled = false;
@@ -80,8 +97,9 @@ export class AuroBadge extends LitElement {
   }
 
   /**
-   * @private Fires a custom event and removes the element from the DOM if target is true
-   * @param {*} event interaction event from Badge
+   * Fires a custom event and removes the element from the DOM if target is true.
+   * @private
+   * @param {*} event - Event interaction event from Badge.
    * @returns {void}
    */
   handleChange(event) {
@@ -94,17 +112,57 @@ export class AuroBadge extends LitElement {
   }
 
   /**
-  * @private On slot content change, checks for auro-icon and applies attribute to component for adjusted styling
-  * @returns {void}
-  */
+   * On slot content change, checks for auro-icon and applies attribute to component for adjusted styling.
+   * @private
+   * @returns {void}
+   */
   handleContentSlotChanges() {
     const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
 
     if (slotContent.tagName === 'AURO-ICON') {
       this.icon = true;
     } else {
-      this.icon = false
+      this.icon = false;
     }
+  }
+
+  /**
+   * Generates an HTML element containing an SVG icon based on the provided `svgContent`.
+   *
+   * @private
+   * @param {string} svgContent - The SVG content to be embedded.
+   * @returns {Element} The HTML element containing the SVG icon.
+   */
+  generateIconHtml(svgContent) {
+    const dom = new DOMParser().parseFromString(svgContent, 'text/html');
+    const svg = dom.body.firstChild;
+
+    svg.setAttribute('slot', 'svg');
+
+    const iconHtml = html`<${this.iconTag} customColor customSize customSvg slot="icon">${svg}</${this.iconTag}>`;
+
+    return iconHtml;
+  }
+
+  /**
+   * If component is registered as a custom name,
+   * this function will add an attribute to the element
+   * with the default name. This is so that other parent
+   * components can still this the element.
+   * @private
+   * @param {string} name - The default tag name.
+   * @param {HTMLElement} elem - The element to add the attribute to.
+   * @returns {void}
+   */
+  handleCustomTagName(name, elem) {
+    if (name.toLowerCase() !== elem.tagName.toLowerCase()) {
+      elem.setAttribute(name, true);
+    }
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.handleCustomTagName('auro-badge', this);
   }
 
   firstUpdated() {
@@ -117,21 +175,30 @@ export class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return [styleCss]
+    return [
+      styleCss,
+      colorCss,
+      tokensCss
+    ];
   }
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
       ${this.target
-        ? html`<button
-                @click=${this.handleChange}
-                ?disabled="${this.disabled}"
-                .value="${this.value}"
-                class="target">
-          <slot @slotchange="${this.handleContentSlotChanges}"></slot>${this.svg}
+        ? html`
+        <${this.buttonTag}
+          rounded
+          @click=${this.handleChange}
+          ?disabled="${this.disabled}"
+          ?onDark="${this.hasAttribute('ondark')}"
+          .value="${this.value}"
+          class="target"
+          id="targetButton">
+          <slot @slotchange="${this.handleContentSlotChanges}"></slot>
+          ${this.generateIconHtml(closeIcon.svg)}
           <span class="util_displayHiddenVisually">Dismiss</span>
-        </button>`
+        </${this.buttonTag}>`
         : html`<slot @slotchange="${this.handleContentSlotChanges}"></slot>`
       }
     `;
