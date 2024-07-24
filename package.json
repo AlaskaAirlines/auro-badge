@@ -22,6 +22,8 @@
   "main": "index.js",
   "license": "Apache-2.0",
   "dependencies": {
+    "@aurodesignsystem/auro-button": "^7.3.0-beta.6",
+    "@aurodesignsystem/auro-icon": "^4.5.0-beta.1",
     "chalk": "^5.3.0",
     "lit": "^3.1.4"
   },
@@ -86,9 +88,9 @@
     ]
   },
   "scripts": {
-    "build": "npm-run-all build:sass sass:render types",
+    "build": "npm-run-all build:version build:sass sass:render types",
     "build:test": "npm-run-all test linters",
-    "build:release": "npm-run-all build build:test build:api build:docs bundler postinstall",
+    "build:release": "npm-run-all build build:api build:docs bundler postinstall",
     "build:ci": "npm-run-all sweep build:release",
     "build:dev:assets": "npm-run-all build:sass:component postCss:component sass:render",
     "build:docs": "node scripts/generateDocs.mjs",
@@ -110,6 +112,7 @@
     "build:sass": "npm-run-all build:sass:component postCss:component sass:render",
     "build:sass:dev": "npm-run-all build:sass:component postCss:component sass:render",
     "build:sass:component": "sass --no-source-map src:src",
+    "build:version": "node scripts/version.mjs",
     "postCss:component": "node ./scripts/postCss.mjs",
     "serve": "web-dev-server --open demo/ --node-resolve --watch",
     "prepare": "husky install",
@@ -145,8 +148,8 @@
             "./CHANGELOG.md",
             "./README.md",
             "./docs/api.md",
-            "./demo/demo.md",
-            "./demo/apiExamples.md"
+            "./demo/index.md",
+            "./demo/api.md"
           ]
         }
       ],

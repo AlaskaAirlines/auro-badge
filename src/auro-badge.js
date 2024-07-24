@@ -3,9 +3,23 @@
 
 // ---------------------------------------------------------------------
 
-// If use litElement base class
-import { LitElement, html } from "lit";
+/* eslint-disable lit/binding-positions, lit/no-invalid-html */
+
+import { LitElement } from "lit";
+import { html } from 'lit/static-html.js';
+
 import styleCss from "./style-css.js";
+import colorCss from "./color-css.js";
+import tokensCss from "./tokens-css.js";
+
+import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
+
+import { AuroButton } from '@aurodesignsystem/auro-button/src/auro-button.js';
+import buttonVersion from './buttonVersion';
+
+import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
+import iconVersion from './iconVersion';
+
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
@@ -13,6 +27,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  * HTML custom element for the use of drawing attention to additional interface information.
  *
  * @attr {Boolean} target - Enables the close functionality
+ * @attr {Boolean} ondark - Enables styles for dark backgrounds
  * @attr {Boolean} error - Enables error UI
  * @attr {Boolean} success - Enables success UI
  * @attr {Boolean} advisory - Enables advisory UI
@@ -38,17 +53,19 @@ export class AuroBadge extends LitElement {
     /**
      * @private
      */
-    this.dom = new DOMParser().parseFromString(closeIcon.svg, 'text/html');
-
-    /**
-     * @private
-     */
-    this.svg = this.dom.body.firstChild;
-
-    /**
-     * @private
-     */
     this.icon = false;
+
+    const versioning = new AuroDependencyVersioning();
+
+    /**
+     * @private
+     */
+    this.buttonTag = versioning.generateTag('auro-button', buttonVersion, AuroButton);
+
+    /**
+     * @private
+     */
+    this.iconTag = versioning.generateTag('auro-icon', iconVersion, AuroIcon);
 
     this.target = false;
     this.disabled = false;
@@ -109,6 +126,24 @@ export class AuroBadge extends LitElement {
     }
   }
 
+  /**
+   * Generates an HTML element containing an SVG icon based on the provided `svgContent`.
+   *
+   * @private
+   * @param {string} svgContent - The SVG content to be embedded.
+   * @returns {Element} The HTML element containing the SVG icon.
+   */
+  generateIconHtml(svgContent) {
+    const dom = new DOMParser().parseFromString(svgContent, 'text/html');
+    const svg = dom.body.firstChild;
+
+    svg.setAttribute('slot', 'svg');
+
+    const iconHtml = html`<${this.iconTag} customColor customSize customSvg slot="icon">${svg}</${this.iconTag}>`;
+
+    return iconHtml;
+  }
+
   firstUpdated() {
     // Finds slotted content and adds string to button value
     if (this.target) {
@@ -119,21 +154,30 @@ export class AuroBadge extends LitElement {
   }
 
   static get styles() {
-    return [styleCss];
+    return [
+      styleCss,
+      colorCss,
+      tokensCss
+    ];
   }
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
       ${this.target
-        ? html`<button
-                @click=${this.handleChange}
-                ?disabled="${this.disabled}"
-                .value="${this.value}"
-                class="target">
-          <slot @slotchange="${this.handleContentSlotChanges}"></slot>${this.svg}
+        ? html`
+        <${this.buttonTag}
+          rounded
+          @click=${this.handleChange}
+          ?disabled="${this.disabled}"
+          ?onDark="${this.hasAttribute('ondark')}"
+          .value="${this.value}"
+          class="target"
+          id="targetButton">
+          <slot @slotchange="${this.handleContentSlotChanges}"></slot>
+          ${this.generateIconHtml(closeIcon.svg)}
           <span class="util_displayHiddenVisually">Dismiss</span>
-        </button>`
+        </${this.buttonTag}>`
         : html`<slot @slotchange="${this.handleContentSlotChanges}"></slot>`
       }
     `;
