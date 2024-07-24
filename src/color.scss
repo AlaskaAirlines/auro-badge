@@ -1,0 +1,111 @@
+// Copyright (c) 2024 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
+// See LICENSE in the project root for license information.
+
+// ---------------------------------------------------------------------
+
+// Import Auro tokens
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
+
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints";
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/core";
+@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/utilityClasses/displayProperties";
+
+// This pattern will ensure that the focus-visible state will be shown
+// regardless of native support or using the polyfill.
+:host(.focus-visible), :focus-visible {
+  &.target {
+    box-shadow: inset 0 0 0 1px var(--ds-auro-badge-boxshadow-color), inset 0 0 0 3px var(--ds-auro-badge-boxshadow-color);
+
+    &::-moz-focus-inner {
+      border: none;
+    }
+  }
+}
+
+:host {
+  color: var(--ds-auro-badge-text-color);
+  background-color: var(--ds-auro-badge-container-color);
+  border-color: var(--ds-auro-badge-border-color);
+}
+
+:host([advisory]) {
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+}
+
+:host([onDark]) {
+  --ds-auro-badge-container-color: var(--ds-color-utility-navy-inverse, #{$ds-color-utility-navy-inverse});
+  --ds-auro-badge-border-color: var(--ds-color-utility-navy-inverse, #{$ds-color-utility-navy-inverse});
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+}
+
+:host([target]) {
+  --ds-auro-badge-container-color: transparent;
+}
+
+:host([label]) {
+  --ds-auro-badge-container-color: transparent;
+  --ds-auro-badge-border-color: var(--ds-color-border-secondary-default, #{$ds-color-border-secondary-default});
+  --ds-auro-badge-text-color: var(--ds-color-text-secondary-default, #{$ds-color-text-secondary-default});
+}
+
+:host([label][ondark]) {
+  --ds-auro-badge-container-color: transparent;
+  --ds-auro-badge-border-color: var(--ds-color-border-secondary-default, #{$ds-color-border-secondary-default});
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+}
+
+// The following loop supports the defined state of a badge, as well
+// as the default fallback Sass variable color and then the OnDark
+// Sass variable color using Sass destructuring
+// https://sass-lang.com/documentation/at-rules/control/each/#destructuring
+$states:
+  "error" "error" $ds-color-utility-error-default $ds-color-utility-error-inverse,
+  "success" "success" $ds-color-utility-success-default $ds-color-utility-success-inverse,
+  "advisory" "warning" $ds-color-utility-warning-default $ds-color-utility-warning-inverse;
+
+@each $state, $utilityName, $default, $dark in $states {
+  :host([#{$state}]) {
+    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-default, $default);
+    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-default, $default);
+  }
+
+  :host([#{$state}][ondark]) {
+    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-inverse, $dark);
+    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-inverse, $dark);
+  }
+}
+
+:host([label][error]),
+:host([label][success]) {
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-inverse, #{$ds-color-text-primary-inverse});
+}
+
+:host([label][advisory]) {
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+}
+
+$owstatus:
+  "emerald" "oneworld" $ds-color-tier-oneworld-emerald,
+  "sapphire" "oneworld" $ds-color-tier-oneworld-sapphire,
+  "ruby" "oneworld" $ds-color-tier-oneworld-ruby,
+  "lounge" "alaska" $ds-color-tier-alaska-lounge,
+  "loungeplus" "alaska" $ds-color-tier-alaska-loungeplus;
+
+@each $status, $tierType, $fallback in $owstatus {
+  :host([#{$status}]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-#{$tierType}-#{$status}, $fallback);
+    --ds-auro-badge-border-color:  var(--ds-color-tier-#{$tierType}-#{$status}, $fallback);
+  }
+}
+
+$mvpStatus:
+  "mvp" $ds-color-tier-alaska-mvp-default,
+  "mvpgold" $ds-color-tier-alaska-mvpgold-default,
+  "mvpgold75k" $ds-color-tier-alaska-mvpgold-default;
+
+@each $status, $fallback in $mvpStatus {
+  :host([#{$status}]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, $fallback);
+    --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, $fallback);
+  }
+}

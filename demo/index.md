@@ -172,7 +172,6 @@ Use the `label` attribute for a text label experience. The last example illustra
   <auro-badge label error>Danger</auro-badge>
   <auro-badge label success>Success</auro-badge>
   <auro-badge label advisory>Advisory</auro-badge>
-  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -185,7 +184,6 @@ Use the `label` attribute for a text label experience. The last example illustra
 <auro-badge label error>Danger</auro-badge>
 <auro-badge label success>Success</auro-badge>
 <auro-badge label advisory>Advisory</auro-badge>
-<auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

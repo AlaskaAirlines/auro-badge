@@ -3,7 +3,7 @@
 
 # auro-badge
 
-HTML custom element for the use of drawing attention to additional interface information
+HTML custom element for the use of drawing attention to additional interface information.
 
 ## Attributes
 
@@ -18,6 +18,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 | [mvp](#mvp)        | `Boolean` | Sets the background color of the badge to the oneworld mvp color |
 | [mvpgold](#mvpgold)    | `Boolean` | Sets the background color of the badge to the oneworld mvpgold color |
 | `mvpgold75k` | `Boolean` | Sets the background color of the badge to the oneworld mvpgold75k color |
+| [ondark](#ondark)     | `Boolean` | Enables styles for dark backgrounds              |
 | [pill](#pill)       | `Boolean` | Enables pill UI option                           |
 | [ruby](#ruby)       | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
 | [sapphire](#sapphire)   | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
@@ -263,3 +264,20 @@ Use the `pill` attribute to render a small 'pill size' UI.
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
+
+## Theme Support
+
+The component may be restyled using the following code sample and changing the values of the following token(s).
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.css) -->
+<!-- The below code snippet is automatically added from ./../../src/tokens.css -->
+
+```css
+:host {
+  --ds-auro-badge-border-color: var(--ds-color-border-subtle-inverse, #326aa5);
+  --ds-auro-badge-boxshadow-color: var(--ds-color-border-subtle-default, #f0f7fd);
+  --ds-auro-badge-container-color: var(--ds-color-utility-navy-default, #326aa5);
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-inverse, #ffffff);
+}
+```
+<!-- AURO-GENERATED-CONTENT:END -->

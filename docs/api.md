@@ -1,6 +1,6 @@
 # auro-badge
 
-HTML custom element for the use of drawing attention to additional interface information
+HTML custom element for the use of drawing attention to additional interface information.
 
 ## Attributes
 
@@ -15,6 +15,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 | `mvp`        | `Boolean` | Sets the background color of the badge to the oneworld mvp color |
 | `mvpgold`    | `Boolean` | Sets the background color of the badge to the oneworld mvpgold color |
 | `mvpgold75k` | `Boolean` | Sets the background color of the badge to the oneworld mvpgold75k color |
+| `ondark`     | `Boolean` | Enables styles for dark backgrounds              |
 | `pill`       | `Boolean` | Enables pill UI option                           |
 | `ruby`       | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
 | `sapphire`   | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
