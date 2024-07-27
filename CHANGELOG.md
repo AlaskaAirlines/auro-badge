@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.5.1-beta.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.5.0...v2.5.1-beta.1) (2024-07-27)
+
+
+### Bug Fixes
+
+* update commitlint rules config ([8f6c804](https://github.com/AlaskaAirlines/auro-badge/commit/8f6c804f56fb5aafa5db19a2274e84c1d7bc2eb4))
+
 # [2.5.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.4.10...v2.5.0) (2024-07-04)
 
 
