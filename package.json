@@ -8,7 +8,7 @@
     "================================================================================"
   ],
   "name": "@aurodesignsystem/auro-badge",
-  "version": "2.5.0",
+  "version": "2.5.1-beta.1",
   "description": "Auro custom auro-badge element",
   "author": "Product design and research",
   "engines": {
@@ -157,7 +157,11 @@
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "footer-max-line-length": [1, "always", 100]
+      "footer-max-line-length": [
+        1,
+        "always",
+        100
+      ]
     }
   },
   "publishConfig": {
