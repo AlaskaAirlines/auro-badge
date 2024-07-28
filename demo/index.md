@@ -8,7 +8,7 @@ This file is generated based on a template fetched from `./docs/partials/index.m
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./description.md) -->
 <!-- The below content is automatically added from ./description.md -->
-HTML custom element for the use of drawing attention to additional interface information
+HTML custom element for the use of drawing attention to additional interface information.
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## auro-badge use cases
@@ -168,11 +168,9 @@ Use the `label` attribute for a text label experience. The last example illustra
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/label.html) -->
   <!-- The below content is automatically added from ./../../apiExamples/label.html -->
-  <auro-badge label>Hello World</auro-badge>
   <auro-badge label error>Danger</auro-badge>
   <auro-badge label success>Success</auro-badge>
   <auro-badge label advisory>Advisory</auro-badge>
-  <auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -181,11 +179,9 @@ Use the `label` attribute for a text label experience. The last example illustra
 <!-- The below code snippet is automatically added from ./../../apiExamples/label.html -->
 
 ```html
-<auro-badge label>Hello World</auro-badge>
 <auro-badge label error>Danger</auro-badge>
 <auro-badge label success>Success</auro-badge>
 <auro-badge label advisory>Advisory</auro-badge>
-<auro-badge label style="color: var(--auro-color-text-primary-on-light); background-color: var(--auro-color-brand-tropical-300); border-color: var(--auro-color-brand-tropical-300)">Flight 167</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
