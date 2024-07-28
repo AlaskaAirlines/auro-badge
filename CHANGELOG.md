@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.6.0-beta.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.5.1-beta.1...v2.6.0-beta.1) (2024-07-28)
+
+
+### Features
+
+* add all code necessary for theme support ([9332baf](https://github.com/AlaskaAirlines/auro-badge/commit/9332baf2dbbed563e540e4dad863913def5f8e7a))
+
 ## [2.5.1-beta.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.5.0...v2.5.1-beta.1) (2024-07-27)
 
 
