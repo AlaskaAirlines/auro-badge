@@ -1,0 +1,8 @@
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
+
+:host {
+  --ds-auro-badge-border-color: var(--ds-color-border-subtle-inverse, #{$ds-color-border-subtle-inverse});
+  --ds-auro-badge-boxshadow-color: var(--ds-color-border-subtle-default, #{$ds-color-border-subtle-default});
+  --ds-auro-badge-container-color: var(--ds-color-utility-navy-default, #{$ds-color-utility-navy-default});
+  --ds-auro-badge-text-color: var(--ds-color-text-primary-inverse, #{$ds-color-text-primary-inverse});
+}

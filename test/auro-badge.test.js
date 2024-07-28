@@ -34,7 +34,7 @@ describe('auro-badge', () => {
     `);
 
     const root = el.shadowRoot;
-    root.querySelector('button').click();
+    root.getElementById('targetButton').click();
     setTimeout(() =>  expect(root).to.be.equal(undefined), 3000);
   });
 });
