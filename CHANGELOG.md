@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [3.0.0-beta.1](https://github.com/AlaskaAirlines/auro-badge/compare/v2.6.0-beta.2...v3.0.0-beta.1) (2024-09-26)
+
+
+### Performance Improvements
+
+* refactor custom component registration config ([891f44a](https://github.com/AlaskaAirlines/auro-badge/commit/891f44a3a6945f96fbf2024875b76f16ae9eb8b8))
+* update dependencies ([363d86d](https://github.com/AlaskaAirlines/auro-badge/commit/363d86d273adc3398f2c86d32ac0fa4db528a036))
+
+
+### BREAKING CHANGES
+
+* trigger major release for color theme support #95
+
 # [2.6.0-beta.2](https://github.com/AlaskaAirlines/auro-badge/compare/v2.6.0-beta.1...v2.6.0-beta.2) (2024-07-28)
 
 
