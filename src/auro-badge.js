@@ -12,13 +12,15 @@ import styleCss from "./style-css.js";
 import colorCss from "./color-css.js";
 import tokensCss from "./tokens-css.js";
 
+import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
+
 import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
 
 import { AuroButton } from '@aurodesignsystem/auro-button/src/auro-button.js';
-import buttonVersion from './buttonVersion';
+import buttonVersion from './buttonVersion.js';
 
 import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
-import iconVersion from './iconVersion';
+import iconVersion from './iconVersion.js';
 
 import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
 
@@ -66,6 +68,11 @@ export class AuroBadge extends LitElement {
      * @private
      */
     this.iconTag = versioning.generateTag('auro-icon', iconVersion, AuroIcon);
+
+    /**
+     * @private
+     */
+    this.runtimeUtils = new AuroLibraryRuntimeUtils();
 
     this.target = false;
     this.disabled = false;
@@ -143,25 +150,9 @@ export class AuroBadge extends LitElement {
     return iconHtml;
   }
 
-  /**
-   * If component is registered as a custom name,
-   * this function will add an attribute to the element
-   * with the default name. This is so that other parent
-   * components can still this the element.
-   * @private
-   * @param {string} name - The default tag name.
-   * @param {HTMLElement} elem - The element to add the attribute to.
-   * @returns {void}
-   */
-  handleCustomTagName(name, elem) {
-    if (name.toLowerCase() !== elem.tagName.toLowerCase()) {
-      elem.setAttribute(name, true);
-    }
-  }
-
   connectedCallback() {
     super.connectedCallback();
-    this.handleCustomTagName('auro-badge', this);
+    this.runtimeUtils.handleComponentTagRename(this, 'auro-badge');
   }
 
   firstUpdated() {
