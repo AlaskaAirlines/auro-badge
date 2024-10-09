@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v3.0.0...v3.0.1) (2024-10-09)
+
+
+### Bug Fixes
+
+* make auro-library a normal dep instead of devDep ([c0051c9](https://github.com/AlaskaAirlines/auro-badge/commit/c0051c95bcfcf7e8e3e3405cdb3304d2d7853182))
+
 # [3.0.0](https://github.com/AlaskaAirlines/auro-badge/compare/v2.5.0...v3.0.0) (2024-09-30)
 
 
