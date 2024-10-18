@@ -104,6 +104,18 @@ export class AuroBadge extends LitElement {
   }
 
   /**
+   * This will register this element with the browser.
+   * @param {string} [name="auro-badge"] - The name of element that you want to register to.
+   *
+   * @example
+   * AuroBadge.register("custom-badge") // this will register this element to <custom-badge/>
+   *
+   */
+  static register(name = "auro-badge") {
+    AuroLibraryRuntimeUtils.prototype.registerComponent(name, AuroBadge);
+  }
+
+  /**
    * Fires a custom event and removes the element from the DOM if target is true.
    * @private
    * @param {*} event - Event interaction event from Badge.
@@ -193,9 +205,4 @@ export class AuroBadge extends LitElement {
       }
     `;
   }
-}
-
-// default internal definition
-if (!customElements.get("auro-badge")) {
-  customElements.define("auro-badge", AuroBadge);
 }
