@@ -1,5 +1,17 @@
 # Semantic Release Automated Changelog
 
+# [3.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.0.1...v3.1.0) (2024-10-24)
+
+
+### Features
+
+* **api:** add register static method [#115](https://github.com/AlaskaAirlines/auro-badge/issues/115) ([e2d8e34](https://github.com/AlaskaAirlines/auro-badge/commit/e2d8e341005a380c3c024da945e9b8832b153622))
+
+
+### Performance Improvements
+
+* update dependency versions ([0dc805e](https://github.com/AlaskaAirlines/auro-badge/commit/0dc805eb5f746e1df233e6168285d282aa3a500c))
+
 ## [3.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v3.0.0...v3.0.1) (2024-10-09)
 
 
