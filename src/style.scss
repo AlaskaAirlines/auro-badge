@@ -64,8 +64,7 @@
 }
 
 [auro-icon] {
-  height: var(--ds-size-300, $ds-size-300);
-  width: var(--ds-size-300, $ds-size-300);
+  width: $ds-size-300;
 }
 
 ::part(button) {
