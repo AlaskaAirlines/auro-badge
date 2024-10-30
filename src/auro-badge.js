@@ -157,7 +157,7 @@ export class AuroBadge extends LitElement {
 
     svg.setAttribute('slot', 'svg');
 
-    const iconHtml = html`<${this.iconTag} customColor customSize customSvg slot="icon">${svg}</${this.iconTag}>`;
+    const iconHtml = html`<${this.iconTag} customColor customSvg slot="icon">${svg}</${this.iconTag}>`;
 
     return iconHtml;
   }
