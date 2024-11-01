@@ -1,5 +1,24 @@
 # Semantic Release Automated Changelog
 
+# [3.2.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.1.0...v3.2.0) (2024-11-01)
+
+
+### Bug Fixes
+
+* remove customsize attribute [#117](https://github.com/AlaskaAirlines/auro-badge/issues/117) ([ae610cd](https://github.com/AlaskaAirlines/auro-badge/commit/ae610cd1020b15db14e70dee39d8bab7c61f4539))
+* set size of icon to lock it for this component [#117](https://github.com/AlaskaAirlines/auro-badge/issues/117) ([e4f7fd4](https://github.com/AlaskaAirlines/auro-badge/commit/e4f7fd46486a141de1a7cea1d77c374a51ca33c5))
+
+
+### Features
+
+* apply latest token ds-auro-icon-size [#117](https://github.com/AlaskaAirlines/auro-badge/issues/117) ([c21eab4](https://github.com/AlaskaAirlines/auro-badge/commit/c21eab413f59cd7781557c43f1b5caac8c695ab1))
+* update auro-icon package [#117](https://github.com/AlaskaAirlines/auro-badge/issues/117) ([3bdd553](https://github.com/AlaskaAirlines/auro-badge/commit/3bdd553e2d3daeedf70f0baf65c9f15ba2a60cc4))
+
+
+### Performance Improvements
+
+* update dependencies ([3934a10](https://github.com/AlaskaAirlines/auro-badge/commit/3934a104b878e14f19bda087a85d7de24a303562))
+
 # [3.1.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.0.1...v3.1.0) (2024-10-24)
 
 
