@@ -1,4 +1,4 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../api.md) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/api.md) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Badge API Examples
@@ -8,13 +8,13 @@
 Use the `error` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/error.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/error.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/error.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -24,13 +24,13 @@ Use the `error` attribute for a pre-defined use of color.
 Use the `success` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/success.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/success.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/success.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/success.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -40,13 +40,13 @@ Use the `success` attribute for a pre-defined use of color.
 Use the `advisory` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/advisory.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/advisory.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/advisory.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/advisory.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -56,13 +56,13 @@ Use the `advisory` attribute for a pre-defined use of color.
 Use the `emerald` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/emerald.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/emerald.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/emerald.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/emerald.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -72,13 +72,13 @@ Use the `emerald` attribute for a pre-defined use of color.
 Use the `ruby` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/ruby.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/ruby.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/ruby.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/ruby.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -88,13 +88,13 @@ Use the `ruby` attribute for a pre-defined use of color.
 Use the `sapphire` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/sapphire.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/sapphire.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/sapphire.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/sapphire.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -104,13 +104,13 @@ Use the `sapphire` attribute for a pre-defined use of color.
 Use the `space` attribute to allow for pre-defined spacing beteen badges.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/space.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/space.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/space.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/space.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -120,13 +120,13 @@ Use the `space` attribute to allow for pre-defined spacing beteen badges.
 Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/disabled.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/disabled.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabled.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -136,13 +136,13 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 Use the `target` property to aply the clickable feature.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/target.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/target.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/target.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -152,13 +152,13 @@ Use the `target` property to aply the clickable feature.
 Use the `pill` attribute to render a small 'pill size' UI.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/pill.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/pill.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/pill.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -167,5 +167,5 @@ Use the `pill` attribute to render a small 'pill size' UI.
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.css) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/tokens.css) -->
 <!-- AURO-GENERATED-CONTENT:END -->

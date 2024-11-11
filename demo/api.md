@@ -1,5 +1,5 @@
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../api.md) -->
-<!-- The below content is automatically added from ./../api.md -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/api.md) -->
+<!-- The below content is automatically added from ./../docs/api.md -->
 
 # auro-badge
 
@@ -40,15 +40,15 @@ HTML custom element for the use of drawing attention to additional interface inf
 Use the `error` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/error.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/error.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/error.html -->
   <auro-badge error>Nonstop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/error.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/error.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/error.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/error.html -->
 
 ```html
 <auro-badge error>Nonstop</auro-badge>
@@ -61,15 +61,15 @@ Use the `error` attribute for a pre-defined use of color.
 Use the `success` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/success.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/success.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/success.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/success.html -->
   <auro-badge success>1 stop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/success.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/success.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/success.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/success.html -->
 
 ```html
 <auro-badge success>1 stop</auro-badge>
@@ -82,15 +82,15 @@ Use the `success` attribute for a pre-defined use of color.
 Use the `advisory` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/advisory.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/advisory.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/advisory.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/advisory.html -->
   <auro-badge advisory>2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/advisory.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/advisory.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/advisory.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/advisory.html -->
 
 ```html
 <auro-badge advisory>2+ stops</auro-badge>
@@ -103,15 +103,15 @@ Use the `advisory` attribute for a pre-defined use of color.
 Use the `emerald` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/emerald.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/emerald.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/emerald.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/emerald.html -->
   <auro-badge emerald><b>one</b>world Emerald</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/emerald.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/emerald.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/emerald.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/emerald.html -->
 
 ```html
 <auro-badge emerald><b>one</b>world Emerald</auro-badge>
@@ -124,15 +124,15 @@ Use the `emerald` attribute for a pre-defined use of color.
 Use the `ruby` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/ruby.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/ruby.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/ruby.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/ruby.html -->
   <auro-badge ruby><b>one</b>world Ruby</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/ruby.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/ruby.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/ruby.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/ruby.html -->
 
 ```html
 <auro-badge ruby><b>one</b>world Ruby</auro-badge>
@@ -145,15 +145,15 @@ Use the `ruby` attribute for a pre-defined use of color.
 Use the `sapphire` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/sapphire.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/sapphire.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/sapphire.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/sapphire.html -->
   <auro-badge sapphire><b>one</b>world Sapphire</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/sapphire.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/sapphire.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/sapphire.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/sapphire.html -->
 
 ```html
 <auro-badge sapphire><b>one</b>world Sapphire</auro-badge>
@@ -166,8 +166,8 @@ Use the `sapphire` attribute for a pre-defined use of color.
 Use the `space` attribute to allow for pre-defined spacing beteen badges.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/space.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/space.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/space.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/space.html -->
   <auro-badge space>Nonstop</auro-badge>
   <auro-badge space>1 stop</auro-badge>
   <auro-badge space>2+ stops</auro-badge>
@@ -175,8 +175,8 @@ Use the `space` attribute to allow for pre-defined spacing beteen badges.
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/space.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/space.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/space.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/space.html -->
 
 ```html
 <auro-badge space>Nonstop</auro-badge>
@@ -191,8 +191,8 @@ Use the `space` attribute to allow for pre-defined spacing beteen badges.
 Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/disabled.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/disabled.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/disabled.html -->
   <auro-badge disabled>1 stop</auro-badge>
   <auro-badge success disabled>1 stop</auro-badge>
   <auro-badge error disabled>1 stop</auro-badge>
@@ -201,8 +201,8 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/disabled.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/disabled.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/disabled.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/disabled.html -->
 
 ```html
 <auro-badge disabled>1 stop</auro-badge>
@@ -218,16 +218,16 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 Use the `target` property to aply the clickable feature.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/target.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/target.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/target.html -->
   <auro-badge target>Nonstop</auro-badge>
   <auro-badge target disabled>1 stop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/target.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/target.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/target.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/target.html -->
 
 ```html
 <auro-badge target>Nonstop</auro-badge>
@@ -241,8 +241,8 @@ Use the `target` property to aply the clickable feature.
 Use the `pill` attribute to render a small 'pill size' UI.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../../apiExamples/pill.html) -->
-  <!-- The below content is automatically added from ./../../apiExamples/pill.html -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/pill.html -->
   <auro-badge pill>12</auro-badge>
   <auro-badge error pill>Danger</auro-badge>
   <auro-badge success pill>Flight 167</auro-badge>
@@ -252,8 +252,8 @@ Use the `pill` attribute to render a small 'pill size' UI.
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../apiExamples/pill.html) -->
-<!-- The below code snippet is automatically added from ./../../apiExamples/pill.html -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/pill.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/pill.html -->
 
 ```html
 <auro-badge pill>12</auro-badge>
@@ -269,8 +269,8 @@ Use the `pill` attribute to render a small 'pill size' UI.
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../../src/tokens.css) -->
-<!-- The below code snippet is automatically added from ./../../src/tokens.css -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/tokens.css) -->
+<!-- The below code snippet is automatically added from ./../src/tokens.css -->
 
 ```css
 :host {
