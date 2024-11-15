@@ -1,5 +1,22 @@
 # Semantic Release Automated Changelog
 
+# [3.3.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.2.0...v3.3.0) (2024-11-15)
+
+
+### Bug Fixes
+
+* change a custom color token on pill example doc ([739c1b9](https://github.com/AlaskaAirlines/auro-badge/commit/739c1b917dae44ace2eb40b5235915f7b489fe8a))
+
+
+### Features
+
+* upgrade auro-library to 3.0.1 ([d343934](https://github.com/AlaskaAirlines/auro-badge/commit/d343934ced73e5cc55c2f8f23afce30a511c333e))
+
+
+### Performance Improvements
+
+* update library to 3.0.2 ([c7bc246](https://github.com/AlaskaAirlines/auro-badge/commit/c7bc2464a099497dc1061532bde5a64d8f981e12))
+
 # [3.2.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.1.0...v3.2.0) (2024-11-01)
 
 
