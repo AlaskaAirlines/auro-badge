@@ -65,13 +65,13 @@ $states:
 
 @each $state, $utilityName, $default, $dark in $states {
   :host([#{$state}]) {
-    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-default, $default);
-    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-default, $default);
+    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-default, #{$default});
+    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-default, #{$default});
   }
 
   :host([#{$state}][ondark]) {
-    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-inverse, $dark);
-    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-inverse, $dark);
+    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-inverse, #{$dark});
+    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-inverse, #{$dark});
   }
 }
 
@@ -93,8 +93,8 @@ $owstatus:
 
 @each $status, $tierType, $fallback in $owstatus {
   :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-#{$tierType}-#{$status}, $fallback);
-    --ds-auro-badge-border-color:  var(--ds-color-tier-#{$tierType}-#{$status}, $fallback);
+    --ds-auro-badge-container-color: var(--ds-color-tier-#{$tierType}-#{$status}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-#{$tierType}-#{$status}, #{$fallback});
   }
 }
 
@@ -105,7 +105,7 @@ $mvpStatus:
 
 @each $status, $fallback in $mvpStatus {
   :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, $fallback);
-    --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, $fallback);
+    --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
   }
 }
