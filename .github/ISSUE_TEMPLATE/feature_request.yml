@@ -4,7 +4,7 @@ title: 'auro-badge: [feature summary]'
 labels:
   - 'Type: Feature'
   - not-reviewed
-  - auro-badge
+  - 'auro-badge'
 body:
   - type: textarea
     id: request
