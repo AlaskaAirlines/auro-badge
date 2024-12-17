@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [3.3.1](https://github.com/AlaskaAirlines/auro-badge/compare/v3.3.0...v3.3.1) (2024-12-17)
+
+
+### Bug Fixes
+
+* update incorrect Sass var injections [#123](https://github.com/AlaskaAirlines/auro-badge/issues/123) ([05649e8](https://github.com/AlaskaAirlines/auro-badge/commit/05649e8581096f550cda2c67c46912f80fc2b220))
+
 # [3.3.0](https://github.com/AlaskaAirlines/auro-badge/compare/v3.2.0...v3.3.0) (2024-11-15)
 
 
