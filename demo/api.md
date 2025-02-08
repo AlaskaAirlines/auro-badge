@@ -273,11 +273,11 @@ The component may be restyled using the following code sample and changing the v
 <!-- The below code snippet is automatically added from ./../src/tokens.css -->
 
 ```css
-:host {
-  --ds-auro-badge-border-color: var(--ds-color-border-subtle-inverse, #326aa5);
-  --ds-auro-badge-boxshadow-color: var(--ds-color-border-subtle-default, #f0f7fd);
-  --ds-auro-badge-container-color: var(--ds-color-utility-navy-default, #265688);
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-inverse, #ffffff);
+:host{
+  --ds-auro-badge-border-color:var(--ds-color-border-subtle-inverse, #326aa5);
+  --ds-auro-badge-boxshadow-color:var(--ds-color-border-subtle-default, #f0f7fd);
+  --ds-auro-badge-container-color:var(--ds-color-utility-navy-default, #265688);
+  --ds-auro-badge-text-color:var(--ds-color-text-primary-inverse, #ffffff);
 }
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
