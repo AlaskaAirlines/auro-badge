@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [4.0.2](https://github.com/AlaskaAirlines/auro-badge/compare/v4.0.1...v4.0.2) (2025-04-15)
+
+
+### Performance Improvements
+
+* add wca script for docs api ([e4c3389](https://github.com/AlaskaAirlines/auro-badge/commit/e4c3389490057667567bea6fe6e60a0d8ce888d9))
+
 ## [4.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v4.0.0...v4.0.1) (2025-03-11)
 
 
