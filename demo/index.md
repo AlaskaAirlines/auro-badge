@@ -4,7 +4,7 @@ README.md is created by running `npm run build:docs`.
 This file is generated based on a template fetched from `./docs/partials/index.md`
 -->
 
-# badge
+# Badge
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/description.md) -->
 <!-- The below content is automatically added from ./../docs/partials/description.md -->
@@ -44,7 +44,7 @@ Default non-actionable badge element to display data.
 
 ### On dark option
 
-Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
+Use the `ondark` attribute to render colors appropriate for darker backgrounds.
 
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/onDark.html) -->
@@ -111,56 +111,6 @@ Use the `space` attribute to allow for default spacing between elements.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Alert color options
-
-Use the `error`, `success`, or `advisory` attributes for alternate alert experiences.
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/color.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/color.html -->
-  <auro-badge variant="error">Nonstop</auro-badge>
-  <auro-badge variant="success">1 stop</auro-badge>
-  <auro-badge variant="warning">2+ stops</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/color.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/color.html -->
-
-```html
-<auro-badge variant="error">Nonstop</auro-badge>
-<auro-badge variant="success">1 stop</auro-badge>
-<auro-badge variant="warning">2+ stops</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### On dark option
-
-Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
-
-<div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/color-onDark.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/color-onDark.html -->
-  <auro-badge ondark variant="error">Nonstop</auro-badge>
-  <auro-badge ondark variant="success">1 stop</auro-badge>
-  <auro-badge ondark variant="warning">2+ stops</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/color-onDark.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/color-onDark.html -->
-
-```html
-<auro-badge ondark variant="error">Nonstop</auro-badge>
-<auro-badge ondark variant="success">1 stop</auro-badge>
-<auro-badge ondark variant="warning">2+ stops</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
 ## Label option
 
 Use the `label` attribute for a text label experience.
@@ -219,7 +169,7 @@ To use icons in your badges, it is preferred that this is added as contnet withi
 
 ## Pill option
 
-Use the `pill` property in combination with `error`, `success`, or `advisory` attributes for alternate badge experiences. The last example illustrates a customized version.
+Use the `pill` property in combination with the `error`, `success`, or `advisory` variants for alternate badge experiences. The last example illustrates a customized version.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
@@ -228,7 +178,7 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <auro-badge variant="error" pill>Danger</auro-badge>
   <auro-badge variant="success" pill>Flight 167</auro-badge>
   <auro-badge variant="warning" pill>99</auro-badge>
-  <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
+  <auro-badge pill style="--ds-auro-badge-text-color: pink; --ds-auro-badge-container-color: purple; --ds-auro-badge-border-color: purple;">Flight 99</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -241,12 +191,12 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 <auro-badge variant="error" pill>Danger</auro-badge>
 <auro-badge variant="success" pill>Flight 167</auro-badge>
 <auro-badge variant="warning" pill>99</auro-badge>
-<auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
+<auro-badge pill style="--ds-auro-badge-text-color: pink; --ds-auro-badge-container-color: purple; --ds-auro-badge-border-color: purple;">Flight 99</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Pill with Icons
+### Pill with Icons
 
 Use `icon` attribute to include icons inside your badge.
 
@@ -254,11 +204,11 @@ Use `icon` attribute to include icons inside your badge.
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pillWithIcons.html) -->
   <!-- The below content is automatically added from ./../apiExamples/pillWithIcons.html -->
   <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
-    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Air</auro-badge>
+    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Covid test</auro-badge>
+    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Health</auro-badge>
+    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Mask</auro-badge>
+    <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Spray bottle</auro-badge>
   </div>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -269,170 +219,13 @@ Use `icon` attribute to include icons inside your badge.
 
 ```html
 <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Air</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Covid test</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Health</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Mask</auro-badge>
+  <auro-badge pill><auro-icon ondark customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Spray bottle</auro-badge>
 </div>
 ```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### Brand programs
-
-Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/brand.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/brand.html -->
-  <auro-badge pill variant="emerald"><b>one</b>world Emerald</auro-badge>
-  <auro-badge pill variant="sapphire"><b>one</b>world Sapphire</auro-badge>
-  <auro-badge pill variant="ruby"><b>one</b>world Ruby</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/brand.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/brand.html -->
-
-```html
-<auro-badge pill variant="emerald"><b>one</b>world Emerald</auro-badge>
-<auro-badge pill variant="sapphire"><b>one</b>world Sapphire</auro-badge>
-<auro-badge pill variant="ruby"><b>one</b>world Ruby</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### Lounge Tier
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/tier.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/tier.html -->
-  <auro-badge pill variant="lounge">Lounge</auro-badge>
-  <auro-badge pill variant="loungeplus">Lounge+</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/tier.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/tier.html -->
-
-```html
-<auro-badge pill variant="lounge">Lounge</auro-badge>
-<auro-badge pill variant="loungeplus">Lounge+</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### Accents
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/accents.html -->
-  <auro-badge variant="accent1">Accent 1</auro-badge>
-  <auro-badge variant="accent2">Accent 2</auro-badge>
-  <auro-badge variant="accent3">Accent 3</auro-badge>
-  <auro-badge variant="accent4">Accent 4</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/accents.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/accents.html -->
-
-```html
-<auro-badge variant="accent1">Accent 1</auro-badge>
-<auro-badge variant="accent2">Accent 2</auro-badge>
-<auro-badge variant="accent3">Accent 3</auro-badge>
-<auro-badge variant="accent4">Accent 4</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### Loyalty Tiers
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTier.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/loyaltyTier.html -->
-  <auro-badge pill variant="bronze">Bronze</auro-badge>
-  <auro-badge pill variant="cobalt">Cobalt</auro-badge>
-  <auro-badge pill variant="copper">Copper</auro-badge>
-  <auro-badge pill variant="gold">Gold</auro-badge>
-  <auro-badge pill variant="nickel">Nickel</auro-badge>
-  <auro-badge pill variant="platinum">Platinum</auro-badge>
-  <auro-badge pill variant="silver">Silver</auro-badge>
-  <auro-badge pill variant="titanium">Titanium</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTierOnDark.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/loyaltyTierOnDark.html -->
-  <auro-badge pill onDark variant="bronze">Bronze</auro-badge>
-  <auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
-  <auro-badge pill onDark variant="copper">Copper</auro-badge>
-  <auro-badge pill onDark variant="gold">Gold</auro-badge>
-  <auro-badge pill onDark variant="nickel">Nickel</auro-badge>
-  <auro-badge pill onDark variant="platinum">Platinum</auro-badge>
-  <auro-badge pill onDark variant="silver">Silver</auro-badge>
-  <auro-badge pill onDark variant="titanium">Titanium</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/loyaltyTier.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/loyaltyTier.html -->
-
-```html
-<auro-badge pill variant="bronze">Bronze</auro-badge>
-<auro-badge pill variant="cobalt">Cobalt</auro-badge>
-<auro-badge pill variant="copper">Copper</auro-badge>
-<auro-badge pill variant="gold">Gold</auro-badge>
-<auro-badge pill variant="nickel">Nickel</auro-badge>
-<auro-badge pill variant="platinum">Platinum</auro-badge>
-<auro-badge pill variant="silver">Silver</auro-badge>
-<auro-badge pill variant="titanium">Titanium</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTierOnDark.html) -->
-<!-- The below content is automatically added from ./../apiExamples/loyaltyTierOnDark.html -->
-<auro-badge pill onDark variant="bronze">Bronze</auro-badge>
-<auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
-<auro-badge pill onDark variant="copper">Copper</auro-badge>
-<auro-badge pill onDark variant="gold">Gold</auro-badge>
-<auro-badge pill onDark variant="nickel">Nickel</auro-badge>
-<auro-badge pill onDark variant="platinum">Platinum</auro-badge>
-<auro-badge pill onDark variant="silver">Silver</auro-badge>
-<auro-badge pill onDark variant="titanium">Titanium</auro-badge>
-<!-- AURO-GENERATED-CONTENT:END -->
-</auro-accordion>
-
-### Transparent
-
-<div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparent.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/transparent.html -->
-  <auro-badge variant="transparent">Transparent</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparentOnDark.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/transparentOnDark.html -->
-  <auro-badge variant="transparent" onDark>Transparent</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
-</div>
-<auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/transparent.html) -->
-<!-- The below code snippet is automatically added from ./../apiExamples/transparent.html -->
-
-```html
-<auro-badge variant="transparent">Transparent</auro-badge>
-```
-<!-- AURO-GENERATED-CONTENT:END -->
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparentOnDark.html) -->
-<!-- The below content is automatically added from ./../apiExamples/transparentOnDark.html -->
-<auro-badge variant="transparent" onDark>Transparent</auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
