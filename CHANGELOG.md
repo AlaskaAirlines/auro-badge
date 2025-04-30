@@ -1,5 +1,24 @@
 # Semantic Release Automated Changelog
 
+# [5.0.0](https://github.com/AlaskaAirlines/auro-badge/compare/v4.0.2...v5.0.0) (2025-04-30)
+
+
+### Bug Fixes
+
+* address missed variant attribute style ([6763076](https://github.com/AlaskaAirlines/auro-badge/commit/676307662f4ebf2345ef26058ac63e618db4d95d))
+
+
+### Features
+
+* add variant attribute ([2ea57d5](https://github.com/AlaskaAirlines/auro-badge/commit/2ea57d5cde9977cadd15df2e68002d07e6c5f9a5))
+* implement new color tokens and attributes [#133](https://github.com/AlaskaAirlines/auro-badge/issues/133) ([b3c9a0e](https://github.com/AlaskaAirlines/auro-badge/commit/b3c9a0e807592c31d959309626a8ab5938403899))
+
+
+### BREAKING CHANGES
+
+* Replace UI attribtues with singular variant attribute.
+* mvp tier statuses are no longer supported badge variants
+
 ## [4.0.2](https://github.com/AlaskaAirlines/auro-badge/compare/v4.0.1...v4.0.2) (2025-04-15)
 
 
