@@ -129,7 +129,7 @@ $loyaltyTier:
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
   }
 
-  :host([#{$tier}][onDark]) {
+  :host([variant="#{$tier}"][onDark]) {
     --ds-auro-badge-border-color: var(--ds-color-tier-program-loyaltytier-#{$tier}-muted, #{$dark});
   }
 }
