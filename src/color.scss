@@ -4,7 +4,8 @@
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/tokens/SCSSVariables";
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SCSSVariables";
+@import "./../node_modules/@aurodesignsystem/design-tokens/dist/alaska/SCSSVariables--alaska";
 
 @import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints";
 @import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/core";
@@ -28,30 +29,30 @@
   border-color: var(--ds-auro-badge-border-color);
 }
 
-:host([advisory]) {
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+:host([onDark]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-brand-primary-muted, #{$ds-basic-color-brand-primary-muted});
+  --ds-auro-badge-border-color: var(--ds-basic-color-brand-primary-muted, #{$ds-basic-color-brand-primary-muted});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
-:host([onDark]) {
-  --ds-auro-badge-container-color: var(--ds-color-utility-navy-inverse, #{$ds-color-utility-navy-inverse});
-  --ds-auro-badge-border-color: var(--ds-color-utility-navy-inverse, #{$ds-color-utility-navy-inverse});
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+:host([warning]) {
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
 :host([target]) {
   --ds-auro-badge-container-color: transparent;
 }
 
-:host([label]) {
-  --ds-auro-badge-container-color: transparent;
-  --ds-auro-badge-border-color: var(--ds-color-border-secondary-default, #{$ds-color-border-secondary-default});
-  --ds-auro-badge-text-color: var(--ds-color-text-secondary-default, #{$ds-color-text-secondary-default});
+:host([transparent]) {
+  --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency, #{$ds-advanced-color-accents-transparency});
+  --ds-auro-badge-border-color: transparent;
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
-:host([label][ondark]) {
-  --ds-auro-badge-container-color: transparent;
-  --ds-auro-badge-border-color: var(--ds-color-border-secondary-default, #{$ds-color-border-secondary-default});
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
+:host([transparent][onDark]) {
+  --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency-inverse, #{$ds-advanced-color-accents-transparency-inverse});
+  --ds-auro-badge-border-color: transparent;
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
 }
 
 // The following loop supports the defined state of a badge, as well
@@ -59,53 +60,92 @@
 // Sass variable color using Sass destructuring
 // https://sass-lang.com/documentation/at-rules/control/each/#destructuring
 $states:
-  "error" "error" $ds-color-utility-error-default $ds-color-utility-error-inverse,
-  "success" "success" $ds-color-utility-success-default $ds-color-utility-success-inverse,
-  "advisory" "warning" $ds-color-utility-warning-default $ds-color-utility-warning-inverse;
+  "info" $ds-basic-color-status-info $ds-basic-color-status-info-subtle,
+  "error" $ds-basic-color-status-error $ds-basic-color-status-error-subtle,
+  "success" $ds-basic-color-status-success $ds-basic-color-status-success-subtle,
+  "warning" $ds-basic-color-status-warning $ds-basic-color-status-warning-subtle;
 
-@each $state, $utilityName, $default, $dark in $states {
+@each $state, $default, $dark in $states {
   :host([#{$state}]) {
-    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-default, #{$default});
-    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-default, #{$default});
+    --ds-auro-badge-container-color: var(--ds-basic-color-status-#{$state}, #{$default});
+    --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}, #{$default});
   }
 
-  :host([#{$state}][ondark]) {
-    --ds-auro-badge-container-color: var(--ds-color-utility-#{$utilityName}-inverse, #{$dark});
-    --ds-auro-badge-border-color: var(--ds-color-utility-#{$utilityName}-inverse, #{$dark});
+  :host([#{$state}][onDark]) {
+    --ds-auro-badge-container-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
+    --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
   }
 }
 
-:host([label][error]),
-:host([label][success]) {
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-inverse, #{$ds-color-text-primary-inverse});
+$accents:
+  "accent1" $ds-advanced-color-accents-accent1,
+  "accent2" $ds-advanced-color-accents-accent2,
+  "accent3" $ds-advanced-color-accents-accent3,
+  "accent4" $ds-advanced-color-accents-accent4;
+
+@each $accent, $color in $accents {
+  :host([#{$accent}]) {
+    --ds-auro-badge-container-color: var(--ds-advanced-color-accents-#{$accent}, #{$color});
+    --ds-auro-badge-border-color: var(--ds-advanced-color-accents-#{$accent}, #{$color});
+    --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
+  }
 }
 
-:host([label][advisory]) {
-  --ds-auro-badge-text-color: var(--ds-color-text-primary-default, #{$ds-color-text-primary-default});
-}
+$oneworldTier:
+  "emerald" $ds-basic-color-tier-program-oneworld-emerald,
+  "sapphire" $ds-basic-color-tier-program-oneworld-sapphire,
+  "ruby" $ds-basic-color-tier-program-oneworld-ruby;
 
-$owstatus:
-  "emerald" "oneworld" $ds-color-tier-oneworld-emerald,
-  "sapphire" "oneworld" $ds-color-tier-oneworld-sapphire,
-  "ruby" "oneworld" $ds-color-tier-oneworld-ruby,
-  "lounge" "alaska" $ds-color-tier-alaska-lounge,
-  "loungeplus" "alaska" $ds-color-tier-alaska-loungeplus;
-
-@each $status, $tierType, $fallback in $owstatus {
+@each $status, $fallback in $oneworldTier {
   :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-#{$tierType}-#{$status}, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-#{$tierType}-#{$status}, #{$fallback});
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-oneworld-#{$status}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-oneworld-#{$status}, #{$fallback});
+  }
+}  
+
+$loungeTier:
+  "lounge" $ds-basic-color-tier-program-loungetier-lounge,
+  "loungeplus" $ds-basic-color-tier-program-loungetier-loungeplus;
+
+@each $status, $fallback in $loungeTier {
+  :host([#{$status}]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loungetier-#{$status}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loungetier-#{$status}, #{$fallback});
   }
 }
 
-$mvpStatus:
-  "mvp" $ds-color-tier-alaska-mvp-default,
-  "mvpgold" $ds-color-tier-alaska-mvpgold-default,
-  "mvpgold75k" $ds-color-tier-alaska-mvpgold-default;
+$loyaltyTier:
+  "bronze" $ds-basic-color-tier-program-loyaltytier-bronze $ds-basic-color-tier-program-loyaltytier-bronze-muted,
+  "copper" $ds-basic-color-tier-program-loyaltytier-copper $ds-basic-color-tier-program-loyaltytier-copper-muted,
+  "gold" $ds-basic-color-tier-program-loyaltytier-gold $ds-basic-color-tier-program-loyaltytier-gold-muted,
+  "nickel" $ds-basic-color-tier-program-loyaltytier-nickel $ds-basic-color-tier-program-loyaltytier-nickel-muted,
+  "platinum" $ds-basic-color-tier-program-loyaltytier-platinum $ds-basic-color-tier-program-loyaltytier-platinum-muted,
+  "silver" $ds-basic-color-tier-program-loyaltytier-silver $ds-basic-color-tier-program-loyaltytier-silver-muted,;
 
-@each $status, $fallback in $mvpStatus {
+@each $status, $fallback, $dark in $loyaltyTier {
   :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+    --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
+  }
+
+  :host([#{$status}][onDark]) {
+    --ds-auro-badge-border-color: var(--ds-color-tier-program-loyaltytier-#{$status}-muted, #{$dark});
+  }
+}
+
+$onDarkLoyaltyTier:
+  "cobalt" $ds-basic-color-tier-program-loyaltytier-cobalt $ds-basic-color-tier-program-loyaltytier-cobalt-muted,
+  "titanium" $ds-basic-color-tier-program-loyaltytier-titanium $ds-basic-color-tier-program-loyaltytier-titanium-muted,;
+
+@each $status, $fallback, $dark in $onDarkLoyaltyTier {
+  :host([#{$status}]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+  }
+
+  :host([#{$status}][onDark]) {
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}-muted, #{$dark});
+    --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
   }
 }

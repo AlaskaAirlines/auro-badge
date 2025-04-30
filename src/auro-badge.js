@@ -30,9 +30,23 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  *
  * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} ondark - Enables styles for dark backgrounds
+ * @attr {Boolean} accent1 - Enables accent1 UI
+ * @attr {Boolean} accent2 - Enables accent2 UI
+ * @attr {Boolean} accent3 - Enables accent3 UI
+ * @attr {Boolean} accent4 - Enables accent4 UI
+ * @attr {Boolean} bronze - Enables bronze UI
+ * @attr {Boolean} cobalt - Enables cobalt UI
+ * @attr {Boolean} copper - Enables copper UI
+ * @attr {Boolean} gold - Enables gold UI
+ * @attr {Boolean} nickel - Enables nickel UI
+ * @attr {Boolean} platinum - Enables platinum UI
+ * @attr {Boolean} silver - Enables silver UI
+ * @attr {Boolean} titanium - Enables titanium UI
+ * @attr {Boolean} transparent - Enables transparent UI
+ * @attr {Boolean} info - Enables info UI
  * @attr {Boolean} error - Enables error UI
  * @attr {Boolean} success - Enables success UI
- * @attr {Boolean} advisory - Enables advisory UI
+ * @attr {Boolean} warning - Enables warning UI
  * @attr {Boolean} space - Adds default spacing spec to badges
  * @attr {Boolean} pill - Enables pill UI option
  * @attr {Boolean} label - Enables label UI option
@@ -42,9 +56,6 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  * @attr {Boolean} ruby - Sets the background color of the badge to the oneworld ruby color
  * @attr {Boolean} lounge - Sets the background color of the badge to the oneworld lounge color
  * @attr {Boolean} loungeplus - Sets the background color of the badge to the oneworld loungeplus color
- * @attr {Boolean} mvp - Sets the background color of the badge to the oneworld mvp color
- * @attr {Boolean} mvpgold - Sets the background color of the badge to the oneworld mvpgold color
- * @attr {Boolean} mvpgold75k - Sets the background color of the badge to the oneworld mvpgold75k color
  */
 
 // build the component class

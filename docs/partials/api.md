@@ -35,18 +35,18 @@ Use the `success` attribute for a pre-defined use of color.
 
 </auro-accordion>
 
-### `advisory`
+### `warning`
 
-Use the `advisory` attribute for a pre-defined use of color.
+Use the `warning` attribute for a pre-defined use of color.
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/advisory.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/warning.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
   <span slot="trigger">See code</span>
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/advisory.html) -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/warning.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -95,6 +95,22 @@ Use the `sapphire` attribute for a pre-defined use of color.
   <span slot="trigger">See code</span>
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/sapphire.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+
+</auro-accordion>
+
+### Accents
+
+Use these attributes to apply pre-defined accent colors to the badge: `accent1`, `accent2`, `accent3`, `accent4`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/accents.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
