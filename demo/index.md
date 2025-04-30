@@ -118,9 +118,9 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/color.html) -->
   <!-- The below content is automatically added from ./../apiExamples/color.html -->
-  <auro-badge error>Nonstop</auro-badge>
-  <auro-badge success>1 stop</auro-badge>
-  <auro-badge warning>2+ stops</auro-badge>
+  <auro-badge variant="error">Nonstop</auro-badge>
+  <auro-badge variant="success">1 stop</auro-badge>
+  <auro-badge variant="warning">2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -129,9 +129,9 @@ Use the `error`, `success`, or `advisory` attributes for alternate alert experie
 <!-- The below code snippet is automatically added from ./../apiExamples/color.html -->
 
 ```html
-<auro-badge error>Nonstop</auro-badge>
-<auro-badge success>1 stop</auro-badge>
-<auro-badge warning>2+ stops</auro-badge>
+<auro-badge variant="error">Nonstop</auro-badge>
+<auro-badge variant="success">1 stop</auro-badge>
+<auro-badge variant="warning">2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -143,9 +143,9 @@ Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/color-onDark.html) -->
   <!-- The below content is automatically added from ./../apiExamples/color-onDark.html -->
-  <auro-badge ondark error>Nonstop</auro-badge>
-  <auro-badge ondark success>1 stop</auro-badge>
-  <auro-badge ondark warning>2+ stops</auro-badge>
+  <auro-badge ondark variant="error">Nonstop</auro-badge>
+  <auro-badge ondark variant="success">1 stop</auro-badge>
+  <auro-badge ondark variant="warning">2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -154,9 +154,9 @@ Use the `ondark` attribute to render colors appropiatre for darker backgrounds.
 <!-- The below code snippet is automatically added from ./../apiExamples/color-onDark.html -->
 
 ```html
-<auro-badge ondark error>Nonstop</auro-badge>
-<auro-badge ondark success>1 stop</auro-badge>
-<auro-badge ondark warning>2+ stops</auro-badge>
+<auro-badge ondark variant="error">Nonstop</auro-badge>
+<auro-badge ondark variant="success">1 stop</auro-badge>
+<auro-badge ondark variant="warning">2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -169,9 +169,9 @@ Use the `label` attribute for a text label experience.
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
   <!-- The below content is automatically added from ./../apiExamples/label.html -->
   <auro-badge label>Default</auro-badge>
-  <auro-badge label error>Danger</auro-badge>
-  <auro-badge label success>Success</auro-badge>
-  <auro-badge label warning>Warning</auro-badge>
+  <auro-badge label variant="error">Danger</auro-badge>
+  <auro-badge label variant="success">Success</auro-badge>
+  <auro-badge label variant="warning">Warning</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -181,9 +181,9 @@ Use the `label` attribute for a text label experience.
 
 ```html
 <auro-badge label>Default</auro-badge>
-<auro-badge label error>Danger</auro-badge>
-<auro-badge label success>Success</auro-badge>
-<auro-badge label warning>Warning</auro-badge>
+<auro-badge label variant="error">Danger</auro-badge>
+<auro-badge label variant="success">Success</auro-badge>
+<auro-badge label variant="warning">Warning</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -225,9 +225,9 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
   <!-- The below content is automatically added from ./../apiExamples/pill.html -->
   <auro-badge pill>12</auro-badge>
-  <auro-badge error pill>Danger</auro-badge>
-  <auro-badge success pill>Flight 167</auro-badge>
-  <auro-badge warning pill>99</auro-badge>
+  <auro-badge variant="error" pill>Danger</auro-badge>
+  <auro-badge variant="success" pill>Flight 167</auro-badge>
+  <auro-badge variant="warning" pill>99</auro-badge>
   <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -238,9 +238,9 @@ Use the `pill` property in combination with `error`, `success`, or `advisory` at
 
 ```html
 <auro-badge pill>12</auro-badge>
-<auro-badge error pill>Danger</auro-badge>
-<auro-badge success pill>Flight 167</auro-badge>
-<auro-badge warning pill>99</auro-badge>
+<auro-badge variant="error" pill>Danger</auro-badge>
+<auro-badge variant="success" pill>Flight 167</auro-badge>
+<auro-badge variant="warning" pill>99</auro-badge>
 <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
@@ -286,9 +286,9 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/brand.html) -->
   <!-- The below content is automatically added from ./../apiExamples/brand.html -->
-  <auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
-  <auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
-  <auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
+  <auro-badge pill variant="emerald"><b>one</b>world Emerald</auro-badge>
+  <auro-badge pill variant="sapphire"><b>one</b>world Sapphire</auro-badge>
+  <auro-badge pill variant="ruby"><b>one</b>world Ruby</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -297,9 +297,9 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <!-- The below code snippet is automatically added from ./../apiExamples/brand.html -->
 
 ```html
-<auro-badge pill emerald><b>one</b>world Emerald</auro-badge>
-<auro-badge pill sapphire><b>one</b>world Sapphire</auro-badge>
-<auro-badge pill ruby><b>one</b>world Ruby</auro-badge>
+<auro-badge pill variant="emerald"><b>one</b>world Emerald</auro-badge>
+<auro-badge pill variant="sapphire"><b>one</b>world Sapphire</auro-badge>
+<auro-badge pill variant="ruby"><b>one</b>world Ruby</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -309,8 +309,8 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/tier.html) -->
   <!-- The below content is automatically added from ./../apiExamples/tier.html -->
-  <auro-badge pill lounge>Lounge</auro-badge>
-  <auro-badge pill loungeplus>Lounge+</auro-badge>
+  <auro-badge pill variant="lounge">Lounge</auro-badge>
+  <auro-badge pill variant="loungeplus">Lounge+</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -319,8 +319,8 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <!-- The below code snippet is automatically added from ./../apiExamples/tier.html -->
 
 ```html
-<auro-badge pill lounge>Lounge</auro-badge>
-<auro-badge pill loungeplus>Lounge+</auro-badge>
+<auro-badge pill variant="lounge">Lounge</auro-badge>
+<auro-badge pill variant="loungeplus">Lounge+</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -330,10 +330,10 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
   <!-- The below content is automatically added from ./../apiExamples/accents.html -->
-  <auro-badge accent1>Accent 1</auro-badge>
-  <auro-badge accent2>Accent 2</auro-badge>
-  <auro-badge accent3>Accent 3</auro-badge>
-  <auro-badge accent4>Accent 4</auro-badge>
+  <auro-badge variant="accent1">Accent 1</auro-badge>
+  <auro-badge variant="accent2">Accent 2</auro-badge>
+  <auro-badge variant="accent3">Accent 3</auro-badge>
+  <auro-badge variant="accent4">Accent 4</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -342,10 +342,10 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <!-- The below code snippet is automatically added from ./../apiExamples/accents.html -->
 
 ```html
-<auro-badge accent1>Accent 1</auro-badge>
-<auro-badge accent2>Accent 2</auro-badge>
-<auro-badge accent3>Accent 3</auro-badge>
-<auro-badge accent4>Accent 4</auro-badge>
+<auro-badge variant="accent1">Accent 1</auro-badge>
+<auro-badge variant="accent2">Accent 2</auro-badge>
+<auro-badge variant="accent3">Accent 3</auro-badge>
+<auro-badge variant="accent4">Accent 4</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -355,27 +355,27 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTier.html) -->
   <!-- The below content is automatically added from ./../apiExamples/loyaltyTier.html -->
-  <auro-badge pill bronze>Bronze</auro-badge>
-  <auro-badge pill cobalt>Cobalt</auro-badge>
-  <auro-badge pill copper>Copper</auro-badge>
-  <auro-badge pill gold>Gold</auro-badge>
-  <auro-badge pill nickel>Nickel</auro-badge>
-  <auro-badge pill platinum>Platinum</auro-badge>
-  <auro-badge pill silver>Silver</auro-badge>
-  <auro-badge pill titanium>Titanium</auro-badge>
+  <auro-badge pill variant="bronze">Bronze</auro-badge>
+  <auro-badge pill variant="cobalt">Cobalt</auro-badge>
+  <auro-badge pill variant="copper">Copper</auro-badge>
+  <auro-badge pill variant="gold">Gold</auro-badge>
+  <auro-badge pill variant="nickel">Nickel</auro-badge>
+  <auro-badge pill variant="platinum">Platinum</auro-badge>
+  <auro-badge pill variant="silver">Silver</auro-badge>
+  <auro-badge pill variant="titanium">Titanium</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTierOnDark.html) -->
   <!-- The below content is automatically added from ./../apiExamples/loyaltyTierOnDark.html -->
-  <auro-badge pill onDark bronze>Bronze</auro-badge>
-  <auro-badge pill onDark cobalt>Cobalt</auro-badge>
-  <auro-badge pill onDark copper>Copper</auro-badge>
-  <auro-badge pill onDark gold>Gold</auro-badge>
-  <auro-badge pill onDark nickel>Nickel</auro-badge>
-  <auro-badge pill onDark platinum>Platinum</auro-badge>
-  <auro-badge pill onDark silver>Silver</auro-badge>
-  <auro-badge pill onDark titanium>Titanium</auro-badge>
+  <auro-badge pill onDark variant="bronze">Bronze</auro-badge>
+  <auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
+  <auro-badge pill onDark variant="copper">Copper</auro-badge>
+  <auro-badge pill onDark variant="gold">Gold</auro-badge>
+  <auro-badge pill onDark variant="nickel">Nickel</auro-badge>
+  <auro-badge pill onDark variant="platinum">Platinum</auro-badge>
+  <auro-badge pill onDark variant="silver">Silver</auro-badge>
+  <auro-badge pill onDark variant="titanium">Titanium</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -384,26 +384,26 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <!-- The below code snippet is automatically added from ./../apiExamples/loyaltyTier.html -->
 
 ```html
-<auro-badge pill bronze>Bronze</auro-badge>
-<auro-badge pill cobalt>Cobalt</auro-badge>
-<auro-badge pill copper>Copper</auro-badge>
-<auro-badge pill gold>Gold</auro-badge>
-<auro-badge pill nickel>Nickel</auro-badge>
-<auro-badge pill platinum>Platinum</auro-badge>
-<auro-badge pill silver>Silver</auro-badge>
-<auro-badge pill titanium>Titanium</auro-badge>
+<auro-badge pill variant="bronze">Bronze</auro-badge>
+<auro-badge pill variant="cobalt">Cobalt</auro-badge>
+<auro-badge pill variant="copper">Copper</auro-badge>
+<auro-badge pill variant="gold">Gold</auro-badge>
+<auro-badge pill variant="nickel">Nickel</auro-badge>
+<auro-badge pill variant="platinum">Platinum</auro-badge>
+<auro-badge pill variant="silver">Silver</auro-badge>
+<auro-badge pill variant="titanium">Titanium</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyTierOnDark.html) -->
 <!-- The below content is automatically added from ./../apiExamples/loyaltyTierOnDark.html -->
-<auro-badge pill onDark bronze>Bronze</auro-badge>
-<auro-badge pill onDark cobalt>Cobalt</auro-badge>
-<auro-badge pill onDark copper>Copper</auro-badge>
-<auro-badge pill onDark gold>Gold</auro-badge>
-<auro-badge pill onDark nickel>Nickel</auro-badge>
-<auro-badge pill onDark platinum>Platinum</auro-badge>
-<auro-badge pill onDark silver>Silver</auro-badge>
-<auro-badge pill onDark titanium>Titanium</auro-badge>
+<auro-badge pill onDark variant="bronze">Bronze</auro-badge>
+<auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
+<auro-badge pill onDark variant="copper">Copper</auro-badge>
+<auro-badge pill onDark variant="gold">Gold</auro-badge>
+<auro-badge pill onDark variant="nickel">Nickel</auro-badge>
+<auro-badge pill onDark variant="platinum">Platinum</auro-badge>
+<auro-badge pill onDark variant="silver">Silver</auro-badge>
+<auro-badge pill onDark variant="titanium">Titanium</auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
@@ -412,13 +412,13 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparent.html) -->
   <!-- The below content is automatically added from ./../apiExamples/transparent.html -->
-  <auro-badge transparent>Transparent</auro-badge>
+  <auro-badge variant="transparent">Transparent</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparentOnDark.html) -->
   <!-- The below content is automatically added from ./../apiExamples/transparentOnDark.html -->
-  <auro-badge transparent onDark>Transparent</auro-badge>
+  <auro-badge variant="transparent" onDark>Transparent</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -427,12 +427,12 @@ Use the `emerald`, `sapphire`, or `ruby` attributes for oneworld badges.
 <!-- The below code snippet is automatically added from ./../apiExamples/transparent.html -->
 
 ```html
-<auro-badge transparent>Transparent</auro-badge>
+<auro-badge variant="transparent">Transparent</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparentOnDark.html) -->
 <!-- The below content is automatically added from ./../apiExamples/transparentOnDark.html -->
-<auro-badge transparent onDark>Transparent</auro-badge>
+<auro-badge variant="transparent" onDark>Transparent</auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
@@ -453,7 +453,7 @@ This will create a new custom element that you can use in your HTML that will fu
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/custom.html) -->
   <!-- The below content is automatically added from ./../apiExamples/custom.html -->
-  <custom-badge type="warning">Salutations World!</custom-badge>
+  <custom-badge variant="warning">Salutations World!</custom-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -462,7 +462,7 @@ This will create a new custom element that you can use in your HTML that will fu
 <!-- The below code snippet is automatically added from ./../apiExamples/custom.html -->
 
 ```html
-<custom-badge type="warning">Salutations World!</custom-badge>
+<custom-badge variant="warning">Salutations World!</custom-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

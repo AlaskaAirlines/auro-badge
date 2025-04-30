@@ -35,7 +35,7 @@
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
-:host([warning]) {
+:host([variant="warning"]) {
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
@@ -43,13 +43,13 @@
   --ds-auro-badge-container-color: transparent;
 }
 
-:host([transparent]) {
+:host([variant="transparent"]) {
   --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency, #{$ds-advanced-color-accents-transparency});
   --ds-auro-badge-border-color: transparent;
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
 }
 
-:host([transparent][onDark]) {
+:host([variant="transparent"][onDark]) {
   --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency-inverse, #{$ds-advanced-color-accents-transparency-inverse});
   --ds-auro-badge-border-color: transparent;
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
@@ -66,12 +66,12 @@ $states:
   "warning" $ds-basic-color-status-warning $ds-basic-color-status-warning-subtle;
 
 @each $state, $default, $dark in $states {
-  :host([#{$state}]) {
+  :host([variant="#{$state}"]) {
     --ds-auro-badge-container-color: var(--ds-basic-color-status-#{$state}, #{$default});
     --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}, #{$default});
   }
 
-  :host([#{$state}][onDark]) {
+  :host([variant="#{$state}"][onDark]) {
     --ds-auro-badge-container-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
     --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
   }
@@ -84,7 +84,7 @@ $accents:
   "accent4" $ds-advanced-color-accents-accent4;
 
 @each $accent, $color in $accents {
-  :host([#{$accent}]) {
+  :host([variant="#{$accent}"]) {
     --ds-auro-badge-container-color: var(--ds-advanced-color-accents-#{$accent}, #{$color});
     --ds-auro-badge-border-color: var(--ds-advanced-color-accents-#{$accent}, #{$color});
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
@@ -96,10 +96,10 @@ $oneworldTier:
   "sapphire" $ds-basic-color-tier-program-oneworld-sapphire,
   "ruby" $ds-basic-color-tier-program-oneworld-ruby;
 
-@each $status, $fallback in $oneworldTier {
-  :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-program-oneworld-#{$status}, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-program-oneworld-#{$status}, #{$fallback});
+@each $tier, $fallback in $oneworldTier {
+  :host([variant="#{$tier}"]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-oneworld-#{$tier}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-oneworld-#{$tier}, #{$fallback});
   }
 }  
 
@@ -107,10 +107,10 @@ $loungeTier:
   "lounge" $ds-basic-color-tier-program-loungetier-lounge,
   "loungeplus" $ds-basic-color-tier-program-loungetier-loungeplus;
 
-@each $status, $fallback in $loungeTier {
-  :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-program-loungetier-#{$status}, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loungetier-#{$status}, #{$fallback});
+@each $tier, $fallback in $loungeTier {
+  :host([variant="#{$tier}"]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loungetier-#{$tier}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loungetier-#{$tier}, #{$fallback});
   }
 }
 
@@ -122,15 +122,15 @@ $loyaltyTier:
   "platinum" $ds-basic-color-tier-program-loyaltytier-platinum $ds-basic-color-tier-program-loyaltytier-platinum-muted,
   "silver" $ds-basic-color-tier-program-loyaltytier-silver $ds-basic-color-tier-program-loyaltytier-silver-muted,;
 
-@each $status, $fallback, $dark in $loyaltyTier {
-  :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+@each $tier, $fallback, $dark in $loyaltyTier {
+  :host([variant="#{$tier}"]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$tier}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$tier}, #{$fallback});
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{$ds-basic-color-texticon-default});
   }
 
-  :host([#{$status}][onDark]) {
-    --ds-auro-badge-border-color: var(--ds-color-tier-program-loyaltytier-#{$status}-muted, #{$dark});
+  :host([#{$tier}][onDark]) {
+    --ds-auro-badge-border-color: var(--ds-color-tier-program-loyaltytier-#{$tier}-muted, #{$dark});
   }
 }
 
@@ -138,14 +138,14 @@ $onDarkLoyaltyTier:
   "cobalt" $ds-basic-color-tier-program-loyaltytier-cobalt $ds-basic-color-tier-program-loyaltytier-cobalt-muted,
   "titanium" $ds-basic-color-tier-program-loyaltytier-titanium $ds-basic-color-tier-program-loyaltytier-titanium-muted,;
 
-@each $status, $fallback, $dark in $onDarkLoyaltyTier {
-  :host([#{$status}]) {
-    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
-    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}, #{$fallback});
+@each $tier, $fallback, $dark in $onDarkLoyaltyTier {
+  :host([variant="#{$tier}"]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-program-loyaltytier-#{$tier}, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$tier}, #{$fallback});
   }
 
-  :host([#{$status}][onDark]) {
-    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$status}-muted, #{$dark});
+  :host([variant="#{$tier}"][onDark]) {
+    --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$tier}-muted, #{$dark});
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{$ds-basic-color-texticon-inverse});
   }
 }

@@ -7,25 +7,13 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ## Attributes
 
-| Attribute    | Type      | Description                                      |
-|--------------|-----------|--------------------------------------------------|
-| `accent1`    | `Boolean` | Enables accent1 UI                               |
-| `accent2`    | `Boolean` | Enables accent2 UI                               |
-| `accent3`    | `Boolean` | Enables accent3 UI                               |
-| `accent4`    | `Boolean` | Enables accent4 UI                               |
-| [emerald](#emerald)    | `Boolean` | Sets the background color of the badge to the oneworld emerald color |
-| [error](#error)      | `Boolean` | Enables error UI                                 |
-| [info](#info)       | `Boolean` | Enables info UI                                  |
-| [label](#label)      | `Boolean` | Enables label UI option                          |
-| [lounge](#lounge)     | `Boolean` | Sets the background color of the badge to the oneworld lounge color |
-| [loungeplus](#loungeplus) | `Boolean` | Sets the background color of the badge to the oneworld loungeplus color |
-| [ondark](#ondark)     | `Boolean` | Enables styles for dark backgrounds              |
-| [pill](#pill)       | `Boolean` | Enables pill UI option                           |
-| [ruby](#ruby)       | `Boolean` | Sets the background color of the badge to the oneworld ruby color |
-| [sapphire](#sapphire)   | `Boolean` | Sets the background color of the badge to the oneworld sapphire color |
-| [space](#space)      | `Boolean` | Adds default spacing spec to badges              |
-| [success](#success)    | `Boolean` | Enables success UI                               |
-| [warning](#warning)    | `Boolean` | Enables warning UI                               |
+| Attribute | Type      | Description                                      |
+|-----------|-----------|--------------------------------------------------|
+| [label](#label)   | `Boolean` | Enables label UI option                          |
+| [ondark](#ondark)  | `Boolean` | Enables styles for dark backgrounds              |
+| [pill](#pill)    | `Boolean` | Enables pill UI option                           |
+| [space](#space)   | `Boolean` | Adds default spacing spec to badges              |
+| [variant](#variant) | `String`  | Sets the variant of the badge, can be one of: "accent1", "accent2", "accent3", "accent4", "bronze", "cobalt", "copper", "gold", "nickel", "platinum", "silver", "titanium", "transparent", "info", "error", "success", "warning", "emerald", "sapphire", "ruby", "lounge", "loungeplus". |
 
 ## Properties
 
@@ -44,7 +32,7 @@ Use the `error` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/error.html) -->
   <!-- The below content is automatically added from ./../apiExamples/error.html -->
-  <auro-badge error>Nonstop</auro-badge>
+  <auro-badge variant="error">Nonstop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -53,7 +41,7 @@ Use the `error` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/error.html -->
 
 ```html
-<auro-badge error>Nonstop</auro-badge>
+<auro-badge variant="error">Nonstop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -65,7 +53,7 @@ Use the `success` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/success.html) -->
   <!-- The below content is automatically added from ./../apiExamples/success.html -->
-  <auro-badge success>1 stop</auro-badge>
+  <auro-badge variant="success">1 stop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -74,7 +62,7 @@ Use the `success` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/success.html -->
 
 ```html
-<auro-badge success>1 stop</auro-badge>
+<auro-badge variant="success">1 stop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -86,7 +74,7 @@ Use the `warning` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/warning.html) -->
   <!-- The below content is automatically added from ./../apiExamples/warning.html -->
-  <auro-badge warning>2+ stops</auro-badge>
+  <auro-badge variant="warning">2+ stops</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -95,7 +83,7 @@ Use the `warning` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/warning.html -->
 
 ```html
-<auro-badge warning>2+ stops</auro-badge>
+<auro-badge variant="warning">2+ stops</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -107,7 +95,7 @@ Use the `emerald` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/emerald.html) -->
   <!-- The below content is automatically added from ./../apiExamples/emerald.html -->
-  <auro-badge emerald><b>one</b>world Emerald</auro-badge>
+  <auro-badge variant="emerald"><b>one</b>world Emerald</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -116,7 +104,7 @@ Use the `emerald` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/emerald.html -->
 
 ```html
-<auro-badge emerald><b>one</b>world Emerald</auro-badge>
+<auro-badge variant="emerald"><b>one</b>world Emerald</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -128,7 +116,7 @@ Use the `ruby` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/ruby.html) -->
   <!-- The below content is automatically added from ./../apiExamples/ruby.html -->
-  <auro-badge ruby><b>one</b>world Ruby</auro-badge>
+  <auro-badge variant="ruby"><b>one</b>world Ruby</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -137,7 +125,7 @@ Use the `ruby` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/ruby.html -->
 
 ```html
-<auro-badge ruby><b>one</b>world Ruby</auro-badge>
+<auro-badge variant="ruby"><b>one</b>world Ruby</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -149,7 +137,7 @@ Use the `sapphire` attribute for a pre-defined use of color.
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/sapphire.html) -->
   <!-- The below content is automatically added from ./../apiExamples/sapphire.html -->
-  <auro-badge sapphire><b>one</b>world Sapphire</auro-badge>
+  <auro-badge variant="sapphire"><b>one</b>world Sapphire</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -158,7 +146,7 @@ Use the `sapphire` attribute for a pre-defined use of color.
 <!-- The below code snippet is automatically added from ./../apiExamples/sapphire.html -->
 
 ```html
-<auro-badge sapphire><b>one</b>world Sapphire</auro-badge>
+<auro-badge variant="sapphire"><b>one</b>world Sapphire</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -170,10 +158,10 @@ Use these attributes to apply pre-defined accent colors to the badge: `accent1`,
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
   <!-- The below content is automatically added from ./../apiExamples/accents.html -->
-  <auro-badge accent1>Accent 1</auro-badge>
-  <auro-badge accent2>Accent 2</auro-badge>
-  <auro-badge accent3>Accent 3</auro-badge>
-  <auro-badge accent4>Accent 4</auro-badge>
+  <auro-badge variant="accent1">Accent 1</auro-badge>
+  <auro-badge variant="accent2">Accent 2</auro-badge>
+  <auro-badge variant="accent3">Accent 3</auro-badge>
+  <auro-badge variant="accent4">Accent 4</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -182,10 +170,10 @@ Use these attributes to apply pre-defined accent colors to the badge: `accent1`,
 <!-- The below code snippet is automatically added from ./../apiExamples/accents.html -->
 
 ```html
-<auro-badge accent1>Accent 1</auro-badge>
-<auro-badge accent2>Accent 2</auro-badge>
-<auro-badge accent3>Accent 3</auro-badge>
-<auro-badge accent4>Accent 4</auro-badge>
+<auro-badge variant="accent1">Accent 1</auro-badge>
+<auro-badge variant="accent2">Accent 2</auro-badge>
+<auro-badge variant="accent3">Accent 3</auro-badge>
+<auro-badge variant="accent4">Accent 4</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -223,9 +211,9 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
   <!-- The below content is automatically added from ./../apiExamples/disabled.html -->
   <auro-badge disabled>1 stop</auro-badge>
-  <auro-badge success disabled>1 stop</auro-badge>
-  <auro-badge error disabled>1 stop</auro-badge>
-  <auro-badge warning disabled>1 stop</auro-badge>
+  <auro-badge variant="success" disabled>1 stop</auro-badge>
+  <auro-badge variant="error" disabled>1 stop</auro-badge>
+  <auro-badge variant="warning" disabled>1 stop</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -235,9 +223,9 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 
 ```html
 <auro-badge disabled>1 stop</auro-badge>
-<auro-badge success disabled>1 stop</auro-badge>
-<auro-badge error disabled>1 stop</auro-badge>
-<auro-badge warning disabled>1 stop</auro-badge>
+<auro-badge variant="success" disabled>1 stop</auro-badge>
+<auro-badge variant="error" disabled>1 stop</auro-badge>
+<auro-badge variant="warning" disabled>1 stop</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -273,9 +261,9 @@ Use the `pill` attribute to render a small 'pill size' UI.
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
   <!-- The below content is automatically added from ./../apiExamples/pill.html -->
   <auro-badge pill>12</auro-badge>
-  <auro-badge error pill>Danger</auro-badge>
-  <auro-badge success pill>Flight 167</auro-badge>
-  <auro-badge warning pill>99</auro-badge>
+  <auro-badge variant="error" pill>Danger</auro-badge>
+  <auro-badge variant="success" pill>Flight 167</auro-badge>
+  <auro-badge variant="warning" pill>99</auro-badge>
   <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -286,9 +274,9 @@ Use the `pill` attribute to render a small 'pill size' UI.
 
 ```html
 <auro-badge pill>12</auro-badge>
-<auro-badge error pill>Danger</auro-badge>
-<auro-badge success pill>Flight 167</auro-badge>
-<auro-badge warning pill>99</auro-badge>
+<auro-badge variant="error" pill>Danger</auro-badge>
+<auro-badge variant="success" pill>Flight 167</auro-badge>
+<auro-badge variant="warning" pill>99</auro-badge>
 <auro-badge pill style="color: var(--auro-color-text-primary-on-light); background-color: var(--ds-color-utility-lime-default); border-color: var(--ds-color-utility-lime-default)">Flight 99</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->

@@ -30,32 +30,11 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  *
  * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} ondark - Enables styles for dark backgrounds
- * @attr {Boolean} accent1 - Enables accent1 UI
- * @attr {Boolean} accent2 - Enables accent2 UI
- * @attr {Boolean} accent3 - Enables accent3 UI
- * @attr {Boolean} accent4 - Enables accent4 UI
- * @attr {Boolean} bronze - Enables bronze UI
- * @attr {Boolean} cobalt - Enables cobalt UI
- * @attr {Boolean} copper - Enables copper UI
- * @attr {Boolean} gold - Enables gold UI
- * @attr {Boolean} nickel - Enables nickel UI
- * @attr {Boolean} platinum - Enables platinum UI
- * @attr {Boolean} silver - Enables silver UI
- * @attr {Boolean} titanium - Enables titanium UI
- * @attr {Boolean} transparent - Enables transparent UI
- * @attr {Boolean} info - Enables info UI
- * @attr {Boolean} error - Enables error UI
- * @attr {Boolean} success - Enables success UI
- * @attr {Boolean} warning - Enables warning UI
  * @attr {Boolean} space - Adds default spacing spec to badges
  * @attr {Boolean} pill - Enables pill UI option
  * @attr {Boolean} label - Enables label UI option
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
- * @attr {Boolean} emerald - Sets the background color of the badge to the oneworld emerald color
- * @attr {Boolean} sapphire - Sets the background color of the badge to the oneworld sapphire color
- * @attr {Boolean} ruby - Sets the background color of the badge to the oneworld ruby color
- * @attr {Boolean} lounge - Sets the background color of the badge to the oneworld lounge color
- * @attr {Boolean} loungeplus - Sets the background color of the badge to the oneworld loungeplus color
+ * @attr {String} variant - Sets the variant of the badge, can be one of: "accent1", "accent2", "accent3", "accent4", "bronze", "cobalt", "copper", "gold", "nickel", "platinum", "silver", "titanium", "transparent", "info", "error", "success", "warning", "emerald", "sapphire", "ruby", "lounge", "loungeplus".
  */
 
 // build the component class
