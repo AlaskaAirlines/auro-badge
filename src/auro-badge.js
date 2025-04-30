@@ -34,7 +34,7 @@ import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
  * @attr {Boolean} pill - Enables pill UI option
  * @attr {Boolean} label - Enables label UI option
  * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
- * @attr {String} variant - Sets the variant of the badge, can be one of: "accent1", "accent2", "accent3", "accent4", "bronze", "cobalt", "copper", "gold", "nickel", "platinum", "silver", "titanium", "transparent", "info", "error", "success", "warning", "emerald", "sapphire", "ruby", "lounge", "loungeplus".
+ * @attr {String} variant - Sets the color UI of the badge, can be one of: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`.
  */
 
 // build the component class
