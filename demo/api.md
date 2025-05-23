@@ -13,7 +13,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 | [ondark](#ondark)  | `Boolean` | Enables styles for dark backgrounds              |
 | [pill](#pill)    | `Boolean` | Enables pill UI option                           |
 | [space](#space)   | `Boolean` | Adds default spacing spec to badges              |
-| [variant](#variant) | `String`  | Sets the color UI of the badge, can be one of: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`. |
+| [variant](#variant) | `String`  | Sets the color UI of the badge<br />Possible Values:<br />- `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`<br />Deprecated Values:<br />- `mvp`, `mvpgold`, `mvpgold75k` |
 
 ## Properties
 
@@ -202,6 +202,31 @@ Use these variants to apply pre-defined lounge tier colors to the badge: `lounge
 ```html
 <auro-badge pill variant="lounge">Lounge</auro-badge>
 <auro-badge pill variant="loungeplus">Lounge+</auro-badge>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+#### MVP Tiers (Deprecated)
+
+Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/mvp.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/mvp.html -->
+  <auro-badge pill variant="mvp">MVP</auro-badge>
+  <auro-badge pill variant="mvpgold">MVP Gold</auro-badge>
+  <auro-badge pill variant="mvpgold75k">MVP Gold 75k</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/mvp.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/mvp.html -->
+
+```html
+<auro-badge pill variant="mvp">MVP</auro-badge>
+<auro-badge pill variant="mvpgold">MVP Gold</auro-badge>
+<auro-badge pill variant="mvpgold75k">MVP Gold 75k</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

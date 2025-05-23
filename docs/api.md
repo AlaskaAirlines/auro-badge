@@ -10,7 +10,7 @@ HTML custom element for the use of drawing attention to additional interface inf
 | `ondark`  | `Boolean` | Enables styles for dark backgrounds              |
 | `pill`    | `Boolean` | Enables pill UI option                           |
 | `space`   | `Boolean` | Adds default spacing spec to badges              |
-| `variant` | `String`  | Sets the color UI of the badge, can be one of: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`. |
+| `variant` | `String`  | Sets the color UI of the badge<br />Possible Values:<br />- `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`<br />Deprecated Values:<br />- `mvp`, `mvpgold`, `mvpgold75k` |
 
 ## Properties
 

@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.0...v5.0.1) (2025-05-23)
+
+
+### Bug Fixes
+
+* re-add mvp tier badge support using new variant attribute and mark them deprecated ([df39e9d](https://github.com/AlaskaAirlines/auro-badge/commit/df39e9d5556320562357dba24a6dac849b6c5e31))
+
 # [5.0.0](https://github.com/AlaskaAirlines/auro-badge/compare/v4.0.2...v5.0.0) (2025-04-30)
 
 
