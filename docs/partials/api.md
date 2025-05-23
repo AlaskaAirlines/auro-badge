@@ -108,6 +108,20 @@ Use these variants to apply pre-defined lounge tier colors to the badge: `lounge
 
 </auro-accordion>
 
+#### MVP Tiers (Deprecated)
+
+Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/mvp.html) -->
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/mvp.html) -->
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
 ### `space`
 
 Use the `space` attribute to allow for pre-defined spacing beteen badges.

@@ -134,6 +134,18 @@ $loyaltyTier:
   }
 }
 
+$mvpStatus:
+  "mvp" $ds-color-tier-alaska-mvp-default,
+  "mvpgold" $ds-color-tier-alaska-mvpgold-default,
+  "mvpgold75k" $ds-color-tier-alaska-mvpgold-default;
+
+@each $status, $fallback in $mvpStatus {
+  :host([variant="#{$status}"]) {
+    --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
+    --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
+  }
+}
+
 $onDarkLoyaltyTier:
   "cobalt" $ds-basic-color-tier-program-loyaltytier-cobalt $ds-basic-color-tier-program-loyaltytier-cobalt-muted,
   "titanium" $ds-basic-color-tier-program-loyaltytier-titanium $ds-basic-color-tier-program-loyaltytier-titanium-muted,;
