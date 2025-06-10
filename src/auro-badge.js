@@ -129,9 +129,13 @@ export class AuroBadge extends LitElement {
    * @returns {void}
    */
   handleContentSlotChanges() {
-    const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
+    const slotContent = this.shadowRoot.querySelector('slot').assignedNodes();
 
-    if (slotContent.tagName === 'AURO-ICON') {
+    const iconElements = slotContent.filter((node) => node.tagName === 'AURO-ICON');
+
+    // If the slot only contains an auro-icon element and the icon does not have a label attribute,
+    // set the icon property to true, otherwise set it to false.
+    if (slotContent.length === 1 && iconElements.length === 1 && !iconElements[0].hasAttribute('label')) {
       this.icon = true;
     } else {
       this.icon = false;
