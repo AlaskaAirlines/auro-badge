@@ -70,6 +70,7 @@ export class AuroBadge extends LitElement {
 
     this.target = false;
     this.disabled = false;
+    this.label = false;
   }
 
   // function to define props used within the scope of this component
@@ -80,6 +81,10 @@ export class AuroBadge extends LitElement {
         reflect: true
       },
       disabled: {
+        type: Boolean,
+        reflect: true
+      },
+      label: {
         type: Boolean,
         reflect: true
       },
@@ -195,7 +200,9 @@ export class AuroBadge extends LitElement {
           ${this.generateIconHtml(closeIcon.svg)}
           <span class="util_displayHiddenVisually">Dismiss</span>
         </${this.buttonTag}>`
-        : html`<slot @slotchange="${this.handleContentSlotChanges}"></slot>`
+        : html`<div class="${this.label ? 'body-xs' : ''}">
+          <slot @slotchange="${this.handleContentSlotChanges}"></slot>
+        </div>`
       }
     `;
   }
