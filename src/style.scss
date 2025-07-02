@@ -4,12 +4,13 @@
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/auro-classic/SCSSVariables";
-@import "./../node_modules/@aurodesignsystem/design-tokens/dist/alaska/SCSSVariables--alaska";
+@use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
+@use "@aurodesignsystem/design-tokens/dist/themes/alaska/SCSSVariables--alaska" as v;
+@use "@aurodesignsystem/webcorestylesheets/dist/bundled/type/classes.alaska.min.css";
 
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/breakpoints";
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/core";
-@import "./../node_modules/@aurodesignsystem/webcorestylesheets/src/utilityClasses/displayProperties";
+@use "@aurodesignsystem/webcorestylesheets/src/breakpoints";
+@use "@aurodesignsystem/webcorestylesheets/src/core";
+@use "@aurodesignsystem/webcorestylesheets/src/utilityClasses/displayProperties";
 
 // This pattern will ensure that the focus-visible state will be shown
 // regardless of native support or using the polyfill.
@@ -27,7 +28,7 @@
 }
 
 :host([space]) {
-  margin-left: var(--ds-size-300, $ds-size-300);
+  margin-left: var(--ds-size-300, vac.$ds-size-300);
 }
 
 :host {
@@ -41,7 +42,7 @@
   // suggestion token; establish a supported scale of values, e.g. 100 - 1000
   // also create --ds-border-radius-badge that maps to a scale value
   border-radius: 1.375rem;
-  padding: .688rem var(--ds-size-200, $ds-size-200);
+  padding: .688rem var(--ds-size-200, vac.$ds-size-200);
 }
 
 :host([target]) {
@@ -51,37 +52,35 @@
 
 :host([target][ondark][disabled]) {
   .target {
-    color: var(--ds-color-text-primary-default, $ds-color-text-primary-default);
+    color: var(--ds-color-text-primary-default, vac.$ds-color-text-primary-default);
   }
 }
 
 .target {
-  font: inherit;
-
   // macOS / iOS agents
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 [auro-icon] {
-  --ds-auro-icon-size: var(--ds-size-300, #{$ds-size-300});
+  --ds-auro-icon-size: var(--ds-size-300, #{vac.$ds-size-300});
 }
 
 ::part(button) {
-  padding-left: calc(var(--ds-size-150, $ds-size-150) + var(--ds-size-, $ds-size-25));
-  padding-right: var(--ds-size-100, $ds-size-100);
+  padding-left: calc(var(--ds-size-150, vac.$ds-size-150) + var(--ds-size-, vac.$ds-size-25));
+  padding-right: var(--ds-size-100, vac.$ds-size-100);
 }
 
 :host([label]) {
-  font-size: var(--ds-text-body-size-xs, $ds-text-body-size-xs);
-  padding: var(--labelpillpadding) var(--ds-size-150, $ds-size-150);
+  padding: var(--labelpillpadding) var(--ds-size-150, vac.$ds-size-150);
   user-select: none;
   border-radius: 9999px;
 }
 
 :host([pill]) {
-  padding: var(--labelpillpadding) var(--ds-size-150, $ds-size-150);
+  padding: var(--labelpillpadding) var(--ds-size-150, vac.$ds-size-150);
   user-select: none;
   border-radius: 9999px;
 }
@@ -92,37 +91,37 @@
 
 
 :host([icon]) {
-  padding: var(--labelpillpadding) var(--ds-size-200, $ds-size-200);
+  padding: var(--labelpillpadding) var(--ds-size-200, vac.$ds-size-200);
 }
 
 :host([icon]) ::slotted(auro-icon) {
-  width: var(--ds-size-300, $ds-size-300);
-  margin-right: var(--ds-size-50, $ds-size-50);
+  width: var(--ds-size-300, vac.$ds-size-300);
+  margin-right: var(--ds-size-50, vac.$ds-size-50);
 }
 
 :host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--ds-size-200, $ds-size-200);
+  width: var(--ds-size-200, vac.$ds-size-200);
 }
 
 :host([icon][pill]) {
-  padding: var(--ds-size-50, $ds-size-50) var(--ds-size-150, $ds-size-150);
+  padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
   line-height: 0.75rem;
 }
 
 :host([icon]) {
-  padding: var(--labelpillpadding) var(--ds-size-200, $ds-size-200);
+  padding: var(--labelpillpadding) var(--ds-size-200, vac.$ds-size-200);
 }
 
 :host([icon]) ::slotted(auro-icon) {
-  width: var(--ds-size-300, $ds-size-300);
-  margin-right: var(--ds-size-50, $ds-size-50);
+  width: var(--ds-size-300, vac.$ds-size-300);
+  margin-right: var(--ds-size-50, vac.$ds-size-50);
 }
 
 :host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--ds-size-200, $ds-size-200);
+  width: var(--ds-size-200, vac.$ds-size-200);
 }
 
 :host([icon][pill]) {
-  padding: var(--ds-size-50, $ds-size-50) var(--ds-size-150, $ds-size-150);
+  padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
   line-height: 0.75rem;
 }
