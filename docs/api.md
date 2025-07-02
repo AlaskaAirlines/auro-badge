@@ -6,7 +6,6 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 | Attribute | Type      | Description                                      |
 |-----------|-----------|--------------------------------------------------|
-| `label`   | `Boolean` | Enables label UI option                          |
 | `ondark`  | `Boolean` | Enables styles for dark backgrounds              |
 | `pill`    | `Boolean` | Enables pill UI option                           |
 | `space`   | `Boolean` | Adds default spacing spec to badges              |
@@ -17,4 +16,5 @@ HTML custom element for the use of drawing attention to additional interface inf
 | Property   | Attribute  | Type      | Default | Description                                      |
 |------------|------------|-----------|---------|--------------------------------------------------|
 | `disabled` | `disabled` | `Boolean` | false   | If set to true button will become disabled and not allow for interactions |
+| `label`    | `label`    | `Boolean` | false   | Enables label UI option                          |
 | `target`   | `target`   | `Boolean` | false   | Enables the close functionality                  |

@@ -1,5 +1,13 @@
 # Semantic Release Automated Changelog
 
+## [5.0.2](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.1...v5.0.2) (2025-07-02)
+
+
+### Bug Fixes
+
+* add type classes integration ([fa3c1a4](https://github.com/AlaskaAirlines/auro-badge/commit/fa3c1a4f5bda8d41f5fe150496519ad33722ae37))
+* update docs head content ([bbf8840](https://github.com/AlaskaAirlines/auro-badge/commit/bbf8840e2efe1683c7420a2ff995f3a2dae32038))
+
 ## [5.0.1](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.0...v5.0.1) (2025-05-23)
 
 
