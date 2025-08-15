@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.0.3](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.2...v5.0.3) (2025-08-15)
+
+
+### Bug Fixes
+
+* update auro-library to latest version ([84b9228](https://github.com/AlaskaAirlines/auro-badge/commit/84b922829f831aa59421e287460f763c91c0fcf1))
+
 ## [5.0.2](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.1...v5.0.2) (2025-07-02)
 
 
