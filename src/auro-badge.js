@@ -22,8 +22,6 @@ import buttonVersion from './buttonVersion.js';
 import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
 import iconVersion from './iconVersion.js';
 
-import closeIcon from '@alaskaairux/icons/dist/icons/interface/x-sm.mjs';
-
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
  * HTML custom element for the use of drawing attention to additional interface information.
@@ -143,24 +141,6 @@ export class AuroBadge extends LitElement {
     }
   }
 
-  /**
-   * Generates an HTML element containing an SVG icon based on the provided `svgContent`.
-   *
-   * @private
-   * @param {string} svgContent - The SVG content to be embedded.
-   * @returns {Element} The HTML element containing the SVG icon.
-   */
-  generateIconHtml(svgContent) {
-    const dom = new DOMParser().parseFromString(svgContent, 'text/html');
-    const svg = dom.body.firstChild;
-
-    svg.setAttribute('slot', 'svg');
-
-    const iconHtml = html`<${this.iconTag} customColor customSvg slot="icon">${svg}</${this.iconTag}>`;
-
-    return iconHtml;
-  }
-
   connectedCallback() {
     super.connectedCallback();
     this.runtimeUtils.handleComponentTagRename(this, 'auro-badge');
@@ -189,7 +169,7 @@ export class AuroBadge extends LitElement {
       ${this.target
         ? html`
         <${this.buttonTag}
-          rounded
+          shape="pill"
           @click=${this.handleChange}
           ?disabled="${this.disabled}"
           ?onDark="${this.hasAttribute('ondark')}"
@@ -197,7 +177,7 @@ export class AuroBadge extends LitElement {
           class="target"
           id="targetButton">
           <slot @slotchange="${this.handleContentSlotChanges}"></slot>
-          ${this.generateIconHtml(closeIcon.svg)}
+          <${this.iconTag} customColor category="interface" name="x-sm"></${this.iconTag}>
           <span class="util_displayHiddenVisually">Dismiss</span>
         </${this.buttonTag}>`
         : html`<div class="${this.label ? 'body-xs' : ''}">
