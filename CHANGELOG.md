@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [5.0.4](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.3...v5.0.4) (2025-08-27)
+
+
+### Performance Improvements
+
+* update button for icon fix and all other auro dependencies [#143](https://github.com/AlaskaAirlines/auro-badge/issues/143) ([0188aa6](https://github.com/AlaskaAirlines/auro-badge/commit/0188aa6c114b4eb9272f1d2cef565524f2af579d))
+
 ## [5.0.3](https://github.com/AlaskaAirlines/auro-badge/compare/v5.0.2...v5.0.3) (2025-08-15)
 
 
