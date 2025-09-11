@@ -69,8 +69,22 @@
 }
 
 ::part(button) {
-  padding-left: calc(var(--ds-size-150, vac.$ds-size-150) + var(--ds-size-, vac.$ds-size-25));
-  padding-right: var(--ds-size-100, vac.$ds-size-100);
+  padding: .688rem var(--ds-size-200, vac.$ds-size-200);
+  min-height: fit-content;
+  max-height: fit-content;
+  --ds-auro-button-border-color: var(--ds-auro-badge-border-color);
+  --ds-auro-button-boxshadow-color: var(--ds-auro-badge-boxshadow-color);
+  --ds-auro-button-container-color: var(--ds-auro-badge-container-color);
+  --ds-auro-button-container-image: var(--ds-auro-badge-container-color);
+  --ds-auro-button-text-color: var(--ds-auro-badge-text-color);
+}
+
+::part(text) {
+  max-height: 18px;
+}
+
+::part(contentWrapper) {
+  margin: 0;
 }
 
 :host([label]) {

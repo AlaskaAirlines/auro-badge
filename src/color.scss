@@ -39,10 +39,6 @@
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
 }
 
-:host([target]) {
-  --ds-auro-badge-container-color: transparent;
-}
-
 :host([variant="transparent"]) {
   --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency, #{v.$ds-advanced-color-accents-transparency});
   --ds-auro-badge-border-color: transparent;
