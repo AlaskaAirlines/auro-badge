@@ -285,8 +285,9 @@ Use the `disabled` attribute to render any `<auro-badge>` with a innoperable UI.
 
 ### `target`
 
-Use the `target` property to aply the clickable feature.
+Use the `target` property to convert the badge to a functional button. This this property will convert the badge to a clickable button element and the value of the button will be copied to the element's `value` attribute and a custom event will be fired when clicked.
 
+<em><strong>Note:</strong> Using the `target` property in combination with the `pill` and/or `label` property is not supported.</em>
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
   <!-- The below content is automatically added from ./../apiExamples/target.html -->
@@ -308,7 +309,9 @@ Use the `target` property to aply the clickable feature.
 
 ### `pill`
 
-Use the `pill` attribute to render a small 'pill size' UI.
+Use the `pill` property in combination with the `error`, `success`, or `advisory` variants for alternate badge experiences. The last example illustrates a customized version.
+
+<em><strong>Note:</strong> Using the `pill` property in combination with the `target` property is not supported.</em> 
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
@@ -331,6 +334,34 @@ Use the `pill` attribute to render a small 'pill size' UI.
 <auro-badge variant="success" pill>Flight 167</auro-badge>
 <auro-badge variant="warning" pill>99</auro-badge>
 <auro-badge pill style="--ds-auro-badge-text-color: pink; --ds-auro-badge-container-color: purple; --ds-auro-badge-border-color: purple;">Flight 99</auro-badge>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+## `label`
+
+Use the `label` attribute for a text label experience.
+
+<em><strong>Note:</strong> Using the `label` property in combination with the `target` property is not supported.</em>
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/label.html -->
+  <auro-badge label>Default</auro-badge>
+  <auro-badge label variant="error">Danger</auro-badge>
+  <auro-badge label variant="success">Success</auro-badge>
+  <auro-badge label variant="warning">Warning</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/label.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/label.html -->
+
+```html
+<auro-badge label>Default</auro-badge>
+<auro-badge label variant="error">Danger</auro-badge>
+<auro-badge label variant="success">Success</auro-badge>
+<auro-badge label variant="warning">Warning</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

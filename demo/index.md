@@ -67,6 +67,7 @@ Use the `ondark` attribute to render colors appropriate for darker backgrounds.
 
 Use the `target` property to convert the badge to a functional button. This this property will convert the badge to a clickable button element and the value of the button will be copied to the element's `value` attribute and a custom event will be fired when clicked.
 
+<em><strong>Note:</strong> Using the `target` property in combination with the `pill` and/or `label` property is not supported.</em>
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
   <!-- The below content is automatically added from ./../apiExamples/target.html -->
@@ -115,6 +116,7 @@ Use the `space` attribute to allow for default spacing between elements.
 
 Use the `label` attribute for a text label experience.
 
+<em><strong>Note:</strong> Using the `label` property in combination with the `target` property is not supported.</em>
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
   <!-- The below content is automatically added from ./../apiExamples/label.html -->
@@ -167,9 +169,11 @@ To use icons in your badges, it is preferred that this is added as contnet withi
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Pill option
+## Pill
 
 Use the `pill` property in combination with the `error`, `success`, or `advisory` variants for alternate badge experiences. The last example illustrates a customized version.
+
+<em><strong>Note:</strong> Using the `pill` property in combination with the `target` property is not supported.</em> 
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
