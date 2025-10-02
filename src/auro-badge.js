@@ -20,7 +20,7 @@ import tokensCss from "./styles/tokens.scss";
  * HTML custom element for the use of drawing attention to additional interface information.
  *
  * @attr {Boolean} target - Enables the close functionality
- * @attr {Boolean} ondark - Enables styles for dark backgrounds
+ * @attr {Boolean} ondark - DEPRECATED - use `appearance` instead.
  * @attr {Boolean} space - Adds default spacing spec to badges
  * @attr {Boolean} pill - Enables pill UI option
  * @attr {Boolean} label - Enables label UI option
@@ -66,6 +66,7 @@ export class AuroBadge extends LitElement {
     this.target = false;
     this.disabled = false;
     this.label = false;
+    this.appearance = 'default';
   }
 
   // function to define props used within the scope of this component
@@ -86,6 +87,16 @@ export class AuroBadge extends LitElement {
       icon: {
         type: Boolean,
         reflect: true,
+      },
+
+      /**
+       * Defines whether the component will be on lighter or darker backgrounds.
+       * @property {'default', 'inverse'}
+       * @default 'default'
+       */
+      appearance: {
+        type: String,
+        reflect: true
       },
 
       /**
@@ -165,10 +176,10 @@ export class AuroBadge extends LitElement {
         this.target
           ? html`
         <${this.buttonTag}
+          appearance="${this.hasAttribute("ondark") ? 'inverse' :this.appearance}"
           shape="pill"
           @click=${this.handleChange}
           ?disabled="${this.disabled}"
-          ?onDark="${this.hasAttribute("ondark")}"
           .value="${this.value}"
           class="target"
           id="targetButton">
