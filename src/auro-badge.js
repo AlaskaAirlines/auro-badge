@@ -5,22 +5,17 @@
 
 /* eslint-disable lit/binding-positions, lit/no-invalid-html */
 
+import { AuroButton } from "@aurodesignsystem/auro-button/src/auro-button.js";
+import { AuroIcon } from "@aurodesignsystem/auro-icon/src/auro-icon.js";
+import { AuroDependencyVersioning } from "@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs";
+import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 import { LitElement } from "lit";
-import { html } from 'lit/static-html.js';
-
-import styleCss from "./style-css.js";
+import { html } from "lit/static-html.js";
+import buttonVersion from "./buttonVersion.js";
 import colorCss from "./color-css.js";
+import iconVersion from "./iconVersion.js";
+import styleCss from "./style-css.js";
 import tokensCss from "./tokens-css.js";
-
-import AuroLibraryRuntimeUtils from '@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs';
-
-import { AuroDependencyVersioning } from '@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs';
-
-import { AuroButton } from '@aurodesignsystem/auro-button/src/auro-button.js';
-import buttonVersion from './buttonVersion.js';
-
-import { AuroIcon } from '@aurodesignsystem/auro-icon/src/auro-icon.js';
-import iconVersion from './iconVersion.js';
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
@@ -54,12 +49,16 @@ export class AuroBadge extends LitElement {
     /**
      * @private
      */
-    this.buttonTag = versioning.generateTag('auro-button', buttonVersion, AuroButton);
+    this.buttonTag = versioning.generateTag(
+      "auro-button",
+      buttonVersion,
+      AuroButton,
+    );
 
     /**
      * @private
      */
-    this.iconTag = versioning.generateTag('auro-icon', iconVersion, AuroIcon);
+    this.iconTag = versioning.generateTag("auro-icon", iconVersion, AuroIcon);
 
     /**
      * @private
@@ -76,26 +75,26 @@ export class AuroBadge extends LitElement {
     return {
       target: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
       disabled: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
       label: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
       icon: {
         type: Boolean,
-        reflect: true
+        reflect: true,
       },
 
       /**
        * @private
        */
       value: {
-        type: String
+        type: String,
       },
     };
   }
@@ -132,9 +131,9 @@ export class AuroBadge extends LitElement {
    * @returns {void}
    */
   handleContentSlotChanges() {
-    const [slotContent] = this.shadowRoot.querySelector('slot').assignedNodes();
+    const [slotContent] = this.shadowRoot.querySelector("slot").assignedNodes();
 
-    if (slotContent.tagName === 'AURO-ICON') {
+    if (slotContent.tagName === "AURO-ICON") {
       this.icon = true;
     } else {
       this.icon = false;
@@ -143,36 +142,35 @@ export class AuroBadge extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.runtimeUtils.handleComponentTagRename(this, 'auro-badge');
+    this.runtimeUtils.handleComponentTagRename(this, "auro-badge");
   }
 
   firstUpdated() {
     // Finds slotted content and adds string to button value
     if (this.target) {
-      const [targetElement] = this.shadowRoot.querySelector('slot').assignedNodes();
+      const [targetElement] = this.shadowRoot
+        .querySelector("slot")
+        .assignedNodes();
 
       this.value = targetElement.textContent;
     }
   }
 
   static get styles() {
-    return [
-      styleCss,
-      colorCss,
-      tokensCss
-    ];
+    return [styleCss, colorCss, tokensCss];
   }
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
     return html`
-      ${this.target
-        ? html`
+      ${
+        this.target
+          ? html`
         <${this.buttonTag}
           shape="pill"
           @click=${this.handleChange}
           ?disabled="${this.disabled}"
-          ?onDark="${this.hasAttribute('ondark')}"
+          ?onDark="${this.hasAttribute("ondark")}"
           .value="${this.value}"
           class="target"
           id="targetButton">
@@ -180,7 +178,7 @@ export class AuroBadge extends LitElement {
           <${this.iconTag} customColor category="interface" name="x-sm"></${this.iconTag}>
           <span class="util_displayHiddenVisually">Dismiss</span>
         </${this.buttonTag}>`
-        : html`<div class="${this.label ? 'body-xs' : ''}">
+          : html`<div class="${this.label ? "body-xs" : ""}">
           <slot @slotchange="${this.handleContentSlotChanges}"></slot>
         </div>`
       }
