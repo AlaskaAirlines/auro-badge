@@ -1,3 +1,3 @@
-import { AuroBadge } from './src/auro-badge.js';
+import { AuroBadge } from "./src/auro-badge.js";
 
 AuroBadge.register();

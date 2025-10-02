@@ -1,5 +1,4 @@
-
-import { AuroBadge } from '../../src/auro-badge.js';
+import { AuroBadge } from "../../src/auro-badge.js";
 
 /**
  * HTML custom element for the use of drawing attention to additional interface information.

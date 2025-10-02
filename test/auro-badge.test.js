@@ -1,8 +1,8 @@
-import { fixture, html, expect } from '@open-wc/testing';
-import '../index.js';
+import { expect, fixture, html } from "@open-wc/testing";
+import "../index.js";
 
-describe('auro-badge', () => {
-  it('auro-badge is accessible', async () => {
+describe("auro-badge", () => {
+  it("auro-badge is accessible", async () => {
     const el = await fixture(html`
       <auro-badge>click me</auro-badge>
     `);
@@ -10,30 +10,30 @@ describe('auro-badge', () => {
     await expect(el).to.be.accessible();
   });
 
-  it('auro-badge custom element is defined', async () => {
+  it("auro-badge custom element is defined", async () => {
     const el = await !!customElements.get("auro-badge");
 
     await expect(el).to.be.true;
   });
 
-  it('auro-badge is NOT a button', async () => {
+  it("auro-badge is NOT a button", async () => {
     const el = await fixture(html`
       <auro-badge>click me not</auro-badge>
     `);
 
     const root = el.shadowRoot;
-    const button = root.querySelector('button')
+    const button = root.querySelector("button");
 
     await expect(button).to.be.null;
   });
 
-  it('auro-badge has an action that closes the badge', async () => {
+  it("auro-badge has an action that closes the badge", async () => {
     const el = await fixture(html`
       <auro-badge target>click me</auro-badge>
     `);
 
     const root = el.shadowRoot;
-    root.getElementById('targetButton').click();
-    setTimeout(() =>  expect(root).to.be.equal(undefined), 3000);
+    root.getElementById("targetButton").click();
+    setTimeout(() => expect(root).to.be.equal(undefined), 3000);
   });
 });
