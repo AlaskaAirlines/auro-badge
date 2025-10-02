@@ -1,4 +1,4 @@
-import { AuroBadge } from "../src/auro-badge.js";
+import { AuroBadge } from "../src/index";
 
 AuroBadge.register(); // registering to `auro-badge`
 AuroBadge.register("custom-badge");

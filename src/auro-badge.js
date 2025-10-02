@@ -3,19 +3,17 @@
 
 // ---------------------------------------------------------------------
 
-/* eslint-disable lit/binding-positions, lit/no-invalid-html */
-
-import { AuroButton } from "@aurodesignsystem/auro-button/src/auro-button.js";
-import { AuroIcon } from "@aurodesignsystem/auro-icon/src/auro-icon.js";
+import { AuroButton } from "@aurodesignsystem/auro-button/class";
+import { AuroIcon } from "@aurodesignsystem/auro-icon/class";
 import { AuroDependencyVersioning } from "@aurodesignsystem/auro-library/scripts/runtime/dependencyTagVersioning.mjs";
 import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 import { LitElement } from "lit";
 import { html } from "lit/static-html.js";
 import buttonVersion from "./buttonVersion.js";
-import colorCss from "./color-css.js";
 import iconVersion from "./iconVersion.js";
-import styleCss from "./style-css.js";
-import tokensCss from "./tokens-css.js";
+import colorCss from "./styles/color.scss";
+import styleCss from "./styles/style.scss";
+import tokensCss from "./styles/tokens.scss";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
