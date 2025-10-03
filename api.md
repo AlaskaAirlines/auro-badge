@@ -339,15 +339,18 @@ Use the `pill` attribute to render a small 'pill size' UI.
 
 The component may be restyled using the following code sample and changing the values of the following token(s).
 
-<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/tokens.css) -->
-<!-- The below code snippet is automatically added from ./../src/tokens.css -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
+<!-- The below code snippet is automatically added from ./../src/styles/tokens.scss -->
 
-```css
-:host{
-  --ds-auro-badge-border-color:var(--ds-basic-color-brand-primary, #01426a);
-  --ds-auro-badge-boxshadow-color:transparent;
-  --ds-auro-badge-container-color:var(--ds-basic-color-brand-primary, #01426a);
-  --ds-auro-badge-text-color:var(--ds-basic-color-texticon-inverse, #ffffff);
+```scss
+@use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
+@use "@aurodesignsystem/design-tokens/dist/themes/alaska/SCSSVariables--alaska" as v;
+
+:host {
+  --ds-auro-badge-border-color: var(--ds-basic-color-brand-primary, #{v.$ds-basic-color-brand-primary});
+  --ds-auro-badge-boxshadow-color: transparent;
+  --ds-auro-badge-container-color: var(--ds-basic-color-brand-primary, #{v.$ds-basic-color-brand-primary});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
 }
 ```
 <!-- AURO-GENERATED-CONTENT:END -->

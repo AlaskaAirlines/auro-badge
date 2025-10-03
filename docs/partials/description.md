@@ -1,1 +1,0 @@
-HTML custom element for the use of drawing attention to additional interface information.
