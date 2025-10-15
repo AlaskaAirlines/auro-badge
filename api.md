@@ -9,18 +9,19 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 | Attribute | Type      | Description                                      |
 |-----------|-----------|--------------------------------------------------|
-| [ondark](#ondark)  | `Boolean` | Enables styles for dark backgrounds              |
+| [ondark](#ondark)  | `Boolean` | DEPRECATED - use `appearance` instead.           |
 | [pill](#pill)    | `Boolean` | Enables pill UI option                           |
 | [space](#space)   | `Boolean` | Adds default spacing spec to badges              |
 | [variant](#variant) | `String`  | Sets the color UI of the badge<br />Possible Values:<br />- `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`<br />Deprecated Values:<br />- `mvp`, `mvpgold`, `mvpgold75k` |
 
 ## Properties
 
-| Property   | Attribute  | Type      | Default | Description                                      |
-|------------|------------|-----------|---------|--------------------------------------------------|
-| [disabled](#disabled) | `disabled` | `Boolean` | false   | If set to true button will become disabled and not allow for interactions |
-| [label](#label)    | `label`    | `Boolean` | false   | Enables label UI option                          |
-| [target](#target)   | `target`   | `Boolean` | false   | Enables the close functionality                  |
+| Property     | Attribute    | Type      | Default     | Description                                      |
+|--------------|--------------|-----------|-------------|--------------------------------------------------|
+| [appearance](#appearance) | `appearance` | `string`  | "'default'" | Defines whether the component will be on lighter or darker backgrounds. |
+| [disabled](#disabled)   | `disabled`   | `Boolean` | false       | If set to true button will become disabled and not allow for interactions |
+| [label](#label)      | `label`      | `Boolean` | false       | Enables label UI option                          |
+| [target](#target)     | `target`     | `Boolean` | false       | Enables the close functionality                  |
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Badge API Examples
@@ -70,12 +71,12 @@ Use these variants to apply pre-defined state styles to the badge: `info`, `erro
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesOnDark.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/statesOnDark.html -->
-  <auro-badge variant="info" onDark>Info</auro-badge>
-  <auro-badge variant="error" onDark>Error</auro-badge>
-  <auro-badge variant="success" onDark>Success</auro-badge>
-  <auro-badge variant="warning" onDark>Warning</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesInverseAppearance.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/statesInverseAppearance.html -->
+  <auro-badge variant="info" appearance="inverse">Info</auro-badge>
+  <auro-badge variant="error" appearance="inverse">Error</auro-badge>
+  <auro-badge variant="success" appearance="inverse">Success</auro-badge>
+  <auro-badge variant="warning" appearance="inverse">Warning</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -90,12 +91,12 @@ Use these variants to apply pre-defined state styles to the badge: `info`, `erro
 <auro-badge variant="warning">Warning</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesOnDark.html) -->
-<!-- The below content is automatically added from ./../apiExamples/statesOnDark.html -->
-<auro-badge variant="info" onDark>Info</auro-badge>
-<auro-badge variant="error" onDark>Error</auro-badge>
-<auro-badge variant="success" onDark>Success</auro-badge>
-<auro-badge variant="warning" onDark>Warning</auro-badge>
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesInverseAppearance.html) -->
+<!-- The below content is automatically added from ./../apiExamples/statesInverseAppearance.html -->
+<auro-badge variant="info" appearance="inverse">Info</auro-badge>
+<auro-badge variant="error" appearance="inverse">Error</auro-badge>
+<auro-badge variant="success" appearance="inverse">Success</auro-badge>
+<auro-badge variant="warning" appearance="inverse">Warning</auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
@@ -117,16 +118,16 @@ Use these variants to apply pre-defined loyalty tier colors to the badge: `bronz
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyOnDark.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/loyaltyOnDark.html -->
-  <auro-badge pill onDark variant="bronze">Bronze</auro-badge>
-  <auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
-  <auro-badge pill onDark variant="copper">Copper</auro-badge>
-  <auro-badge pill onDark variant="gold">Gold</auro-badge>
-  <auro-badge pill onDark variant="nickel">Nickel</auro-badge>
-  <auro-badge pill onDark variant="platinum">Platinum</auro-badge>
-  <auro-badge pill onDark variant="silver">Silver</auro-badge>
-  <auro-badge pill onDark variant="titanium">Titanium</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyInverseAppearance.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/loyaltyInverseAppearance.html -->
+  <auro-badge pill appearance="inverse" variant="bronze">Bronze</auro-badge>
+  <auro-badge pill appearance="inverse" variant="cobalt">Cobalt</auro-badge>
+  <auro-badge pill appearance="inverse" variant="copper">Copper</auro-badge>
+  <auro-badge pill appearance="inverse" variant="gold">Gold</auro-badge>
+  <auro-badge pill appearance="inverse" variant="nickel">Nickel</auro-badge>
+  <auro-badge pill appearance="inverse" variant="platinum">Platinum</auro-badge>
+  <auro-badge pill appearance="inverse" variant="silver">Silver</auro-badge>
+  <auro-badge pill appearance="inverse" variant="titanium">Titanium</auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -145,16 +146,16 @@ Use these variants to apply pre-defined loyalty tier colors to the badge: `bronz
 <auro-badge pill variant="titanium">Titanium</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyOnDark.html) -->
-<!-- The below content is automatically added from ./../apiExamples/loyaltyOnDark.html -->
-<auro-badge pill onDark variant="bronze">Bronze</auro-badge>
-<auro-badge pill onDark variant="cobalt">Cobalt</auro-badge>
-<auro-badge pill onDark variant="copper">Copper</auro-badge>
-<auro-badge pill onDark variant="gold">Gold</auro-badge>
-<auro-badge pill onDark variant="nickel">Nickel</auro-badge>
-<auro-badge pill onDark variant="platinum">Platinum</auro-badge>
-<auro-badge pill onDark variant="silver">Silver</auro-badge>
-<auro-badge pill onDark variant="titanium">Titanium</auro-badge>
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyInverseAppearance.html) -->
+<!-- The below content is automatically added from ./../apiExamples/loyaltyInverseAppearance.html -->
+<auro-badge pill appearance="inverse" variant="bronze">Bronze</auro-badge>
+<auro-badge pill appearance="inverse" variant="cobalt">Cobalt</auro-badge>
+<auro-badge pill appearance="inverse" variant="copper">Copper</auro-badge>
+<auro-badge pill appearance="inverse" variant="gold">Gold</auro-badge>
+<auro-badge pill appearance="inverse" variant="nickel">Nickel</auro-badge>
+<auro-badge pill appearance="inverse" variant="platinum">Platinum</auro-badge>
+<auro-badge pill appearance="inverse" variant="silver">Silver</auro-badge>
+<auro-badge pill appearance="inverse" variant="titanium">Titanium</auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
