@@ -29,7 +29,8 @@
   border-color: var(--ds-auro-badge-border-color);
 }
 
-:host([onDark]) {
+:host([onDark]),
+:host([appearance="inverse"]) {
   --ds-auro-badge-container-color: var(--ds-basic-color-brand-primary-muted, #{v.$ds-basic-color-brand-primary-muted});
   --ds-auro-badge-border-color: var(--ds-basic-color-brand-primary-muted, #{v.$ds-basic-color-brand-primary-muted});
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
@@ -49,7 +50,8 @@
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
 }
 
-:host([variant="transparent"][onDark]) {
+:host([variant="transparent"][onDark]),
+:host([variant="transparent"][appearance="inverse"]) {
   --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency-inverse, #{v.$ds-advanced-color-accents-transparency-inverse});
   --ds-auro-badge-border-color: transparent;
   --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
@@ -71,7 +73,8 @@ $states:
     --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}, #{$default});
   }
 
-  :host([variant="#{$state}"][onDark]) {
+  :host([variant="#{$state}"][onDark]),
+  :host([variant="#{$state}"][appearance="inverse"]) {
     --ds-auro-badge-container-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
     --ds-auro-badge-border-color: var(--ds-basic-color-status-#{$state}-subtle, #{$dark});
   }
@@ -129,7 +132,8 @@ $loyaltyTier:
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
   }
 
-  :host([variant="#{$tier}"][onDark]) {
+  :host([variant="#{$tier}"][onDark]),
+  :host([variant="#{$tier}"][appearance="inverse"]) {
     --ds-auro-badge-border-color: var(--ds-color-tier-program-loyaltytier-#{$tier}-muted, #{$dark});
   }
 }
@@ -156,7 +160,8 @@ $onDarkLoyaltyTier:
     --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$tier}, #{$fallback});
   }
 
-  :host([variant="#{$tier}"][onDark]) {
+  :host([variant="#{$tier}"][onDark]),
+  :host([variant="#{$tier}"][appearance="inverse"]) {
     --ds-auro-badge-border-color:  var(--ds-color-tier-program-loyaltytier-#{$tier}-muted, #{$dark});
     --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
   }

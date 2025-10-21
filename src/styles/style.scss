@@ -50,7 +50,8 @@
   border: 0;
 }
 
-:host([target][ondark][disabled]) {
+:host([target][ondark][disabled]),
+:host([target][appearance="inverse"][disabled]) {
   .target {
     color: var(--ds-color-text-primary-default, vac.$ds-color-text-primary-default);
   }

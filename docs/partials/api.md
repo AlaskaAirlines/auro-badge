@@ -34,7 +34,7 @@ Use these variants to apply pre-defined state styles to the badge: `info`, `erro
 </div>
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesOnDark.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesInverseAppearance.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
@@ -44,7 +44,7 @@ Use these variants to apply pre-defined state styles to the badge: `info`, `erro
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/states.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesOnDark.html) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/statesInverseAppearance.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
@@ -59,7 +59,7 @@ Use these variants to apply pre-defined loyalty tier colors to the badge: `bronz
 </div>
 
 <div class="exampleWrapper--ondark">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyOnDark.html) -->
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyInverseAppearance.html) -->
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 
@@ -69,7 +69,7 @@ Use these variants to apply pre-defined loyalty tier colors to the badge: `bronz
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/loyalty.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
-<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyOnDark.html) -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyaltyInverseAppearance.html) -->
 <!-- AURO-GENERATED-CONTENT:END -->
 
 </auro-accordion>
