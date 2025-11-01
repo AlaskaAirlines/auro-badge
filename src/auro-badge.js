@@ -19,12 +19,9 @@ import tokensCss from "./styles/tokens.scss";
 /**
  * HTML custom element for the use of drawing attention to additional interface information.
  *
- * @attr {Boolean} target - Enables the close functionality
  * @attr {Boolean} ondark - DEPRECATED - use `appearance` instead.
  * @attr {Boolean} space - Adds default spacing spec to badges
  * @attr {Boolean} pill - Enables pill UI option
- * @attr {Boolean} label - Enables label UI option
- * @attr {Boolean} disabled - If set to true button will become disabled and not allow for interactions
  * @attr {String} variant - Sets the color UI of the badge
  *  Possible Values:
  *    - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`
@@ -37,9 +34,9 @@ export class AuroBadge extends LitElement {
   constructor() {
     super();
 
-    /**
-     * @private
-     */
+    /*
+      * @private
+      */
     this.icon = false;
 
     const versioning = new AuroDependencyVersioning();
@@ -69,21 +66,33 @@ export class AuroBadge extends LitElement {
     this.appearance = 'default';
   }
 
-  // function to define props used within the scope of this component
+  // function to define props used within the scope of this component.
   static get properties() {
     return {
+      /**
+       * Enables the close functionality
+       */
       target: {
         type: Boolean,
         reflect: true,
       },
+
+      /**
+       * If set to true button will become disabled and not allow for interactions.
+       */
       disabled: {
         type: Boolean,
         reflect: true,
       },
+
+      /**
+       * Enables label UI option
+       */
       label: {
         type: Boolean,
         reflect: true,
       },
+
       icon: {
         type: Boolean,
         reflect: true,
@@ -91,6 +100,7 @@ export class AuroBadge extends LitElement {
 
       /**
        * Defines whether the component will be on lighter or darker backgrounds.
+       *  Possible Values: `default`, `inverse`
        * @property {'default', 'inverse'}
        * @default 'default'
        */
@@ -140,13 +150,8 @@ export class AuroBadge extends LitElement {
    * @returns {void}
    */
   handleContentSlotChanges() {
-    const [slotContent] = this.shadowRoot.querySelector("slot").assignedNodes();
-
-    if (slotContent.tagName === "AURO-ICON") {
-      this.icon = true;
-    } else {
-      this.icon = false;
-    }
+    const slotContents = this.shadowRoot.querySelector("slot").assignedNodes();
+    this.icon = slotContents.some((slotContent) => slotContent.tagName === "AURO-ICON");
   }
 
   connectedCallback() {

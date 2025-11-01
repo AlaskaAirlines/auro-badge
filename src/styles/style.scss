@@ -95,33 +95,6 @@
   padding: var(--labelpillpadding) var(--ds-size-200, vac.$ds-size-200);
 }
 
-:host([icon]) ::slotted(auro-icon) {
-  width: var(--ds-size-300, vac.$ds-size-300);
-  margin-right: var(--ds-size-50, vac.$ds-size-50);
-}
-
-:host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--ds-size-200, vac.$ds-size-200);
-}
-
-:host([icon][pill]) {
-  padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
-  line-height: 0.75rem;
-}
-
-:host([icon]) {
-  padding: var(--labelpillpadding) var(--ds-size-200, vac.$ds-size-200);
-}
-
-:host([icon]) ::slotted(auro-icon) {
-  width: var(--ds-size-300, vac.$ds-size-300);
-  margin-right: var(--ds-size-50, vac.$ds-size-50);
-}
-
-:host([icon][pill]) ::slotted(auro-icon) {
-  width: var(--ds-size-200, vac.$ds-size-200);
-}
-
 :host([icon][pill]) {
   padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
   line-height: 0.75rem;

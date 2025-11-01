@@ -135,7 +135,7 @@ Use the `pill` property in combination with the `error`, `success`, or `advisory
 
 ### Pill with Icons
 
-Use `icon` attribute to include icons inside your badge.
+`pill` attribute with `auro-icon` inside your badge.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pillWithIcons.html) -->
