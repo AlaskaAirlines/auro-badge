@@ -145,11 +145,21 @@ To use icons in your badges, it is preferred that this is added as contnet withi
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/icon.html) -->
   <!-- The below content is automatically added from ./../apiExamples/icon.html -->
-  <auro-badge><auro-icon appearance="inverse" emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-  <auro-badge><auro-icon appearance="inverse" emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-  <auro-badge><auro-icon appearance="inverse" emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-  <auro-badge><auro-icon appearance="inverse" emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-  <auro-badge><auro-icon appearance="inverse" emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge>
+    <auro-icon appearance="inverse" emphasis category="health" name="air" label>Air</auro-icon>
+  </auro-badge>
+  <auro-badge>
+    <auro-icon appearance="inverse" emphasis category="health" name="covid-test" label>Covid test</auro-icon>
+  </auro-badge>
+  <auro-badge>
+    <auro-icon appearance="inverse" emphasis category="health" name="health" label>Health</auro-icon>
+  </auro-badge>
+  <auro-badge>
+    <auro-icon appearance="inverse" emphasis category="health" name="mask" label>Mask</auro-icon>
+  </auro-badge>
+  <auro-badge>
+    <auro-icon appearance="inverse" emphasis category="health" name="spraybottle" label>Spray bottle</auro-icon>
+  </auro-badge>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
@@ -158,11 +168,21 @@ To use icons in your badges, it is preferred that this is added as contnet withi
 <!-- The below code snippet is automatically added from ./../apiExamples/icon.html -->
 
 ```html
-<auro-badge><auro-icon appearance="inverse" emphasis category="health" name="air"></auro-icon>Air</auro-badge>
-<auro-badge><auro-icon appearance="inverse" emphasis category="health" name="covid-test"></auro-icon>Covid test</auro-badge>
-<auro-badge><auro-icon appearance="inverse" emphasis category="health" name="health"></auro-icon>Health</auro-badge>
-<auro-badge><auro-icon appearance="inverse" emphasis category="health" name="mask"></auro-icon>Mask</auro-badge>
-<auro-badge><auro-icon appearance="inverse" emphasis category="health" name="spraybottle"></auro-icon>Spray bottle</auro-badge>
+<auro-badge>
+  <auro-icon appearance="inverse" emphasis category="health" name="air" label>Air</auro-icon>
+</auro-badge>
+<auro-badge>
+  <auro-icon appearance="inverse" emphasis category="health" name="covid-test" label>Covid test</auro-icon>
+</auro-badge>
+<auro-badge>
+  <auro-icon appearance="inverse" emphasis category="health" name="health" label>Health</auro-icon>
+</auro-badge>
+<auro-badge>
+  <auro-icon appearance="inverse" emphasis category="health" name="mask" label>Mask</auro-icon>
+</auro-badge>
+<auro-badge>
+  <auro-icon appearance="inverse" emphasis category="health" name="spraybottle" label>Spray bottle</auro-icon>
+</auro-badge>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
@@ -198,17 +218,27 @@ Use the `pill` property in combination with the `error`, `success`, or `advisory
 
 ### Pill with Icons
 
-Use `icon` attribute to include icons inside your badge.
+`pill` attribute with `auro-icon` inside your badge.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pillWithIcons.html) -->
   <!-- The below content is automatically added from ./../apiExamples/pillWithIcons.html -->
   <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
-    <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Air</auro-badge>
-    <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Covid test</auro-badge>
-    <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Health</auro-badge>
-    <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Mask</auro-badge>
-    <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Spray bottle</auro-badge>
+    <auro-badge pill>
+      <auro-icon appearance="inverse" label customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)">Air</auro-icon>
+    </auro-badge>
+    <auro-badge pill>
+      <auro-icon appearance="inverse" label customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)">Covid test</auro-icon>
+    </auro-badge>
+    <auro-badge pill>
+      <auro-icon appearance="inverse" label customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)">Health</auro-icon>
+    </auro-badge>
+    <auro-badge pill>
+      <auro-icon appearance="inverse" label customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)">Mask</auro-icon>
+    </auro-badge>
+    <auro-badge pill>
+      <auro-icon appearance="inverse" label customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)">Spray bottle</auro-icon>
+    </auro-badge>
   </div>
   <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -219,11 +249,21 @@ Use `icon` attribute to include icons inside your badge.
 
 ```html
 <div class="exampleWrapper" style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
-  <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Air</auro-badge>
-  <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Covid test</auro-badge>
-  <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Health</auro-badge>
-  <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Mask</auro-badge>
-  <auro-badge pill><auro-icon appearance="inverse" customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)"></auro-icon>Spray bottle</auro-badge>
+  <auro-badge pill>
+    <auro-icon appearance="inverse" label customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)">Air</auro-icon>
+  </auro-badge>
+  <auro-badge pill>
+    <auro-icon appearance="inverse" label customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)">Covid test</auro-icon>
+  </auro-badge>
+  <auro-badge pill>
+    <auro-icon appearance="inverse" label customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)">Health</auro-icon>
+  </auro-badge>
+  <auro-badge pill>
+    <auro-icon appearance="inverse" label customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)">Mask</auro-icon>
+  </auro-badge>
+  <auro-badge pill>
+    <auro-icon appearance="inverse" label customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)">Spray bottle</auro-icon>
+  </auro-badge>
 </div>
 ```
 <!-- AURO-GENERATED-CONTENT:END -->

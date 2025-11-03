@@ -5,23 +5,24 @@
 
 HTML custom element for the use of drawing attention to additional interface information.
 
-## Attributes
+### Properties & Attributes
 
-| Attribute | Type      | Description                                      |
-|-----------|-----------|--------------------------------------------------|
-| [ondark](#ondark)  | `Boolean` | DEPRECATED - use `appearance` instead.           |
-| [pill](#pill)    | `Boolean` | Enables pill UI option                           |
-| [space](#space)   | `Boolean` | Adds default spacing spec to badges              |
-| [variant](#variant) | `String`  | Sets the color UI of the badge<br />Possible Values:<br />- `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`<br />Deprecated Values:<br />- `mvp`, `mvpgold`, `mvpgold75k` |
+| Properties | Attributes | Type    | Default   | Description                                                                                                                                                                                                                                                                                                                                     |
+| ---------- | ---------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| appearance | appearance | string  | 'default' | Defines whether the component will be on lighter or darker backgrounds.<br> Possible Values: `default`, `inverse`                                                                                                                                                                                                                               |
+| disabled   | disabled   | boolean | false     | If set to true button will become disabled and not allow for interactions.                                                                                                                                                                                                                                                                      |
+| label      | label      | boolean | false     | Enables label UI option                                                                                                                                                                                                                                                                                                                         |
+| target     | target     | boolean | false     | Enables the close functionality                                                                                                                                                                                                                                                                                                                 |
+|            | ondark     | Boolean |           | DEPRECATED - use `appearance` instead.                                                                                                                                                                                                                                                                                                          |
+|            | pill       | Boolean |           | Enables pill UI option                                                                                                                                                                                                                                                                                                                          |
+|            | space      | Boolean |           | Adds default spacing spec to badges                                                                                                                                                                                                                                                                                                             |
+|            | variant    | String  |           | Sets the color UI of the badge Possible Values: - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus` Deprecated Values: - `mvp`, `mvpgold`, `mvpgold75k` |
 
-## Properties
+### Methods
 
-| Property     | Attribute    | Type      | Default     | Description                                      |
-|--------------|--------------|-----------|-------------|--------------------------------------------------|
-| [appearance](#appearance) | `appearance` | `string`  | "'default'" | Defines whether the component will be on lighter or darker backgrounds. |
-| [disabled](#disabled)   | `disabled`   | `Boolean` | false       | If set to true button will become disabled and not allow for interactions |
-| [label](#label)      | `label`      | `Boolean` | false       | Enables label UI option                          |
-| [target](#target)     | `target`     | `Boolean` | false       | Enables the close functionality                  |
+| Name     | Parameters                                                          | Return | Description                                       |
+| -------- | ------------------------------------------------------------------- | ------ | ------------------------------------------------- |
+| register | `name` (string) - The name of element that you want to register to. |        | This will register this element with the browser. |
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Badge API Examples
