@@ -23,7 +23,7 @@
                 "text": "string"
               },
               "description": "Defines whether the component will be on lighter or darker backgrounds.\n Possible Values: `default`, `inverse`",
-              "default": "'default'",
+              "default": "\"default\"",
               "fieldName": "appearance",
               "inheritedFrom": {
                 "name": "AuroBadge",
@@ -129,7 +129,7 @@
               "type": {
                 "text": "String"
               },
-              "description": "Sets the color UI of the badge Possible Values: - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus` Deprecated Values: - `mvp`, `mvpgold`, `mvpgold75k`",
+              "description": "Sets the color UI of the badge Possible Values: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`, `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first` Deprecated Values: `mvp`, `mvpgold`, `mvpgold75k`",
               "name": "variant",
               "inheritedFrom": {
                 "name": "AuroBadge",
@@ -146,7 +146,7 @@
                 "text": "string"
               },
               "description": "Defines whether the component will be on lighter or darker backgrounds.\n Possible Values: `default`, `inverse`",
-              "default": "'default'",
+              "default": "\"default\"",
               "attribute": "appearance",
               "reflects": true,
               "inheritedFrom": {
@@ -272,6 +272,9 @@
               "inheritedFrom": {
                 "name": "AuroBadge",
                 "module": "src/auro-badge.js"
+              },
+              "type": {
+                "text": "register(name?: string = \"auro-badge\") => void"
               }
             },
             {
@@ -313,7 +316,9 @@
                 "module": "src/auro-badge.js"
               }
             }
-          ]
+          ],
+          "modulePath": "scripts/wca/auro-badge.js",
+          "definitionPath": "scripts/wca/auro-badge.js"
         }
       ],
       "exports": [
@@ -344,7 +349,7 @@
                 "text": "string"
               },
               "description": "Defines whether the component will be on lighter or darker backgrounds.\n Possible Values: `default`, `inverse`",
-              "default": "'default'",
+              "default": "\"default\"",
               "attribute": "appearance",
               "reflects": true
             },
@@ -471,7 +476,7 @@
                 "text": "string"
               },
               "description": "Defines whether the component will be on lighter or darker backgrounds.\n Possible Values: `default`, `inverse`",
-              "default": "'default'",
+              "default": "\"default\"",
               "fieldName": "appearance"
             },
             {
@@ -541,7 +546,7 @@
               "type": {
                 "text": "String"
               },
-              "description": "Sets the color UI of the badge Possible Values: - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus` Deprecated Values: - `mvp`, `mvpgold`, `mvpgold75k`",
+              "description": "Sets the color UI of the badge Possible Values: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`, `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first` Deprecated Values: `mvp`, `mvpgold`, `mvpgold75k`",
               "name": "variant"
             }
           ],
@@ -549,7 +554,8 @@
             "name": "LitElement",
             "package": "lit"
           },
-          "customElement": true
+          "customElement": true,
+          "modulePath": "src/auro-badge.js"
         }
       ],
       "exports": [
@@ -574,20 +580,6 @@
           "declaration": {
             "name": "12.3.0",
             "module": "src/buttonVersion.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/color-css.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/color-css.js"
           }
         }
       ]
@@ -627,34 +619,6 @@
       "path": "src/registered.js",
       "declarations": [],
       "exports": []
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/style-css.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/style-css.js"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/tokens-css.js",
-      "declarations": [],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "module": "src/tokens-css.js"
-          }
-        }
-      ]
     }
   ]
 }
