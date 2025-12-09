@@ -24,9 +24,37 @@ import tokensCss from "./styles/tokens.scss";
  * @attr {Boolean} pill - Enables pill UI option
  * @attr {String} variant - Sets the color UI of the badge
  *  Possible Values:
- *    - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`
+ *    `accent1`,
+ *    `accent2`,
+ *    `accent3`,
+ *    `accent4`,
+ *    `bronze`,
+ *    `cobalt`,
+ *    `copper`,
+ *    `gold`,
+ *    `nickel`,
+ *    `platinum`,
+ *    `silver`,
+ *    `titanium`,
+ *    `transparent`,
+ *    `info`,
+ *    `error`,
+ *    `success`,
+ *    `warning`,
+ *    `emerald`,
+ *    `sapphire`,
+ *    `ruby`,
+ *    `lounge`,
+ *    `loungeplus`,
+ *    `fare-saver`,
+ *    `fare-economy`,
+ *    `fare-premium`,
+ *    `fare-business`,
+ *    `fare-first`
  *  Deprecated Values:
- *    - `mvp`, `mvpgold`, `mvpgold75k`
+ *    `mvp`,
+ *    `mvpgold`,
+ *    `mvpgold75k`
  */
 
 // build the component class
@@ -35,8 +63,8 @@ export class AuroBadge extends LitElement {
     super();
 
     /*
-      * @private
-      */
+     * @private
+     */
     this.icon = false;
 
     const versioning = new AuroDependencyVersioning();
@@ -63,7 +91,7 @@ export class AuroBadge extends LitElement {
     this.target = false;
     this.disabled = false;
     this.label = false;
-    this.appearance = 'default';
+    this.appearance = "default";
   }
 
   // function to define props used within the scope of this component.
@@ -106,7 +134,7 @@ export class AuroBadge extends LitElement {
        */
       appearance: {
         type: String,
-        reflect: true
+        reflect: true,
       },
 
       /**
@@ -151,7 +179,9 @@ export class AuroBadge extends LitElement {
    */
   handleContentSlotChanges() {
     const slotContents = this.shadowRoot.querySelector("slot").assignedNodes();
-    this.icon = slotContents.some((slotContent) => slotContent.tagName === "AURO-ICON");
+    this.icon = slotContents.some(
+      (slotContent) => slotContent.tagName === "AURO-ICON",
+    );
   }
 
   connectedCallback() {
@@ -181,7 +211,7 @@ export class AuroBadge extends LitElement {
         this.target
           ? html`
         <${this.buttonTag}
-          appearance="${this.hasAttribute("ondark") ? 'inverse' :this.appearance}"
+          appearance="${this.hasAttribute("ondark") ? "inverse" : this.appearance}"
           shape="pill"
           @click=${this.handleChange}
           ?disabled="${this.disabled}"

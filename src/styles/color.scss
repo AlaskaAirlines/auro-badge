@@ -1,6 +1,12 @@
 // Copyright (c) 2024 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
 
+/* stylelint-disable selector-class-pattern,
+   no-descending-specificity,
+   scss/dollar-variable-first-in-block,
+   scss/dollar-variable-pattern,
+   no-duplicate-selectors */
+
 // ---------------------------------------------------------------------
 
 // Import Auro tokens
@@ -24,9 +30,9 @@
 }
 
 :host {
-  color: var(--ds-auro-badge-text-color);
-  background-color: var(--ds-auro-badge-container-color);
   border-color: var(--ds-auro-badge-border-color);
+  background-color: var(--ds-auro-badge-container-color);
+  color: var(--ds-auro-badge-text-color);
 }
 
 :host([onDark]),
@@ -148,6 +154,48 @@ $mvpStatus:
     --ds-auro-badge-container-color: var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
     --ds-auro-badge-border-color:  var(--ds-color-tier-alaska-#{$status}-default, #{$fallback});
   }
+}
+
+:host([variant="fare-saver"]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-fare-basiceconomy, #{v.$ds-basic-color-fare-basiceconomy});
+  --ds-auro-badge-border-color: var(--ds-basic-color-fare-basiceconomy, #{v.$ds-basic-color-fare-basiceconomy});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
+}
+
+:host([variant="fare-economy"]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-fare-economy, #{v.$ds-basic-color-fare-economy});
+  --ds-auro-badge-border-color: var(--ds-basic-color-fare-economy, #{v.$ds-basic-color-fare-economy});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
+}
+
+:host([variant="fare-premium"]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-fare-premiumeconomy, #{v.$ds-basic-color-fare-premiumeconomy});
+  --ds-auro-badge-border-color: var(--ds-basic-color-fare-premiumeconomy, #{v.$ds-basic-color-fare-premiumeconomy});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
+}
+
+:host([variant="fare-business"]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-fare-business, #{v.$ds-basic-color-fare-business});
+  --ds-auro-badge-border-color: var(--ds-basic-color-fare-business, #{v.$ds-basic-color-fare-business});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
+}
+
+:host([variant="fare-first"]) {
+  --ds-auro-badge-container-color: var(--ds-basic-color-fare-first, #{v.$ds-basic-color-fare-first});
+  --ds-auro-badge-border-color: var(--ds-basic-color-fare-first, #{v.$ds-basic-color-fare-first});
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
+}
+
+:host([variant="transparent"]) {
+  --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency, #{v.$ds-advanced-color-accents-transparency});
+  --ds-auro-badge-border-color: transparent;
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-default, #{v.$ds-basic-color-texticon-default});
+}
+
+:host([variant="transparent-inverse"]) {
+  --ds-auro-badge-container-color: var(--ds-advanced-color-accents-transparency-inverse, #{v.$ds-advanced-color-accents-transparency-inverse});
+  --ds-auro-badge-border-color: transparent;
+  --ds-auro-badge-text-color: var(--ds-basic-color-texticon-inverse, #{v.$ds-basic-color-texticon-inverse});
 }
 
 $onDarkLoyaltyTier:
