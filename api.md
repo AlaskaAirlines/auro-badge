@@ -7,16 +7,16 @@ HTML custom element for the use of drawing attention to additional interface inf
 
 ### Properties & Attributes
 
-| Properties | Attributes | Type    | Default   | Description                                                                                                                                                                                                                                                                                                                                     |
-| ---------- | ---------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| appearance | appearance | string  | 'default' | Defines whether the component will be on lighter or darker backgrounds.<br> Possible Values: `default`, `inverse`                                                                                                                                                                                                                               |
-| disabled   | disabled   | boolean | false     | If set to true button will become disabled and not allow for interactions.                                                                                                                                                                                                                                                                      |
-| label      | label      | boolean | false     | Enables label UI option                                                                                                                                                                                                                                                                                                                         |
-| target     | target     | boolean | false     | Enables the close functionality                                                                                                                                                                                                                                                                                                                 |
-|            | ondark     | Boolean |           | DEPRECATED - use `appearance` instead.                                                                                                                                                                                                                                                                                                          |
-|            | pill       | Boolean |           | Enables pill UI option                                                                                                                                                                                                                                                                                                                          |
-|            | space      | Boolean |           | Adds default spacing spec to badges                                                                                                                                                                                                                                                                                                             |
-|            | variant    | String  |           | Sets the color UI of the badge Possible Values: - `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus` Deprecated Values: - `mvp`, `mvpgold`, `mvpgold75k` |
+| Properties | Attributes | Modifiers | Type    | Default   | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------- | ---------- | --------- | ------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| appearance | appearance |           | string  | `default` | Defines whether the component will be on lighter or darker backgrounds.<br> Possible Values: `default`, `inverse`                                                                                                                                                                                                                                                                                                        |
+| disabled   | disabled   |           | boolean | `false`   | If set to true button will become disabled and not allow for interactions.                                                                                                                                                                                                                                                                                                                                               |
+| label      | label      |           | boolean | `false`   | Enables label UI option                                                                                                                                                                                                                                                                                                                                                                                                  |
+| target     | target     |           | boolean | `false`   | Enables the close functionality                                                                                                                                                                                                                                                                                                                                                                                          |
+|            | ondark     |           | Boolean |           | DEPRECATED - use `appearance` instead.                                                                                                                                                                                                                                                                                                                                                                                   |
+|            | pill       |           | Boolean |           | Enables pill UI option                                                                                                                                                                                                                                                                                                                                                                                                   |
+|            | space      |           | Boolean |           | Adds default spacing spec to badges                                                                                                                                                                                                                                                                                                                                                                                      |
+|            | variant    |           | String  |           | Sets the color UI of the badge Possible Values: `accent1`, `accent2`, `accent3`, `accent4`, `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`, `transparent`, `info`, `error`, `success`, `warning`, `emerald`, `sapphire`, `ruby`, `lounge`, `loungeplus`, `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first` Deprecated Values: `mvp`, `mvpgold`, `mvpgold75k` |
 
 ### Methods
 
@@ -98,6 +98,69 @@ Use these variants to apply pre-defined state styles to the badge: `info`, `erro
 <auro-badge variant="error" appearance="inverse">Error</auro-badge>
 <auro-badge variant="success" appearance="inverse">Success</auro-badge>
 <auro-badge variant="warning" appearance="inverse">Warning</auro-badge>
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+#### Fares
+
+Use these variants to apply pre-defined fare colors to the badge: `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/fares.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/fares.html -->
+  <auro-badge variant="fare-saver">saver</auro-badge>
+  <auro-badge variant="fare-economy">economy</auro-badge>
+  <auro-badge variant="fare-premium">premium</auro-badge>
+  <auro-badge variant="fare-business">business</auro-badge>
+  <auro-badge variant="fare-first">first</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/fares.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/fares.html -->
+
+```html
+<auro-badge variant="fare-saver">saver</auro-badge>
+<auro-badge variant="fare-economy">economy</auro-badge>
+<auro-badge variant="fare-premium">premium</auro-badge>
+<auro-badge variant="fare-business">business</auro-badge>
+<auro-badge variant="fare-first">first</auro-badge>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+</auro-accordion>
+
+#### Transparency
+
+Use these variants to apply pre-defined transparency colors to the badge: `transparent`, `transparent-inverse`.
+
+<div class="exampleWrapper">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparency.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/transparency.html -->
+  <auro-badge variant="transparent">saver</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<div class="exampleWrapper--ondark">
+  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparency-inverse.html) -->
+  <!-- The below content is automatically added from ./../apiExamples/transparency-inverse.html -->
+  <auro-badge variant="transparent-inverse">saver</auro-badge>
+  <!-- AURO-GENERATED-CONTENT:END -->
+</div>
+<auro-accordion alignRight>
+  <span slot="trigger">See code</span>
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/transparency.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/transparency.html -->
+
+```html
+<auro-badge variant="transparent">saver</auro-badge>
+```
+<!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/transparency-inverse.html) -->
+<!-- The below code snippet is automatically added from ./../apiExamples/transparency-inverse.html -->
+
+```html
+<auro-badge variant="transparent-inverse">saver</auro-badge>
+```
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
