@@ -124,7 +124,16 @@ You can do this by importing only the component class and using the `register(na
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/customRegistration.md) -->
 <!-- The below content is automatically added from ./docs/partials/customRegistration.md -->
-<!-- add custom registration content here -->
+
+```js
+// Import the class only
+import { AuroBadge } from '@aurodesignsystem/auro-badge/class';
+
+// Register with a custom name if desired
+AuroBadge.register('custom-badge');
+```
+
+This will create a new custom element `<custom-badge>` that behaves exactly like `<auro-badge>`, allowing both to coexist on the same page without interfering with each other.
 <!-- AURO-GENERATED-CONTENT:END -->
 <div class="exampleWrapper exampleWrapper--flex">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
