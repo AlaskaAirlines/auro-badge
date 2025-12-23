@@ -1,4 +1,4 @@
-// Copyright (c) 2020 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
+// Copyright (c) 2025 Alaska Airlines. All right reserved. Licensed under the Apache-2.0 license
 // See LICENSE in the project root for license information.
 
 // ---------------------------------------------------------------------
@@ -17,50 +17,21 @@ import tokensCss from "./styles/tokens.scss";
 
 // See https://git.io/JJ6SJ for "How to document your components using JSDoc"
 /**
- * HTML custom element for the use of drawing attention to additional interface information.
- *
- * @attr {Boolean} ondark - DEPRECATED - use `appearance` instead.
- * @attr {Boolean} space - Adds default spacing spec to badges
- * @attr {Boolean} pill - Enables pill UI option
- * @attr {String} variant - Sets the color UI of the badge
- *  Possible Values:
- *    `accent1`,
- *    `accent2`,
- *    `accent3`,
- *    `accent4`,
- *    `bronze`,
- *    `cobalt`,
- *    `copper`,
- *    `gold`,
- *    `nickel`,
- *    `platinum`,
- *    `silver`,
- *    `titanium`,
- *    `transparent`,
- *    `info`,
- *    `error`,
- *    `success`,
- *    `warning`,
- *    `emerald`,
- *    `sapphire`,
- *    `ruby`,
- *    `lounge`,
- *    `loungeplus`,
- *    `fare-saver`,
- *    `fare-economy`,
- *    `fare-premium`,
- *    `fare-business`,
- *    `fare-first`
- *  Deprecated Values:
- *    `mvp`,
- *    `mvpgold`,
- *    `mvpgold75k`
+ * The `auro-badge` element is for the use of drawing attention to additional interface information.
+ * @customElement auro-badge
  */
-
-// build the component class
 export class AuroBadge extends LitElement {
   constructor() {
     super();
+
+    this._initializeDefaults();
+  }
+
+  _initializeDefaults() {
+    this.target = false;
+    this.disabled = false;
+    this.label = false;
+    this.appearance = "default";
 
     /*
      * @private
@@ -87,22 +58,19 @@ export class AuroBadge extends LitElement {
      * @private
      */
     this.runtimeUtils = new AuroLibraryRuntimeUtils();
-
-    this.target = false;
-    this.disabled = false;
-    this.label = false;
-    this.appearance = "default";
   }
 
   // function to define props used within the scope of this component.
   static get properties() {
     return {
       /**
-       * Enables the close functionality
+       * Defines whether the component will be on lighter or darker backgrounds.
+       * @type {'default' | 'inverse'}
+       * @default 'default'
        */
-      target: {
-        type: Boolean,
-        reflect: true,
+      appearance: {
+        type: String,
+        reflect: true
       },
 
       /**
@@ -110,45 +78,73 @@ export class AuroBadge extends LitElement {
        */
       disabled: {
         type: Boolean,
-        reflect: true,
+        reflect: true
       },
 
       /**
-       * Enables label UI option
+       * Enables label UI option.
        */
       label: {
         type: Boolean,
-        reflect: true,
-      },
-
-      icon: {
-        type: Boolean,
-        reflect: true,
+        reflect: true
       },
 
       /**
-       * Defines whether the component will be on lighter or darker backgrounds.
-       *  Possible Values: `default`, `inverse`
-       * @property {'default', 'inverse'}
-       * @default 'default'
+       * Enables pill UI option.
        */
-      appearance: {
-        type: String,
+      pill: {
+        type: Boolean,
+        reflect: true
+      },
+
+
+      /**
+       * DEPRECATED - use `appearance` instead.
+       */
+      onDark: {
+        type: Boolean,
         reflect: true,
+        deprecated: true
+      },
+
+
+      /**
+       * Adds default spacing to the left of badges.
+       */
+      space: {
+        type: Boolean,
+        reflect: true
+      },
+
+      /**
+       * Adds functionality to the badge that displays a "target" icon, which dismisses the badge when clicked.
+       */
+      target: {
+        type: Boolean,
+        reflect: true
       },
 
       /**
        * @private
        */
       value: {
-        type: String,
+        type: String
       },
+
+      /**
+       * Defines the color variant of the badge.
+       * @type {'accent1' | 'accent2' | 'accent3' | 'accent4' | 'bronze' | 'cobalt' | 'copper' | 'gold' | 'nickel' | 'platinum' | 'silver' | 'titanium' | 'transparent' | 'info' | 'error' | 'success' | 'warning' | 'emerald' | 'sapphire' | 'ruby' | 'lounge' | 'loungeplus' | 'fare-saver' | 'fare-economy' | 'fare-premium' | 'fare-business' | 'fare-first'}
+       */
+      variant: {
+        type: String,
+        reflect: true
+      }
     };
   }
 
   /**
    * This will register this element with the browser.
-   * @param {string} [name="auro-badge"] - The name of element that you want to register to.
+   * @param {string} [name="auro-badge"] - The name of the element that you want to register.
    *
    * @example
    * AuroBadge.register("custom-badge") // this will register this element to <custom-badge/>
