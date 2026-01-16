@@ -200,7 +200,7 @@ export class AuroBadge extends LitElement {
           ${this.generateIconHtml(closeIcon.svg)}
           <span class="util_displayHiddenVisually">Dismiss</span>
         </${this.buttonTag}>`
-        : html`<div class="${this.label ? 'body-xs' : ''}">
+        : html`<div class="${this.label ? 'body-xs' : 'body-default'}">
           <slot @slotchange="${this.handleContentSlotChanges}"></slot>
         </div>`
       }
