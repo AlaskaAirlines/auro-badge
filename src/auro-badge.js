@@ -9,6 +9,7 @@ import { AuroDependencyVersioning } from "@aurodesignsystem/auro-library/scripts
 import AuroLibraryRuntimeUtils from "@aurodesignsystem/auro-library/scripts/utils/runtimeUtils.mjs";
 import { LitElement } from "lit";
 import { html } from "lit/static-html.js";
+import { classMap } from "lit/directives/class-map.js";
 import buttonVersion from "./buttonVersion.js";
 import iconVersion from "./iconVersion.js";
 import colorCss from "./styles/color.scss";
@@ -37,6 +38,11 @@ export class AuroBadge extends LitElement {
      * @private
      */
     this.icon = false;
+
+    /*
+     * @private
+     */
+    this.hasText = true;
 
     const versioning = new AuroDependencyVersioning();
 
@@ -132,6 +138,14 @@ export class AuroBadge extends LitElement {
       },
 
       /**
+       * @private
+       */
+      hasText: {
+        type: Boolean,
+        state: true
+      },
+
+      /**
        * Defines the color variant of the badge.
        * @type {'accent1' | 'accent2' | 'accent3' | 'accent4' | 'bronze' | 'cobalt' | 'copper' | 'gold' | 'nickel' | 'platinum' | 'silver' | 'titanium' | 'transparent' | 'info' | 'error' | 'success' | 'warning' | 'emerald' | 'sapphire' | 'ruby' | 'lounge' | 'loungeplus' | 'fare-saver' | 'fare-economy' | 'fare-premium' | 'fare-business' | 'fare-first'}
        */
@@ -178,6 +192,13 @@ export class AuroBadge extends LitElement {
     this.icon = slotContents.some(
       (slotContent) => slotContent.tagName === "AURO-ICON",
     );
+    this.hasText = slotContents.some(
+      (slotContent) =>
+        (slotContent.nodeType === Node.TEXT_NODE &&
+          slotContent.textContent.trim().length > 0) ||
+        (slotContent.nodeType === Node.ELEMENT_NODE &&
+          slotContent.tagName !== "AURO-ICON"),
+    );
   }
 
   connectedCallback() {
@@ -202,6 +223,12 @@ export class AuroBadge extends LitElement {
 
   // function that renders the HTML and CSS into  the scope of the component
   render() {
+    const sizingClassMap = {
+      "body-xs": this.hasText && this.label,
+      "body-default": this.hasText && !this.label,
+      "iconOnly": !this.hasText
+    };
+
     return html`
       ${
         this.target
@@ -218,7 +245,7 @@ export class AuroBadge extends LitElement {
           <${this.iconTag} customColor category="interface" name="x-sm"></${this.iconTag}>
           <span class="util_displayHiddenVisually">Dismiss</span>
         </${this.buttonTag}>`
-          : html`<div class="${this.label ? "body-xs" : ""}">
+          : html`<div class="${classMap(sizingClassMap)}">
           <slot @slotchange="${this.handleContentSlotChanges}"></slot>
         </div>`
       }
