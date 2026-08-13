@@ -43,6 +43,16 @@
   margin-left: var(--ds-size-300, vac.$ds-size-300);
 }
 
+:host([target]) {
+  [auro-button] {
+    &::part(button) {
+      padding: 0;
+      min-height: var(--ds-size-500, vac.$ds-size-500);
+      max-height: var(--ds-size-500, vac.$ds-size-500);
+    }
+  }
+}
+
 :host {
   display: inline-flex;
   align-items: center;
@@ -62,13 +72,6 @@
 :host([target]) {
   padding: 0;
   border: 0;
-}
-
-:host([target][ondark][disabled]),
-:host([target][appearance="inverse"][disabled]) {
-  .target {
-    color: var(--ds-color-text-primary-default, vac.$ds-color-text-primary-default);
-  }
 }
 
 .target {
