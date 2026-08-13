@@ -59,6 +59,22 @@ describe("auro-badge", () => {
     await expect(wrapper.classList.contains("body-xs")).to.be.false;
   });
 
+  it("auro-badge centers its text with a collapsed line-height so mobile spacing stays symmetric", async () => {
+    // Guards AB#1547903: the text wrapper must flex-center its content and
+    // collapse the typography leading (line-height 1 / 16px, not 24px) so Chrome
+    // for Android cannot pool the extra leading below the glyph.
+    const el = await fixture(html`
+      <auro-badge>default</auro-badge>
+    `);
+
+    const wrapper = el.shadowRoot.querySelector("div");
+    const styles = getComputedStyle(wrapper);
+
+    await expect(styles.display).to.equal("flex");
+    await expect(styles.alignItems).to.equal("center");
+    await expect(styles.lineHeight).to.equal("16px");
+  });
+
   it("auro-badge has an action that closes the badge", async () => {
     const el = await fixture(html`
       <auro-badge target>click me</auro-badge>

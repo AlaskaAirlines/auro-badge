@@ -46,9 +46,9 @@
 :host([target]) {
   [auro-button] {
     &::part(button) {
-      padding: 0;
       min-height: var(--ds-size-500, vac.$ds-size-500);
       max-height: var(--ds-size-500, vac.$ds-size-500);
+      padding: 0;
     }
   }
 }
@@ -57,6 +57,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   // Vertical value is tuned (no matching --ds-size token) to preserve the
   // badge height against the body-default/body-xs typography line-height.
   padding: .438rem var(--ds-size-200, vac.$ds-size-200);
@@ -120,4 +121,26 @@
 .iconOnly {
   padding-top: var(--ds-size-50, vac.$ds-size-50);
   padding-bottom: var(--ds-size-50, vac.$ds-size-50);
+}
+
+// Collapse the typography line-height's leading and re-center the text within a
+// box whose height equals the old line-height. Flex centering makes the vertical
+// spacing symmetric regardless of the platform's font metrics, so Chrome for
+// Android no longer pools the leading below the glyph (AB#1547903). The
+// min-height preserves the wrapper's previous height, so no badge padding changes
+// and every variant renders at its existing desktop size.
+.body-default,
+.body-xs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.body-default {
+  min-height: var(--wcss-body-default-line-height, 1.5rem);
+}
+
+.body-xs {
+  min-height: var(--wcss-body-xs-line-height, 1rem);
 }
