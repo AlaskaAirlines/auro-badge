@@ -31,7 +31,12 @@
 :host {
   line-height: 1;
 
+  // Overridable vertical padding hooks. Pill uses a tighter value than the
+  // label/icon variants to offset the body typography line-height so the pill
+  // keeps its previous height. Values are intentional literals (no matching
+  // --ds-size token) but remain themeable via these custom properties.
   --labelpillpadding: .3125rem;
+  --pillpadding: .0625rem;
 }
 
 :host([space]) {
@@ -42,7 +47,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .688rem var(--ds-size-200, vac.$ds-size-200);
+  // Vertical value is tuned (no matching --ds-size token) to preserve the
+  // badge height against the body-default/body-xs typography line-height.
+  padding: .438rem var(--ds-size-200, vac.$ds-size-200);
   border-width: 1px;
   border-style: solid;
 
@@ -88,7 +95,7 @@
 }
 
 :host([pill]) {
-  padding: var(--labelpillpadding) var(--ds-size-150, vac.$ds-size-150);
+  padding: var(--pillpadding) var(--ds-size-150, vac.$ds-size-150);
   border-radius: 9999px;
   user-select: none;
 }
@@ -105,4 +112,9 @@
 :host([icon][pill]) {
   padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
   line-height: 0.75rem;
+}
+
+.iconOnly {
+  padding-top: var(--ds-size-50, vac.$ds-size-50);
+  padding-bottom: var(--ds-size-50, vac.$ds-size-50);
 }
