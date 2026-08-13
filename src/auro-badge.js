@@ -183,7 +183,8 @@ export class AuroBadge extends LitElement {
   }
 
   /**
-   * On slot content change, checks for auro-icon and applies attribute to component for adjusted styling.
+   * On slot content change, checks for auro-icon to apply an attribute for adjusted styling, and
+   * computes the `hasText` reactive state that drives text-vs-icon sizing.
    * @private
    * @returns {void}
    */
