@@ -31,18 +31,36 @@
 :host {
   line-height: 1;
 
+  // Overridable vertical padding hooks. Pill uses a tighter value than the
+  // label/icon variants to offset the body typography line-height so the pill
+  // keeps its previous height. Values are intentional literals (no matching
+  // --ds-size token) but remain themeable via these custom properties.
   --labelpillpadding: .3125rem;
+  --pillpadding: .0625rem;
 }
 
 :host([space]) {
   margin-left: var(--ds-size-300, vac.$ds-size-300);
 }
 
+:host([target]) {
+  [auro-button] {
+    &::part(button) {
+      min-height: var(--ds-size-500, vac.$ds-size-500);
+      max-height: var(--ds-size-500, vac.$ds-size-500);
+      padding: 0;
+    }
+  }
+}
+
 :host {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .688rem var(--ds-size-200, vac.$ds-size-200);
+
+  // Vertical value is tuned (no matching --ds-size token) to preserve the
+  // badge height against the body-default/body-xs typography line-height.
+  padding: .438rem var(--ds-size-200, vac.$ds-size-200);
   border-width: 1px;
   border-style: solid;
 
@@ -55,13 +73,6 @@
 :host([target]) {
   padding: 0;
   border: 0;
-}
-
-:host([target][ondark][disabled]),
-:host([target][appearance="inverse"][disabled]) {
-  .target {
-    color: var(--ds-color-text-primary-default, vac.$ds-color-text-primary-default);
-  }
 }
 
 .target {
@@ -88,7 +99,7 @@
 }
 
 :host([pill]) {
-  padding: var(--labelpillpadding) var(--ds-size-150, vac.$ds-size-150);
+  padding: var(--pillpadding) var(--ds-size-150, vac.$ds-size-150);
   border-radius: 9999px;
   user-select: none;
 }
@@ -105,4 +116,31 @@
 :host([icon][pill]) {
   padding: var(--ds-size-50, vac.$ds-size-50) var(--ds-size-150, vac.$ds-size-150);
   line-height: 0.75rem;
+}
+
+.iconOnly {
+  padding-top: var(--ds-size-50, vac.$ds-size-50);
+  padding-bottom: var(--ds-size-50, vac.$ds-size-50);
+}
+
+// Collapse the typography line-height's leading and re-center the text within a
+// box whose height equals the old line-height. Flex centering makes the vertical
+// spacing symmetric regardless of the platform's font metrics, so Chrome for
+// Android no longer pools the leading below the glyph (AB#1547903). The
+// min-height preserves the wrapper's previous height, so no badge padding changes
+// and every variant renders at its existing desktop size.
+.body-default,
+.body-xs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.body-default {
+  min-height: var(--wcss-body-default-line-height, 1.5rem);
+}
+
+.body-xs {
+  min-height: var(--wcss-body-xs-line-height, 1rem);
 }
