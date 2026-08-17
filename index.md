@@ -26,18 +26,16 @@ The `auro-badge` use cases include:
 ### Basic
 
 <div class="exampleWrapper">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
-  <!-- The below content is automatically added from ./../apiExamples/basic.html -->
-  <auro-badge>Nonstop</auro-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/basic.html) -->
+<!-- The below content is automatically added from ./../apiExamples/basic.html -->
+<auro-badge>Nonstop</auro-badge>
+<!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
-  <span slot="trigger">See code</span>
+<span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./../apiExamples/basic.html -->
 
-```html
-<auro-badge>Nonstop</auro-badge>
-```
+<pre class="language-html"><code class="language-html">&lt;auro-badge&gt;Nonstop&lt;/auro-badge&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
