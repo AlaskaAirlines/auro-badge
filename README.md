@@ -33,21 +33,17 @@ There are two important parts of every Auro component. The <a href="https://deve
 
 To protect from versioning conflicts with other instances of the component being loaded, it is recommended to use our `AuroBadge.register('name')` method and pass in a unique name.
 
-```js
-import { AuroBadge } from '@aurodesignsystem/auro-badge';
-AuroBadge.register('custom-badge');
-```
+<pre class="language-js"><code class="language-js">import { AuroBadge } from '@aurodesignsystem/auro-badge';
+AuroBadge.register('custom-badge');</code></pre>
 
 This will create a new custom element that you can use in your HTML that will function identically to the `auro-badge` element.
 
 <div class="exampleWrapper">
-  <custom-badge type="warning">Salutations World!</custom-badge>
+<custom-badge type="warning">Salutations World!</custom-badge>
 </div>
 <auro-accordion alignRight>
-  <span slot="trigger">See code</span>
-  ```html
-  <custom-badge type="warning">Salutations World!</custom-badge>
-  ```
+<span slot="trigger">See code</span>
+<pre class="language-html"><code class="language-html">&lt;custom-badge type="warning"&gt;Salutations World!&lt;/custom-badge&gt;</code></pre>
 
 </auro-accordion>
 <!-- AURO-GENERATED-CONTENT:END -->
@@ -70,9 +66,7 @@ The `auro-badge` use cases include:
 [![License](https://img.shields.io/npm/l/@aurodesignsystem/auro-badge?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 ![ESM supported](https://img.shields.io/badge/ESM-compatible-FFE900?style=for-the-badge)
 
-```shell
-$ npm i @aurodesignsystem/auro-badge
-```
+<pre class="language-shell"><code class="language-shell">$ npm i @aurodesignsystem/auro-badge</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -84,9 +78,7 @@ Defining the dependency within each project that is using the `<auro-badge>` com
 <!-- AURO-GENERATED-CONTENT:END -->
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/componentImport.md) -->
 
-```js
-import "@aurodesignsystem/auro-badge";
-```
+<pre class="language-js"><code class="language-js">import "@aurodesignsystem/auro-badge";</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -95,9 +87,7 @@ import "@aurodesignsystem/auro-badge";
 <!-- AURO-GENERATED-CONTENT:START (REMOTE:url=https://raw.githubusercontent.com/AlaskaAirlines/auro-templates/main/templates/default/partials/usage/bundleInstallDescription.md) -->
 In cases where the project is not able to process JS assets, there are pre-processed assets available for use. Legacy browsers such as IE11 are no longer supported.
 
-```html
-<script type="module" src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-badge@latest/+esm"></script>
-```
+<pre class="language-html"><code class="language-html">&lt;script type="module" src="https://cdn.jsdelivr.net/npm/@aurodesignsystem/auro-badge@latest/+esm"&gt;&lt;/script&gt;</code></pre>
 
 <!-- AURO-GENERATED-CONTENT:END -->
 
@@ -106,9 +96,7 @@ In cases where the project is not able to process JS assets, there are pre-proce
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/basic.html) -->
 <!-- The below code snippet is automatically added from ./apiExamples/basic.html -->
 
-```html
-<auro-badge>Nonstop</auro-badge>
-```
+<pre class="language-html"><code class="language-html">&lt;auro-badge&gt;Nonstop&lt;/auro-badge&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Custom Component Registration for Version Management
@@ -125,29 +113,24 @@ You can do this by importing only the component class and using the `register(na
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/customRegistration.md) -->
 <!-- The below content is automatically added from ./docs/partials/customRegistration.md -->
 
-```js
-// Import the class only
+<pre class="language-js"><code class="language-js">// Import the class only
 import { AuroBadge } from '@aurodesignsystem/auro-badge/class';
-
-// Register with a custom name if desired
-AuroBadge.register('custom-badge');
-```
+&#10;// Register with a custom name if desired
+AuroBadge.register('custom-badge');</code></pre>
 
 This will create a new custom element `<custom-badge>` that behaves exactly like `<auro-badge>`, allowing both to coexist on the same page without interfering with each other.
 <!-- AURO-GENERATED-CONTENT:END -->
 <div class="exampleWrapper exampleWrapper--flex">
-  <!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
-  <!-- The below content is automatically added from ./apiExamples/custom.html -->
-  <custom-badge variant="warning">Salutations World!</custom-badge>
-  <!-- AURO-GENERATED-CONTENT:END -->
+<!-- AURO-GENERATED-CONTENT:START (FILE:src=./apiExamples/custom.html) -->
+<!-- The below content is automatically added from ./apiExamples/custom.html -->
+<custom-badge variant="warning">Salutations World!</custom-badge>
+<!-- AURO-GENERATED-CONTENT:END -->
 </div>
 <auro-accordion alignRight>
-  <span slot="trigger">See code</span>
+<span slot="trigger">See code</span>
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./apiExamples/custom.html) -->
 <!-- The below code snippet is automatically added from ./apiExamples/custom.html -->
 
-```html
-<custom-badge variant="warning">Salutations World!</custom-badge>
-```
+<pre class="language-html"><code class="language-html">&lt;custom-badge variant="warning"&gt;Salutations World!&lt;/custom-badge&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>

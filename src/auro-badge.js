@@ -106,9 +106,11 @@ export class AuroBadge extends LitElement {
 
       /**
        * DEPRECATED - use `appearance` instead.
+       * @deprecated Use `appearance="inverse"` instead.
        */
       onDark: {
         type: Boolean,
+        attribute: "ondark",
         reflect: true,
         deprecated: true
       },
@@ -134,7 +136,8 @@ export class AuroBadge extends LitElement {
        * @private
        */
       value: {
-        type: String
+        type: String,
+        attribute: false
       },
 
       /**
@@ -142,6 +145,7 @@ export class AuroBadge extends LitElement {
        */
       hasText: {
         type: Boolean,
+        attribute: false,
         state: true
       },
 
