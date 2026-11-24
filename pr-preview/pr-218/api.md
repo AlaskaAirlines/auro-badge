@@ -136,7 +136,7 @@ Use the `label` attribute for a badge with fully rounded ends and smaller text.
 
 ### Pill
 
-Use the `pill` attribute for a pill-shaped badge. The last example changes the badge's colors with CSS custom properties.
+Use the `pill` attribute for a badge with fully rounded ends and less vertical padding. The last example changes the badge's colors with CSS custom properties.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
@@ -163,7 +163,7 @@ Use the `pill` attribute for a pill-shaped badge. The last example changes the b
 
 ### Spacing
 
-Use the `space` attribute to allow for default spacing between elements.
+Use the `space` attribute to add space to the left of a badge.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/space.html) -->
@@ -207,7 +207,7 @@ Use the `target` attribute to turn the badge into a button that removes the badg
 
 ### Variants
 
-Use the `variant` attribute to apply pre-defined styles to the badge.
+Use the `variant` attribute to color the badge for what it shows, such as a status, a fare class, or a tier.
 
 #### Accents
 

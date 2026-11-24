@@ -32,10 +32,10 @@ Draws attention to a short piece of information, such as a status, a count, or a
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./docs/partials/useCases.md) -->
 <!-- The below content is automatically added from ./docs/partials/useCases.md -->
-The `auro-badge` use cases include:
+Use `<auro-badge>` to:
 
-* Additional information to draw attention to a specific area of the interface
-* Advising the user of a specific action or status
+* Add information that draws attention to a specific area of the interface.
+* Tell the user about a specific action or status.
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Install
