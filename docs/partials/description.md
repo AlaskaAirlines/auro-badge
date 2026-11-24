@@ -1,1 +1,1 @@
-HTML custom element for the use of drawing attention to additional interface information.
+Draws attention to a short piece of information, such as a status, a count, or a loyalty tier.
