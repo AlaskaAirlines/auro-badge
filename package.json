@@ -84,6 +84,7 @@
   "files": [
     "dist/**/*",
     "demo/**/*",
+    "custom-elements.json",
     "CHANGELOG.md",
     "README.md",
     "LICENSE",
