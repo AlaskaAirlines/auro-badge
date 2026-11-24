@@ -16,11 +16,11 @@
 
 </auro-accordion>
 
-## Property & Attribute Examples
+## Property and attribute examples
 
-### Appearance on Dark Backgrounds
+### Appearance on dark backgrounds
 
-Use the `appearance="inverse"` attribute to render colors appropriate for darker backgrounds.
+Use `appearance="inverse"` on dark backgrounds.
 
 <div class="exampleWrapper--ondark">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inverse-appearance.html) -->
@@ -37,7 +37,7 @@ Use the `appearance="inverse"` attribute to render colors appropriate for darker
 
 ### Disabled
 
-Use the `disabled` attribute to render any `<auro-badge>` with a inoperable UI.
+Use the `disabled` attribute to show a badge in a muted style. On a badge with `target`, it also turns off the dismiss button.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
@@ -54,7 +54,7 @@ Use the `disabled` attribute to render any `<auro-badge>` with a inoperable UI.
 
 ### Label
 
-Use the `label` attribute for a text label experience.
+Use the `label` attribute for a badge with fully rounded ends and smaller text.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
@@ -71,7 +71,7 @@ Use the `label` attribute for a text label experience.
 
 ### Pill
 
-Use the `pill` attribute for a pill-shaped badge. The last example illustrates a customized version of the element.
+Use the `pill` attribute for a pill-shaped badge. The last example changes the badge's colors with CSS custom properties.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
@@ -105,7 +105,7 @@ Use the `space` attribute to allow for default spacing between elements.
 
 ### Target
 
-The `target` attribute will convert the badge to a clickable button element, which will provide functionality for the badge to be dismissed upon interaction with the element.
+Use the `target` attribute to turn the badge into a button that removes the badge when clicked.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
@@ -126,7 +126,7 @@ Use the `variant` attribute to apply pre-defined styles to the badge.
 
 #### Accents
 
-Use these variants to apply pre-defined `accent` colors to the badge: `accent1`, `accent2`, `accent3`, `accent4`.
+Use these variants for accent colors: `accent1`, `accent2`, `accent3`, and `accent4`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
@@ -143,7 +143,7 @@ Use these variants to apply pre-defined `accent` colors to the badge: `accent1`,
 
 #### States
 
-Use these variants to apply pre-defined `state` colors to the badge: `info`, `error`, `success`, `warning`.
+Use these variants for status colors: `info`, `error`, `success`, and `warning`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/states.html) -->
@@ -168,7 +168,7 @@ Use these variants to apply pre-defined `state` colors to the badge: `info`, `er
 
 #### Fares
 
-Use these variants to apply pre-defined `fare` colors to the badge: `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first`.
+Use these variants for fare class colors: `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, and `fare-first`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/fares.html) -->
@@ -185,7 +185,7 @@ Use these variants to apply pre-defined `fare` colors to the badge: `fare-saver`
 
 #### Transparency
 
-Use these variants to apply pre-defined `transparency` colors to the badge: `transparent`, `transparent-inverse`.
+Use `transparent` for a semi-transparent background, or `transparent-inverse` on dark backgrounds.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparency.html) -->
@@ -208,9 +208,9 @@ Use these variants to apply pre-defined `transparency` colors to the badge: `tra
 
 </auro-accordion>
 
-#### Loyalty Tiers
+#### Loyalty tiers
 
-Use these variants to apply pre-defined `loyalty` tier colors to the badge: `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`.
+Use these variants for loyalty tier colors: `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, and `titanium`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyalty.html) -->
@@ -233,9 +233,9 @@ Use these variants to apply pre-defined `loyalty` tier colors to the badge: `bro
 
 </auro-accordion>
 
-#### Oneworld Tiers
+#### Oneworld tiers
 
-Use these variants to apply pre-defined `oneworld` brand colors to the badge: `emerald`, `sapphire`, `ruby`.
+Use these variants for oneworld tier colors: `emerald`, `sapphire`, and `ruby`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/oneworld.html) -->
@@ -250,9 +250,9 @@ Use these variants to apply pre-defined `oneworld` brand colors to the badge: `e
 
 </auro-accordion>
 
-#### Lounge Tiers
+#### Lounge tiers
 
-Use these variants to apply pre-defined `lounge` tier colors to the badge: `lounge`, `loungeplus`.
+Use these variants for lounge tier colors: `lounge` and `loungeplus`.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/lounge.html) -->
@@ -267,9 +267,9 @@ Use these variants to apply pre-defined `lounge` tier colors to the badge: `loun
 
 </auro-accordion>
 
-#### MVP Tiers (Deprecated)
+#### MVP tiers (deprecated)
 
-Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
+Deprecated: Use the Atmos loyalty tier variants, listed under Loyalty tiers, instead. The `mvp`, `mvpgold`, and `mvpgold75k` values of `variant` still show the MVP tier colors.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/mvp.html) -->
@@ -284,11 +284,11 @@ Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
 
 </auro-accordion>
 
-## Common Usage Patterns & Functional Examples
+## Common usage patterns
 
 ### Icons
 
-To use icons in your badges, it is preferred that this is added as content within the `<slot>` of the `<auro-badge>` element. In most cases, it is preferred to use the Auro Icons repo and include the icon as part of the bundle. This example illustrates this option using the `<auro-icon>` element. Be aware that the `<auro-icon>` element uses a CDN to render the SVG. Consider this when building app critical UIs.
+Put an icon in the badge's default slot, as in this example, which uses `<auro-icon>`. `<auro-icon>` loads its SVG from a CDN, so for critical UIs, consider including the icon from the Auro icon library in your bundle instead.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/icon.html) -->
@@ -303,9 +303,9 @@ To use icons in your badges, it is preferred that this is added as content withi
 
 </auro-accordion>
 
-#### Pill with Icons
+#### Pill with icons
 
-`pill` attribute with `auro-icon` inside your badge.
+Use the `pill` attribute with an `<auro-icon>` in the badge.
 
 <div class="exampleWrapper">
   <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill-with-icons.html) -->
@@ -320,9 +320,9 @@ To use icons in your badges, it is preferred that this is added as content withi
 
 </auro-accordion>
 
-## Restyle Component with CSS Variables
+## Restyle with CSS custom properties
 
-The component may be restyled by changing the values of the following token(s).
+Restyle the component by changing the values of the following tokens.
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
 <!-- AURO-GENERATED-CONTENT:END -->
