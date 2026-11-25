@@ -6,4 +6,4 @@ import { AuroBadge } from '@aurodesignsystem/auro-badge/class';
 AuroBadge.register('custom-badge');
 ```
 
-This will create a new custom element `<custom-badge>` that behaves exactly like `<auro-badge>`, allowing both to coexist on the same page without interfering with each other.
+This creates a new custom element, `<custom-badge>`, that works exactly like `<auro-badge>`, so both can be on the same page without interfering with each other.

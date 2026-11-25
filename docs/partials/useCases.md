@@ -1,4 +1,4 @@
-The `auro-badge` use cases include:
+Use `<auro-badge>` to:
 
-* Additional information to draw attention to a specific area of the interface
-* Advising the user of a specific action or status
+* Add information that draws attention to a specific area of the interface.
+* Tell the user about a specific action or status.
