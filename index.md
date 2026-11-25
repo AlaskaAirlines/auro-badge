@@ -8,20 +8,20 @@
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/description.md) -->
 <!-- The below content is automatically added from ./../docs/partials/description.md -->
-HTML custom element for the use of drawing attention to additional interface information.
+Draws attention to a short piece of information, such as a status, a count, or a loyalty tier.
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## Use Cases
+## Use cases
 
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../docs/partials/useCases.md) -->
 <!-- The below content is automatically added from ./../docs/partials/useCases.md -->
-The `auro-badge` use cases include:
+Use `<auro-badge>` to:
 
-* Additional information to draw attention to a specific area of the interface
-* Advising the user of a specific action or status
+* Add information that draws attention to a specific area of the interface.
+* Tell the user about a specific action or status.
 <!-- AURO-GENERATED-CONTENT:END -->
 
-## Example(s)
+## Examples
 
 ### Basic
 

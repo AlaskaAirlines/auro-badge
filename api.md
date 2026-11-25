@@ -3,26 +3,47 @@
 
 # auro-badge
 
-The `auro-badge` element is for the use of drawing attention to additional interface information.
+Draws attention to a short piece of information, such as a status, a count, or a loyalty tier.
 
-### Properties & Attributes
+**Key capabilities**
+- **Color variants**: Set `variant` to color the badge for a status, such as `error`, or a tier, such as `gold`.
+- **Dark backgrounds**: Set `appearance="inverse"` to use colors made for dark backgrounds.
+- **Rounded shapes**: Set `pill` or `label` for a badge with fully rounded ends.
+- **Dismissible**: Set `target` to turn the badge into a button that removes it when clicked.
 
-| Properties | Attributes | Modifiers | Type                                                                                                                                                                                                                                                                                                                                                                       | Default   | Description                                                                                            |
-| ---------- | ---------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------ |
-| appearance | appearance |           | `default` \| `inverse`                                                                                                                                                                                                                                                                                                                                                     | `default` | Defines whether the component will be on lighter or darker backgrounds.                                |
-| disabled   | disabled   |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | If set to true button will become disabled and not allow for interactions.                             |
-| label      | label      |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | Enables label UI option.                                                                               |
-| onDark     | onDark     |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | DEPRECATED - use `appearance` instead.                                                                 |
-| pill       | pill       |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | Enables pill UI option.                                                                                |
-| space      | space      |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | Adds default spacing to the left of badges.                                                            |
-| target     | target     |           | boolean                                                                                                                                                                                                                                                                                                                                                                    |           | Adds functionality to the badge that displays a "target" icon, which dismisses the badge when clicked. |
-| variant    | variant    |           | `accent1` \| `accent2` \| `accent3` \| `accent4` \| `bronze` \| `cobalt` \| `copper` \| `gold` \| `nickel` \| `platinum` \| `silver` \| `titanium` \| `transparent` \| `info` \| `error` \| `success` \| `warning` \| `emerald` \| `sapphire` \| `ruby` \| `lounge` \| `loungeplus` \| `fare-saver` \| `fare-economy` \| `fare-premium` \| `fare-business` \| `fare-first` |           | Defines the color variant of the badge.                                                                |
+### Properties and attributes
+
+| Properties | Attributes | Modifiers | Type                                                                                                                                                                                                                                                                                                                                                                                                | Default   | Description                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------- | ---------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| appearance | appearance |           | `default` \| `inverse`                                                                                                                                                                                                                                                                                                                                                                              | `default` | Sets the badge's colors for the background it sits on. Use `inverse` on dark backgrounds.                                                                                                                                                                                                                                                                                         |
+| disabled   | disabled   |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Shows the badge in a muted style. When `target` is set, also turns off the dismiss button, so it can't be clicked or reached with the keyboard.                                                                                                                                                                                                                                   |
+| label      | label      |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Shows the badge with fully rounded ends and smaller text.                                                                                                                                                                                                                                                                                                                         |
+| pill       | pill       |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Shows the badge with fully rounded ends and less vertical padding.                                                                                                                                                                                                                                                                                                                |
+| space      | space      |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Adds default spacing to the left of badges.                                                                                                                                                                                                                                                                                                                                       |
+| target     | target     |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Turns the badge into a button with an x icon that removes the badge from the page when clicked. Screen readers announce the badge's text followed by "Dismiss".                                                                                                                                                                                                                   |
+| variant    | variant    |           | `accent1` \| `accent2` \| `accent3` \| `accent4` \| `bronze` \| `cobalt` \| `copper` \| `gold` \| `nickel` \| `platinum` \| `silver` \| `titanium` \| `transparent` \| `transparent-inverse` \| `info` \| `error` \| `success` \| `warning` \| `emerald` \| `sapphire` \| `ruby` \| `lounge` \| `loungeplus` \| `fare-saver` \| `fare-economy` \| `fare-premium` \| `fare-business` \| `fare-first` |           | Sets the badge's color to match what it shows. Use a status (`info`, `error`, `success`, or `warning`), a fare class (values starting with `fare-`), a loyalty, oneworld, or lounge tier (such as `gold`, `emerald`, or `lounge`), or an accent (`accent1`–`accent4`). Use `transparent` for a semi-transparent background, or `transparent-inverse` for one on dark backgrounds. |
+| onDark     | onDark     |           | boolean                                                                                                                                                                                                                                                                                                                                                                                             |           | Deprecated: Use `appearance="inverse"` instead.<br>Shows the badge in colors for dark backgrounds.                                                                                                                                                                                                                                                                                |
 
 ### Methods
 
-| Name     | Parameters                                                           | Return | Description                                       |
-| -------- | -------------------------------------------------------------------- | ------ | ------------------------------------------------- |
-| register | `name` (string) - The name of the element that you want to register. |        | This will register this element with the browser. |
+| Name     | Parameters                                                    | Return | Description                                              |
+| -------- | ------------------------------------------------------------- | ------ | -------------------------------------------------------- |
+| register | `name` (string) - The tag name to register the element under. |        | Registers the element with the browser under a tag name. |
+
+### Slots
+
+| Name      | Description                                                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| (default) | The badge's content, such as short text, an `<auro-icon>`, or both. For a badge that shows only an icon, describe the icon with text in the icon's default slot. |
+
+### CSS custom properties
+
+| Name                            | Description                                                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| --ds-auro-badge-border-color    | Border color of the badge. Badges with `target` don't show a border.                                                           |
+| --ds-auro-badge-boxshadow-color | Color of the ring drawn around the dismiss button of a badge with `target` when it has keyboard focus. Transparent by default. |
+| --ds-auro-badge-container-color | Background color of the badge.                                                                                                 |
+| --ds-auro-badge-text-color      | Color of the badge's text.                                                                                                     |
 <!-- AURO-GENERATED-CONTENT:END -->
 
 ## Basic
@@ -42,11 +63,11 @@ The `auro-badge` element is for the use of drawing attention to additional inter
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Property & Attribute Examples
+## Property and attribute examples
 
-### Appearance on Dark Backgrounds
+### Appearance on dark backgrounds
 
-Use the `appearance="inverse"` attribute to render colors appropriate for darker backgrounds.
+Use `appearance="inverse"` on dark backgrounds.
 
 <div class="exampleWrapper--ondark">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/inverse-appearance.html) -->
@@ -65,7 +86,7 @@ Use the `appearance="inverse"` attribute to render colors appropriate for darker
 
 ### Disabled
 
-Use the `disabled` attribute to render any `<auro-badge>` with a inoperable UI.
+Use the `disabled` attribute to show a badge in a muted style. On a badge with `target`, it also turns off the dismiss button.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/disabled.html) -->
@@ -90,7 +111,7 @@ Use the `disabled` attribute to render any `<auro-badge>` with a inoperable UI.
 
 ### Label
 
-Use the `label` attribute for a text label experience.
+Use the `label` attribute for a badge with fully rounded ends and smaller text.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/label.html) -->
@@ -115,7 +136,7 @@ Use the `label` attribute for a text label experience.
 
 ### Pill
 
-Use the `pill` attribute for a pill-shaped badge. The last example illustrates a customized version of the element.
+Use the `pill` attribute for a badge with fully rounded ends and less vertical padding. The last example changes the badge's colors with CSS custom properties.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill.html) -->
@@ -142,7 +163,7 @@ Use the `pill` attribute for a pill-shaped badge. The last example illustrates a
 
 ### Spacing
 
-Use the `space` attribute to allow for default spacing between elements.
+Use the `space` attribute to add space to the left of a badge.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/space.html) -->
@@ -165,7 +186,7 @@ Use the `space` attribute to allow for default spacing between elements.
 
 ### Target
 
-The `target` attribute will convert the badge to a clickable button element, which will provide functionality for the badge to be dismissed upon interaction with the element.
+Use the `target` attribute to turn the badge into a button that removes the badge when clicked.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/target.html) -->
@@ -186,11 +207,11 @@ The `target` attribute will convert the badge to a clickable button element, whi
 
 ### Variants
 
-Use the `variant` attribute to apply pre-defined styles to the badge.
+Use the `variant` attribute to color the badge for what it shows, such as a status, a fare class, or a tier.
 
 #### Accents
 
-Use these variants to apply pre-defined `accent` colors to the badge: `accent1`, `accent2`, `accent3`, `accent4`.
+Use these variants for accent colors: `accent1`, `accent2`, `accent3`, and `accent4`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/accents.html) -->
@@ -215,7 +236,7 @@ Use these variants to apply pre-defined `accent` colors to the badge: `accent1`,
 
 #### States
 
-Use these variants to apply pre-defined `state` colors to the badge: `info`, `error`, `success`, `warning`.
+Use these variants for status colors: `info`, `error`, `success`, and `warning`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/states.html) -->
@@ -257,7 +278,7 @@ Use these variants to apply pre-defined `state` colors to the badge: `info`, `er
 
 #### Fares
 
-Use these variants to apply pre-defined `fare` colors to the badge: `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, `fare-first`.
+Use these variants for fare class colors: `fare-saver`, `fare-economy`, `fare-premium`, `fare-business`, and `fare-first`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/fares.html) -->
@@ -284,7 +305,7 @@ Use these variants to apply pre-defined `fare` colors to the badge: `fare-saver`
 
 #### Transparency
 
-Use these variants to apply pre-defined `transparency` colors to the badge: `transparent`, `transparent-inverse`.
+Use `transparent` for a semi-transparent background, or `transparent-inverse` on dark backgrounds.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/transparency.html) -->
@@ -312,9 +333,9 @@ Use these variants to apply pre-defined `transparency` colors to the badge: `tra
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Loyalty Tiers
+#### Loyalty tiers
 
-Use these variants to apply pre-defined `loyalty` tier colors to the badge: `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, `titanium`.
+Use these variants for loyalty tier colors: `bronze`, `cobalt`, `copper`, `gold`, `nickel`, `platinum`, `silver`, and `titanium`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/loyalty.html) -->
@@ -370,9 +391,9 @@ Use these variants to apply pre-defined `loyalty` tier colors to the badge: `bro
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Oneworld Tiers
+#### Oneworld tiers
 
-Use these variants to apply pre-defined `oneworld` brand colors to the badge: `emerald`, `sapphire`, `ruby`.
+Use these variants for oneworld tier colors: `emerald`, `sapphire`, and `ruby`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/oneworld.html) -->
@@ -393,9 +414,9 @@ Use these variants to apply pre-defined `oneworld` brand colors to the badge: `e
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Lounge Tiers
+#### Lounge tiers
 
-Use these variants to apply pre-defined `lounge` tier colors to the badge: `lounge`, `loungeplus`.
+Use these variants for lounge tier colors: `lounge` and `loungeplus`.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/lounge.html) -->
@@ -414,9 +435,9 @@ Use these variants to apply pre-defined `lounge` tier colors to the badge: `loun
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### MVP Tiers (Deprecated)
+#### MVP tiers (deprecated)
 
-Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
+Deprecated: Use the Atmos loyalty tier variants, listed under Loyalty tiers, instead. The `mvp`, `mvpgold`, and `mvpgold75k` values of `variant` still show the MVP tier colors.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/mvp.html) -->
@@ -437,29 +458,29 @@ Use the `mvp`, `mvpgold` or `mvpgold75k` attributes for tier badges.
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Common Usage Patterns & Functional Examples
+## Common usage patterns
 
 ### Icons
 
-To use icons in your badges, it is preferred that this is added as content within the `<slot>` of the `<auro-badge>` element. In most cases, it is preferred to use the Auro Icons repo and include the icon as part of the bundle. This example illustrates this option using the `<auro-icon>` element. Be aware that the `<auro-icon>` element uses a CDN to render the SVG. Consider this when building app critical UIs.
+Put an icon in the badge's default slot, as in this example, which uses `<auro-icon>`. `<auro-icon>` loads its SVG from a CDN, so for critical UIs, consider including the icon from the Auro icon library in your bundle instead.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/icon.html) -->
 <!-- The below content is automatically added from ./../apiExamples/icon.html -->
 <auro-badge>
-<auro-icon appearance="inverse" emphasis category="health" name="air" label>Air</auro-icon>
+<auro-icon appearance="inverse" category="health" name="air" label>Air</auro-icon>
 </auro-badge>
 <auro-badge>
-<auro-icon appearance="inverse" emphasis category="health" name="covid-test" label>Covid test</auro-icon>
+<auro-icon appearance="inverse" category="health" name="covid-test-stroke" label>Covid test</auro-icon>
 </auro-badge>
 <auro-badge>
-<auro-icon appearance="inverse" emphasis category="health" name="health" label>Health</auro-icon>
+<auro-icon appearance="inverse" category="health" name="medical-stroke" label>Medical</auro-icon>
 </auro-badge>
 <auro-badge>
-<auro-icon appearance="inverse" emphasis category="health" name="mask" label>Mask</auro-icon>
+<auro-icon appearance="inverse" category="health" name="mask-stroke" label>Mask</auro-icon>
 </auro-badge>
 <auro-badge>
-<auro-icon appearance="inverse" emphasis category="health" name="spraybottle" label>Spray bottle</auro-icon>
+<auro-icon appearance="inverse" category="health" name="clean-stroke" label>Cleaning</auro-icon>
 </auro-badge>
 <!-- AURO-GENERATED-CONTENT:END -->
 </div>
@@ -469,45 +490,45 @@ To use icons in your badges, it is preferred that this is added as content withi
 <!-- The below code snippet is automatically added from ./../apiExamples/icon.html -->
 
 <pre class="language-html"><code class="language-html">&lt;auro-badge&gt;
-  &lt;auro-icon appearance="inverse" emphasis category="health" name="air" label&gt;Air&lt;/auro-icon&gt;
+  &lt;auro-icon appearance="inverse" category="health" name="air" label&gt;Air&lt;/auro-icon&gt;
 &lt;/auro-badge&gt;
 &lt;auro-badge&gt;
-  &lt;auro-icon appearance="inverse" emphasis category="health" name="covid-test" label&gt;Covid test&lt;/auro-icon&gt;
+  &lt;auro-icon appearance="inverse" category="health" name="covid-test-stroke" label&gt;Covid test&lt;/auro-icon&gt;
 &lt;/auro-badge&gt;
 &lt;auro-badge&gt;
-  &lt;auro-icon appearance="inverse" emphasis category="health" name="health" label&gt;Health&lt;/auro-icon&gt;
+  &lt;auro-icon appearance="inverse" category="health" name="medical-stroke" label&gt;Medical&lt;/auro-icon&gt;
 &lt;/auro-badge&gt;
 &lt;auro-badge&gt;
-  &lt;auro-icon appearance="inverse" emphasis category="health" name="mask" label&gt;Mask&lt;/auro-icon&gt;
+  &lt;auro-icon appearance="inverse" category="health" name="mask-stroke" label&gt;Mask&lt;/auro-icon&gt;
 &lt;/auro-badge&gt;
 &lt;auro-badge&gt;
-  &lt;auro-icon appearance="inverse" emphasis category="health" name="spraybottle" label&gt;Spray bottle&lt;/auro-icon&gt;
+  &lt;auro-icon appearance="inverse" category="health" name="clean-stroke" label&gt;Cleaning&lt;/auro-icon&gt;
 &lt;/auro-badge&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-#### Pill with Icons
+#### Pill with icons
 
-`pill` attribute with `auro-icon` inside your badge.
+Use the `pill` attribute with an `<auro-icon>` in the badge.
 
 <div class="exampleWrapper">
 <!-- AURO-GENERATED-CONTENT:START (FILE:src=./../apiExamples/pill-with-icons.html) -->
 <!-- The below content is automatically added from ./../apiExamples/pill-with-icons.html -->
 <div style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap">
 <auro-badge pill>
-<auro-icon appearance="inverse" label customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)">Air</auro-icon>
+<auro-icon appearance="inverse" label category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)">Air</auro-icon>
 </auro-badge>
 <auro-badge pill>
-<auro-icon appearance="inverse" label customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)">Covid test</auro-icon>
+<auro-icon appearance="inverse" label category="health" name="covid-test-stroke" style="--ds-auro-icon-size: var(--ds-size-250)">Covid test</auro-icon>
 </auro-badge>
 <auro-badge pill>
-<auro-icon appearance="inverse" label customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)">Health</auro-icon>
+<auro-icon appearance="inverse" label category="health" name="medical-stroke" style="--ds-auro-icon-size: var(--ds-size-250)">Medical</auro-icon>
 </auro-badge>
 <auro-badge pill>
-<auro-icon appearance="inverse" label customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)">Mask</auro-icon>
+<auro-icon appearance="inverse" label category="health" name="mask-stroke" style="--ds-auro-icon-size: var(--ds-size-250)">Mask</auro-icon>
 </auro-badge>
 <auro-badge pill>
-<auro-icon appearance="inverse" label customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)">Spray bottle</auro-icon>
+<auro-icon appearance="inverse" label category="health" name="clean-stroke" style="--ds-auro-icon-size: var(--ds-size-250)">Cleaning</auro-icon>
 </auro-badge>
 </div>
 <!-- AURO-GENERATED-CONTENT:END -->
@@ -519,35 +540,34 @@ To use icons in your badges, it is preferred that this is added as content withi
 
 <pre class="language-html"><code class="language-html">&lt;div style="display: inline-flex; gap: 0.25rem; flex-wrap: wrap"&gt;
   &lt;auro-badge pill&gt;
-    &lt;auro-icon appearance="inverse" label customSize emphasis category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Air&lt;/auro-icon&gt;
+    &lt;auro-icon appearance="inverse" label category="health" name="air" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Air&lt;/auro-icon&gt;
   &lt;/auro-badge&gt;
   &lt;auro-badge pill&gt;
-    &lt;auro-icon appearance="inverse" label customSize emphasis category="health" name="covid-test" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Covid test&lt;/auro-icon&gt;
+    &lt;auro-icon appearance="inverse" label category="health" name="covid-test-stroke" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Covid test&lt;/auro-icon&gt;
   &lt;/auro-badge&gt;
   &lt;auro-badge pill&gt;
-    &lt;auro-icon appearance="inverse" label customSize emphasis category="health" name="health" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Health&lt;/auro-icon&gt;
+    &lt;auro-icon appearance="inverse" label category="health" name="medical-stroke" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Medical&lt;/auro-icon&gt;
   &lt;/auro-badge&gt;
   &lt;auro-badge pill&gt;
-    &lt;auro-icon appearance="inverse" label customSize emphasis category="health" name="mask" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Mask&lt;/auro-icon&gt;
+    &lt;auro-icon appearance="inverse" label category="health" name="mask-stroke" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Mask&lt;/auro-icon&gt;
   &lt;/auro-badge&gt;
   &lt;auro-badge pill&gt;
-    &lt;auro-icon appearance="inverse" label customSize emphasis category="health" name="spraybottle" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Spray bottle&lt;/auro-icon&gt;
+    &lt;auro-icon appearance="inverse" label category="health" name="clean-stroke" style="--ds-auro-icon-size: var(--ds-size-250)"&gt;Cleaning&lt;/auro-icon&gt;
   &lt;/auro-badge&gt;
 &lt;/div&gt;</code></pre>
 <!-- AURO-GENERATED-CONTENT:END -->
 </auro-accordion>
 
-## Restyle Component with CSS Variables
+## Restyle with CSS custom properties
 
-The component may be restyled by changing the values of the following token(s).
+Restyle the component by changing the values of the following tokens.
 
 <!-- AURO-GENERATED-CONTENT:START (CODE:src=./../src/styles/tokens.scss) -->
 <!-- The below code snippet is automatically added from ./../src/styles/tokens.scss -->
 
 <pre class="language-scss"><code class="language-scss">@use "@aurodesignsystem/design-tokens/dist/legacy/auro-classic/SCSSVariables" as vac;
 @use "@aurodesignsystem/design-tokens/dist/themes/alaska/SCSSVariables--alaska" as v;
-​
-:host {
+&#10;:host {
   --ds-auro-badge-border-color: var(--ds-basic-color-brand-primary, #{v.$ds-basic-color-brand-primary});
   --ds-auro-badge-boxshadow-color: transparent;
   --ds-auro-badge-container-color: var(--ds-basic-color-brand-primary, #{v.$ds-basic-color-brand-primary});
